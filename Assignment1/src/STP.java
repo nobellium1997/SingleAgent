@@ -5,7 +5,21 @@ public class STP
 
     //operator function
 
-    //add op
+    //apply op
+    public STPState ApplyOperator(STPState stp, SlideDir o)
+    {
+        switch (o){
+            case Up:
+
+            case Down:
+
+            case Left:
+
+            case Right:
+        }
+
+        return stp;
+    }
     public enum SlideDir
     {
         Up, Down, Left, Right
