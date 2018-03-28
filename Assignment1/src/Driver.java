@@ -13,18 +13,8 @@ public class Driver
                 counter++;
             }
 
-<<<<<<< HEAD
+
         ArrayList<int[][]> states_arrays = new ArrayList<>();
         states_arrays.add(STP);
-
-        // I want to die
-        //asdifojwefiwoef
-
-=======
-
-            ArrayList<int[][]> states_arrays = new ArrayList<>();
-            states_arrays.add(STP);
-        }
->>>>>>> 02f75057187021e148b2a8b8fe0dc11b3fc05a1d
     }
 }
