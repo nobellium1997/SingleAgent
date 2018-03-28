@@ -18,15 +18,26 @@ public class STP {
     //apply operator
     public STPState ApplyOperator(STPState stp, SlideDir o)
     {
+        int[][] state = stp.getArr();
+        int x = stp.getxBlank();
+        int y = stp.getyBlank();
+
+        //i is y
+        //j is x
         switch (o){
             case Up:
+                //i--
 
 
             case Down:
+                //i++
 
             case Left:
+                //j--
 
             case Right:
+                //j++
+
         }
 
         return stp;
