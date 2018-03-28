@@ -11,11 +11,17 @@ public class STP {
     }
 
 
+    public enum SlideDir
+    {
+        Up, Down, Left, Right;
+    }
+
     //apply operator
     public STPState ApplyOperator(STPState stp, SlideDir o)
     {
         switch (o){
             case Up:
+
 
             case Down:
 
@@ -45,9 +51,5 @@ public class STP {
     }
 
 
-    public enum SlideDir
-    {
-        Up, Down, Left, Right
-    }
 }
 
