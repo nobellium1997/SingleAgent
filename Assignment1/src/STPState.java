@@ -21,13 +21,12 @@ public class STPState
 
     // TODO add copy constructor
     public STPState(STPState s) {
-        s.arr = new int[5][3];
-//        for(int i = 0; i < 5; i++) {
-//            for(int j = 0; j < 3; j++) {
-//                System.out.println();
-//            }
-//        }
-        System.out.println(s);
+        this.arr = new int[5][3];
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 3; j++) {
+                this.arr[i][j] = s.arr[i][j];
+            }
+        }
         this.xBlank = s.xBlank;
         this.yBlank = s.yBlank;
     }
