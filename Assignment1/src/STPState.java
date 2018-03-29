@@ -31,6 +31,20 @@ public class STPState
         this.yBlank = s.yBlank;
     }
 
+    public STPState(int[][] array) {
+        this.arr = array;
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 3; j++) {
+                if(this.arr[i][j] == 0)
+                {
+                    this.xBlank = j;
+                    this.yBlank = i;
+                }
+            }
+        }
+
+    }
+
     public int[][] getArr() {
         return arr;
     }

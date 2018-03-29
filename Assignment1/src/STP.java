@@ -64,10 +64,9 @@ public class STP {
                 state[x++][y] = 0;
 
         }
-        //TODO make int[][] constructor
-        //STPState retState = new STPState(state);
+        STPState retState = new STPState(state);
 
-        return stp;
+        return retState;
     }
 
     //undo operator (same, but reversed)
