@@ -2,11 +2,76 @@ import java.util.ArrayList;
 
 public class STP {
 
-    // How are we gonna call these functions in driver?
+    /*
+    How are we gonna call these functions in driver?
+    what kind of a constructor do we need?
+    why tf do we have to have a separate class for this stuff?
+    */
 
     public ArrayList<STPState> GetSuccessors (STPState stp)
     {
+        int[][] arr = stp.getArr();
+        int x = stp.getxBlank();
+        int y = stp.getyBlank();
+
         ArrayList<STPState> succs = new ArrayList<>();
+
+        // if the blank tile isn't on the upper edge...
+        if(stp.getyBlank() != 0)
+        {
+            // make a copy of the tile state
+            STPState succ = new STPState(stp);
+
+            // switch blank tile with tile above it
+            succ.getArr()[x][y] = arr[x][y--];
+            succ.getArr()[x][y--] = 0;
+
+            // add successor state to return list
+            succs.add(succ);
+        }
+
+        // if the blank tile isn't on the lower edge...
+        if(stp.getyBlank() < 5)
+        {
+            // make a copy of the tile state
+            STPState succ = new STPState(stp);
+
+            // switch blank tile with tile below it
+            succ.getArr()[x][y] = arr[x][y++];
+            succ.getArr()[x][y++] = 0;
+
+            // add successor state to return list
+            succs.add(succ);
+        }
+
+        // if the blank tile isn't on the left edge...
+        if(stp.getxBlank() != 0)
+        {
+            // make a copy of the tile state
+            STPState succ = new STPState(stp);
+
+            // switch blank tile with tile left of it
+            succ.getArr()[x][y] = arr[x--][y];
+            succ.getArr()[x--][y] = 0;
+
+            // add successor state to return list
+            succs.add(succ);
+        }
+
+        // if the blank tile isn't on the right edge...
+        if(stp.getyBlank() < 3)
+        {
+            // make a copy of the tile state
+            STPState succ = new STPState(stp);
+
+            // switch blank tile with tile right of it
+            succ.getArr()[x][y] = arr[x++][y];
+            succ.getArr()[x++][y] = 0;
+
+            // add successor state to return list
+            succs.add(succ);
+
+        }
 
         return succs;
     }
@@ -92,8 +157,6 @@ public class STP {
             case Right:
                 state[x][y] = state[x--][y];
                 state[x--][y] = 0;
-
-
         }
 
         return stp;

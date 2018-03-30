@@ -32,7 +32,10 @@ public class STPState
     }
 
     public STPState(int[][] array) {
+        //intitialize array
         this.arr = array;
+
+        //find the blank tile and initialize coords
         for(int i = 0; i < 5; i++) {
             for(int j = 0; j < 3; j++) {
                 if(this.arr[i][j] == 0)
