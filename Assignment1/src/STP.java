@@ -99,33 +99,24 @@ public class STP {
         //i is y (number of rows horizontal rows)
         //j is x (number of vertical columns)
         //remember that (0,0) is in top left corner
+
+        // depending on the operation, switch the blank tile
+        //  with another tile in a particular direction
         switch (o){
             case Up:
-                //shifting the tile above the blank down to the current blank position
                 state[x][y] = state[x][y--];
-
-                //making the new blank position above the previous one
                 state[x][y--] = 0;
 
             case Down:
-                //shifting the tile below the blank up to the current blank position
                 state[x][y] = state[x][y++];
-
-                //making the new blank position below the previous one
                 state[x][y++] = 0;
 
             case Left:
-                //shifting the tile left of the blank over to the current blank position
                 state[x][y] = state[x--][y];
-
-                //making the new blank position to the left the previous one
                 state[x--][y] = 0;
 
             case Right:
-                //shifting the tile right of the blank over to the current blank position
                 state[x][y] = state[x++][y];
-
-                //making the new blank position to the left the previous one
                 state[x++][y] = 0;
 
         }
