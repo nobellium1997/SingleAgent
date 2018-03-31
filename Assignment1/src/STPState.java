@@ -19,7 +19,6 @@ public class STPState
         }
     }
 
-    // TODO add copy constructor
     public STPState(STPState s) {
         this.arr = new int[5][3];
         for(int i = 0; i < 5; i++) {
@@ -64,7 +63,7 @@ public class STPState
         String ret = new String();
         for(int i = 0; i < 5; i++) {
             for (int j = 0; j < 3; j++) {
-                ret += arr[i][j] + " ";
+                ret += arr[i][j] + "  ";
             }
             ret += "\n";
         }

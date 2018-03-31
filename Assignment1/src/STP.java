@@ -3,12 +3,12 @@ import java.util.ArrayList;
 public class STP {
 
     /*
-    How are we gonna call these functions in driver?
-    what kind of a constructor do we need?
-    why tf do we have to have a separate class for this stuff?
-    */
+    bro no constructor
+    and just make the functions static to access them
+    static method eg: STP.<your method name>
+     */
 
-    public ArrayList<STPState> GetSuccessors (STPState stp)
+    public static ArrayList<STPState> GetSuccessors (STPState stp)
     {
         int[][] arr = stp.getArr();
         int x = stp.getxBlank();
@@ -76,9 +76,29 @@ public class STP {
         return succs;
     }
 
-    public ArrayList<SlideDir> GetOperators (STPState stp)
+    public static ArrayList<SlideDir> GetOperators (STPState stp)
     {
         ArrayList<SlideDir> ops = new ArrayList<>();
+
+        // For this method to work we need the coordinates of the 0 square
+        // This should be given by xblank and yblank
+        SlideDir tempDir;
+        if(stp.getyBlank() - 1 >= 0) {
+            tempDir = SlideDir.Up;
+            ops.add(tempDir);
+        }
+        if(stp.getyBlank() + 1 < 5) {
+            tempDir = SlideDir.Down;
+            ops.add(tempDir);
+        }
+        if(stp.getxBlank() - 1 >= 0) {
+            tempDir = SlideDir.Left;
+            ops.add(tempDir);
+        }
+        if(stp.getxBlank() + 1 < 3) {
+            tempDir = SlideDir.Right;
+            ops.add(tempDir);
+        }
 
         return ops;
     }
@@ -90,7 +110,7 @@ public class STP {
     }
 
     //apply operator
-    public STPState ApplyOperator(STPState stp, SlideDir o)
+    public static STPState ApplyOperator(STPState stp, SlideDir o)
     {
         int[][] state = stp.getArr();
         int x = stp.getxBlank();
@@ -126,7 +146,7 @@ public class STP {
     }
 
     //undo operator (same, but reversed)
-    public STPState UndoOperator(STPState stp, SlideDir o)
+    public static STPState UndoOperator(STPState stp, SlideDir o)
     {
         int[][] state = stp.getArr();
         int x = stp.getxBlank();
