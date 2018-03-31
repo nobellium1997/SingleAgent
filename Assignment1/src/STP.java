@@ -8,74 +8,82 @@ public class STP {
     static method eg: STP.<your method name>
      */
 
+    // this method has been tested and is working
     public static ArrayList<STPState> GetSuccessors (STPState stp)
     {
-        int[][] arr = stp.getArr();
-        int x = stp.getxBlank();
-        int y = stp.getyBlank();
+//        int[][] arr = stp.getArr();
+//        int x = stp.getxBlank();
+//        int y = stp.getyBlank();
 
         ArrayList<STPState> succs = new ArrayList<>();
+        // Gonna comment some of this out since I think we can just use GetOperators
+        // for this part
+//        // if the blank tile isn't on the upper edge...
+//        if(stp.getyBlank() != 0)
+//        {
+//            // make a copy of the tile state
+//            STPState succ = new STPState(stp);
+//
+//            // switch blank tile with tile above it
+//            succ.getArr()[x][y] = arr[x][y--];
+//            succ.getArr()[x][y--] = 0;
+//
+//            // add successor state to return list
+//            succs.add(succ);
+//        }
+//
+//        // if the blank tile isn't on the lower edge...
+//        if(stp.getyBlank() < 5)
+//        {
+//            // make a copy of the tile state
+//            STPState succ = new STPState(stp);
+//
+//            // switch blank tile with tile below it
+//            succ.getArr()[x][y] = arr[x][y++];
+//            succ.getArr()[x][y++] = 0;
+//
+//            // add successor state to return list
+//            succs.add(succ);
+//        }
+//
+//        // if the blank tile isn't on the left edge...
+//        if(stp.getxBlank() != 0)
+//        {
+//            // make a copy of the tile state
+//            STPState succ = new STPState(stp);
+//
+//            // switch blank tile with tile left of it
+//            succ.getArr()[x][y] = arr[x--][y];
+//            succ.getArr()[x--][y] = 0;
+//
+//            // add successor state to return list
+//            succs.add(succ);
+//        }
+//
+//        // if the blank tile isn't on the right edge...
+//        if(stp.getyBlank() < 3)
+//        {
+//            // make a copy of the tile state
+//            STPState succ = new STPState(stp);
+//
+//            // switch blank tile with tile right of it
+//            succ.getArr()[x][y] = arr[x++][y];
+//            succ.getArr()[x++][y] = 0;
+//
+//            // add successor state to return list
+//            succs.add(succ);
+//
+//        }
 
-        // if the blank tile isn't on the upper edge...
-        if(stp.getyBlank() != 0)
-        {
-            // make a copy of the tile state
-            STPState succ = new STPState(stp);
-
-            // switch blank tile with tile above it
-            succ.getArr()[x][y] = arr[x][y--];
-            succ.getArr()[x][y--] = 0;
-
-            // add successor state to return list
-            succs.add(succ);
-        }
-
-        // if the blank tile isn't on the lower edge...
-        if(stp.getyBlank() < 5)
-        {
-            // make a copy of the tile state
-            STPState succ = new STPState(stp);
-
-            // switch blank tile with tile below it
-            succ.getArr()[x][y] = arr[x][y++];
-            succ.getArr()[x][y++] = 0;
-
-            // add successor state to return list
-            succs.add(succ);
-        }
-
-        // if the blank tile isn't on the left edge...
-        if(stp.getxBlank() != 0)
-        {
-            // make a copy of the tile state
-            STPState succ = new STPState(stp);
-
-            // switch blank tile with tile left of it
-            succ.getArr()[x][y] = arr[x--][y];
-            succ.getArr()[x--][y] = 0;
-
-            // add successor state to return list
-            succs.add(succ);
-        }
-
-        // if the blank tile isn't on the right edge...
-        if(stp.getyBlank() < 3)
-        {
-            // make a copy of the tile state
-            STPState succ = new STPState(stp);
-
-            // switch blank tile with tile right of it
-            succ.getArr()[x][y] = arr[x++][y];
-            succ.getArr()[x++][y] = 0;
-
-            // add successor state to return list
-            succs.add(succ);
-
+        ArrayList<SlideDir> operators = GetOperators(stp);
+        for(int i = 0; i < operators.size(); i++) {
+            succs.add(ApplyOperator(stp, operators.get(i)));
         }
 
         return succs;
     }
 
+    // This method has been tested and should be working
     public static ArrayList<SlideDir> GetOperators (STPState stp)
     {
         ArrayList<SlideDir> ops = new ArrayList<>();
@@ -83,19 +91,19 @@ public class STP {
         // For this method to work we need the coordinates of the 0 square
         // This should be given by xblank and yblank
         SlideDir tempDir;
-        if(stp.getyBlank() - 1 >= 0) {
+        if(stp.getxBlank() - 1 >= 0) {
             tempDir = SlideDir.Up;
             ops.add(tempDir);
         }
-        if(stp.getyBlank() + 1 < 5) {
+        if(stp.getxBlank() + 1 < 5) {
             tempDir = SlideDir.Down;
             ops.add(tempDir);
         }
-        if(stp.getxBlank() - 1 >= 0) {
+        if(stp.getyBlank() - 1 >= 0) {
             tempDir = SlideDir.Left;
             ops.add(tempDir);
         }
-        if(stp.getxBlank() + 1 < 3) {
+        if(stp.getyBlank() + 1 < 3) {
             tempDir = SlideDir.Right;
             ops.add(tempDir);
         }
@@ -109,10 +117,15 @@ public class STP {
         Up, Down, Left, Right;
     }
 
-    //apply operator
+    // This method has been tested and is working
     public static STPState ApplyOperator(STPState stp, SlideDir o)
     {
-        int[][] state = stp.getArr();
+        int[][] state = new int[5][3];
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 3; j++) {
+                state[i][j] = stp.getArr()[i][j];
+            }
+        }
         int x = stp.getxBlank();
         int y = stp.getyBlank();
 
@@ -123,22 +136,22 @@ public class STP {
         // depending on the operation, switch the blank tile
         //  with another tile in a particular direction
         switch (o){
-            case Up:
-                state[x][y] = state[x][y--];
-                state[x][y--] = 0;
-
-            case Down:
-                state[x][y] = state[x][y++];
-                state[x][y++] = 0;
-
             case Left:
-                state[x][y] = state[x--][y];
-                state[x--][y] = 0;
-
+                state[x][y] = state[x][y-1];
+                state[x][y-1] = 0;
+                break;
             case Right:
-                state[x][y] = state[x++][y];
-                state[x++][y] = 0;
-
+                state[x][y] = state[x][y+1];
+                state[x][y+1] = 0;
+                break;
+            case Up:
+                state[x][y] = state[x-1][y];
+                state[x-1][y] = 0;
+                break;
+            case Down:
+                state[x][y] = state[x+1][y];
+                state[x+1][y] = 0;
+                break;
         }
         STPState retState = new STPState(state);
 
@@ -172,7 +185,5 @@ public class STP {
 
         return stp;
     }
-
-
 }
 

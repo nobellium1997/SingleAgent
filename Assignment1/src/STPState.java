@@ -31,16 +31,21 @@ public class STPState
     }
 
     public STPState(int[][] array) {
-        //intitialize array
-        this.arr = array;
+        // initialize array
+        this.arr = new int[5][3];
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 3; j++) {
+                this.arr[i][j] = array[i][j];
+            }
+        }
 
         //find the blank tile and initialize coords
         for(int i = 0; i < 5; i++) {
             for(int j = 0; j < 3; j++) {
                 if(this.arr[i][j] == 0)
                 {
-                    this.xBlank = j;
-                    this.yBlank = i;
+                    this.xBlank = i;
+                    this.yBlank = j;
                 }
             }
         }
