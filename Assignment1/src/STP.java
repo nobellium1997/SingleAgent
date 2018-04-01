@@ -8,6 +8,15 @@ public class STP {
     static method eg: STP.<your method name>
      */
 
+    public STP() {
+
+    }
+
+    public enum SlideDir
+    {
+        Up, Down, Left, Right;
+    }
+
     // this method has been tested and is working
     public static ArrayList<STPState> GetSuccessors (STPState stp)
     {
@@ -47,12 +56,6 @@ public class STP {
         }
 
         return ops;
-    }
-
-
-    public enum SlideDir
-    {
-        Up, Down, Left, Right;
     }
 
     // This method has been tested and is working
@@ -103,7 +106,7 @@ public class STP {
         int x = stp.getxBlank();
         int y = stp.getyBlank();
 
-        switch(o){
+        switch(o) {
             case Up:
                 state[x][y] = state[x][y++];
                 state[x][y++] = 0;
@@ -120,7 +123,6 @@ public class STP {
                 state[x][y] = state[x--][y];
                 state[x--][y] = 0;
         }
-
         return stp;
     }
 }
