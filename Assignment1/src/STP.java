@@ -107,21 +107,22 @@ public class STP {
         int y = stp.getyBlank();
 
         switch(o) {
-            case Up:
-                state[x][y] = state[x][y++];
-                state[x][y++] = 0;
-
-            case Down:
-                state[x][y] = state[x][y--];
-                state[x][y--] = 0;
-
             case Left:
-                state[x][y] = state[x++][y];
-                state[x++][y] = 0;
-
+                state[x][y] = state[x][y+1];
+                state[x][y+1] = 0;
+                break;
             case Right:
-                state[x][y] = state[x--][y];
-                state[x--][y] = 0;
+                state[x][y] = state[x][y-1];
+                state[x][y-1] = 0;
+                break;
+            case Up:
+                state[x][y] = state[x+1][y];
+                state[x+1][y] = 0;
+                break;
+            case Down:
+                state[x][y] = state[x-1][y];
+                state[x-1][y] = 0;
+                break;
         }
         return stp;
     }

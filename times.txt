@@ -1,0 +1,2 @@
+Operator time is: 13869 miliseconds 
+Successor time is: 31199 miliseconds

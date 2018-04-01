@@ -6,20 +6,17 @@ import java.util.Random;
 public class Driver {
     public static void main(String[] args) {
         STPState s = new STPState();
-        System.out.println(s);
         STP stp = new STP();
-        System.out.println("Random walk : ");
 
         long start = System.currentTimeMillis();
         DoRandomWalk_Operator(stp, s, 100000000);
         long stop = System.currentTimeMillis();
-        System.out.println(stop - start);
+        System.out.println("Operator time is: " + (stop - start));
 
         start = System.currentTimeMillis();
         DoRandomWalk_Successor(stp, s, 100000000);
         stop = System.currentTimeMillis();
-        System.out.println(stop - start);
-
+        System.out.println("Successor time is: " + (stop - start));
     }
 
 
