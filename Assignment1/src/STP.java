@@ -11,69 +11,7 @@ public class STP {
     // this method has been tested and is working
     public static ArrayList<STPState> GetSuccessors (STPState stp)
     {
-//        int[][] arr = stp.getArr();
-//        int x = stp.getxBlank();
-//        int y = stp.getyBlank();
-
         ArrayList<STPState> succs = new ArrayList<>();
-        // Gonna comment some of this out since I think we can just use GetOperators
-        // for this part
-//        // if the blank tile isn't on the upper edge...
-//        if(stp.getyBlank() != 0)
-//        {
-//            // make a copy of the tile state
-//            STPState succ = new STPState(stp);
-//
-//            // switch blank tile with tile above it
-//            succ.getArr()[x][y] = arr[x][y--];
-//            succ.getArr()[x][y--] = 0;
-//
-//            // add successor state to return list
-//            succs.add(succ);
-//        }
-//
-//        // if the blank tile isn't on the lower edge...
-//        if(stp.getyBlank() < 5)
-//        {
-//            // make a copy of the tile state
-//            STPState succ = new STPState(stp);
-//
-//            // switch blank tile with tile below it
-//            succ.getArr()[x][y] = arr[x][y++];
-//            succ.getArr()[x][y++] = 0;
-//
-//            // add successor state to return list
-//            succs.add(succ);
-//        }
-//
-//        // if the blank tile isn't on the left edge...
-//        if(stp.getxBlank() != 0)
-//        {
-//            // make a copy of the tile state
-//            STPState succ = new STPState(stp);
-//
-//            // switch blank tile with tile left of it
-//            succ.getArr()[x][y] = arr[x--][y];
-//            succ.getArr()[x--][y] = 0;
-//
-//            // add successor state to return list
-//            succs.add(succ);
-//        }
-//
-//        // if the blank tile isn't on the right edge...
-//        if(stp.getyBlank() < 3)
-//        {
-//            // make a copy of the tile state
-//            STPState succ = new STPState(stp);
-//
-//            // switch blank tile with tile right of it
-//            succ.getArr()[x][y] = arr[x++][y];
-//            succ.getArr()[x++][y] = 0;
-//
-//            // add successor state to return list
-//            succs.add(succ);
-//
-//        }
 
         ArrayList<SlideDir> operators = GetOperators(stp);
         for(int i = 0; i < operators.size(); i++) {
@@ -158,7 +96,7 @@ public class STP {
         return retState;
     }
 
-    //undo operator (same, but reversed)
+    // NEEDS TESTING
     public static STPState UndoOperator(STPState stp, SlideDir o)
     {
         int[][] state = stp.getArr();
