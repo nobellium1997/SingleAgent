@@ -9,14 +9,16 @@ public class Driver {
         STP stp = new STP();
 
         long start = System.currentTimeMillis();
-        DoRandomWalk_Operator(stp, s, 100000000);
+        s = new STPState(DoRandomWalk_Operator(stp, s, 100000000));
         long stop = System.currentTimeMillis();
         System.out.println("Operator time is: " + (stop - start));
+        System.out.println(s);
 
         start = System.currentTimeMillis();
-        DoRandomWalk_Successor(stp, s, 100000000);
+        s = new STPState(DoRandomWalk_Successor(stp, s, 100000000));
         stop = System.currentTimeMillis();
         System.out.println("Successor time is: " + (stop - start));
+        System.out.println(s);
     }
 
 
