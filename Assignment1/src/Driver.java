@@ -7,18 +7,9 @@ public class Driver {
     public static void main(String[] args) {
         STPState s = new STPState();
         STP stp = new STP();
-
-        long start = System.currentTimeMillis();
-        s = new STPState(DoRandomWalk_Operator(stp, s, 100000000));
-        long stop = System.currentTimeMillis();
-        System.out.println("Operator time is: " + (stop - start));
-        System.out.println(s);
-
-        start = System.currentTimeMillis();
-        s = new STPState(DoRandomWalk_Successor(stp, s, 100000000));
-        stop = System.currentTimeMillis();
-        System.out.println("Successor time is: " + (stop - start));
-        System.out.println(s);
+        s = new STPState(DoRandomWalk_Operator(stp, s, 3));
+        STPState goal = new STPState();
+        System.out.println(BFS.breadthFirst(s, goal));
     }
 
 

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class STPState
 {
@@ -73,6 +74,17 @@ public class STPState
             ret += "\n";
         }
         return ret;
+    }
+
+    public boolean equals(STPState compare) {
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 3; j++) {
+                if(this.arr[i][j] != compare.arr[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 }
