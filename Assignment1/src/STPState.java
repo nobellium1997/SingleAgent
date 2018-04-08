@@ -5,9 +5,14 @@ public class STPState
     private int[][] arr;
     private int xBlank;
     private int yBlank;
+    private int depth;
+    private SlideDir direction;
+    private STPState parent;
 
     public STPState()
     {
+        parent = null;
+        depth = 0;
         arr = new int[5][3];
         xBlank = 0;
         yBlank = 0;
@@ -29,6 +34,9 @@ public class STPState
         }
         this.xBlank = s.xBlank;
         this.yBlank = s.yBlank;
+        this.parent = s.parent;
+        this.depth = s.depth;
+        this.direction = s.direction;
     }
 
     public STPState(int[][] array) {
@@ -50,7 +58,8 @@ public class STPState
                 }
             }
         }
-
+        this.depth = 0;
+        this.parent = null;
     }
 
     public int[][] getArr() {
@@ -63,6 +72,30 @@ public class STPState
 
     public int getyBlank() {
         return yBlank;
+    }
+
+    public int getDepth() {
+        return depth;
+    }
+
+    public STPState getParent() {
+        return parent;
+    }
+
+    public void setDirection(SlideDir direction) {
+        this.direction = direction;
+    }
+
+    public SlideDir getDirection() {
+        return direction;
+    }
+
+    public void setParent(STPState parent) {
+        this.parent = parent;
+    }
+
+    public void setDepth(int depth) {
+        this.depth = depth;
     }
 
     public String toString() {

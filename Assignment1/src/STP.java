@@ -12,11 +12,6 @@ public class STP {
 
     }
 
-    public enum SlideDir
-    {
-        Up, Down, Left, Right;
-    }
-
     // this method has been tested and is working
     public static ArrayList<STPState> GetSuccessors (STPState stp)
     {
@@ -102,7 +97,12 @@ public class STP {
     // NEEDS TESTING
     public static STPState UndoOperator(STPState stp, SlideDir o)
     {
-        int[][] state = stp.getArr();
+        int[][] state = new int[5][3];
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 3; j++) {
+                state[i][j] = stp.getArr()[i][j];
+            }
+        }
         int x = stp.getxBlank();
         int y = stp.getyBlank();
 
@@ -124,7 +124,8 @@ public class STP {
                 state[x-1][y] = 0;
                 break;
         }
-        return stp;
+        STPState new_state = new STPState(state);
+        return new_state;
     }
 }
 

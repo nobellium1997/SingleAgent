@@ -3,13 +3,19 @@ import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import java.util.ArrayList;
 import java.util.Random;
 
+
 public class Driver {
     public static void main(String[] args) {
         STPState s = new STPState();
         STP stp = new STP();
-        s = new STPState(DoRandomWalk_Operator(stp, s, 3));
+        s = new STPState(DoRandomWalk_Operator(stp, s, 2));
         STPState goal = new STPState();
-        System.out.println(BFS.breadthFirst(s, goal));
+//        System.out.println(BFS.breadthFirst(s, goal));
+
+        System.out.println(DFID.depth_first(s, goal, 1));
+
+
+
     }
 
 
@@ -28,7 +34,7 @@ public class Driver {
     public static STPState DoRandomWalk_Operator(STP stp, STPState state, int walkDistance) {
         state = new STPState();
         Random rand = new Random();
-        ArrayList<STP.SlideDir> all_operator;
+        ArrayList<SlideDir> all_operator;
         for(int i = 0; i < walkDistance; i++) {
             all_operator = stp.GetOperators(state);
             int op_num = rand.nextInt(all_operator.size());
