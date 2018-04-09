@@ -1,10 +1,21 @@
 import java.util.ArrayList;
-import java.util.Stack;
 
 public class DFID {
-    public static boolean is_found;
+    public static boolean is_found = false;
+    public static int nodes_expanded = 0;
+
+    public static boolean GetPath(STPState start, STPState goal) {
+        int index = 0;
+        while(!is_found) {
+            nodes_expanded = 0;
+            depth_first(start, goal, index);
+            index++;
+        }
+        return is_found;
+    }
 
     public static STPState depth_first(STPState start, STPState goal, int depth) {
+        nodes_expanded++;
         ArrayList<SlideDir> operators = STP.GetOperators(start);
         if(!start.getParent().equals(start)) {
             for(int i = 0; i < operators.size(); i++) {
@@ -14,13 +25,13 @@ public class DFID {
             }
         }
 
-//        System.out.println(start);
         for(int i = 0; i < operators.size(); i++) {
             if(is_found) {
                 break;
             }
             if(start.equals(goal)) {
-                System.out.println("SUCC");
+                System.out.println("STATE FOUND");
+                System.out.print(start);
                 is_found = true;
             }
             if(start.getDepth() != depth) {
@@ -29,7 +40,6 @@ public class DFID {
                 new_start.setParent(start.getParent());
                 new_start.setDirection(operator);
                 new_start.setDepth(start.getDepth() + 1);
-                System.out.println(new_start);
                 depth_first(new_start, goal, depth);
             }
         }
@@ -49,5 +59,9 @@ public class DFID {
                 return SlideDir.Up;
         }
         return null;
+    }
+
+    public static int GetNodesExpanded() {
+        return nodes_expanded;
     }
 }

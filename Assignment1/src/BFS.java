@@ -2,9 +2,10 @@ import java.util.ArrayList;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class BFS {
+    public static int nodes_expanded = 0;
 
     // TODO make sure the return type is correct
-    public static boolean breadthFirst(STPState start, STPState goal) {
+    public static boolean GetPath(STPState start, STPState goal) {
         LinkedBlockingQueue<STPState> queue = new LinkedBlockingQueue<>();
         queue.add(start);
         // this line is just for our janky implementation
@@ -18,9 +19,11 @@ public class BFS {
         }
         STPState parent = new STPState(arr);
         while(!queue.isEmpty()) {
+            nodes_expanded++;
             STPState examineState = queue.remove();
-            System.out.println(examineState);
             if(examineState.equals(goal)) {
+                System.out.println("STATE FOUND");
+                System.out.print(examineState);
                 return true;
             }
             ArrayList<STPState> states = STP.GetSuccessors(examineState);
@@ -33,5 +36,9 @@ public class BFS {
             parent = examineState;
         }
         return false;
+    }
+
+    public static int GetNodesExpanded() {
+        return nodes_expanded;
     }
 }
