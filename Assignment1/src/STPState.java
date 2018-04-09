@@ -11,7 +11,6 @@ public class STPState
 
     public STPState()
     {
-        parent = null;
         depth = 0;
         arr = new int[5][3];
         xBlank = 0;
@@ -23,6 +22,7 @@ public class STPState
                 counter++;
             }
         }
+        parent = this;
     }
 
     public STPState(STPState s) {
@@ -37,6 +37,7 @@ public class STPState
         this.parent = s.parent;
         this.depth = s.depth;
         this.direction = s.direction;
+        this.parent = s.parent;
     }
 
     public STPState(int[][] array) {

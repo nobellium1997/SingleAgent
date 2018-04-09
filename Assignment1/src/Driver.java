@@ -8,11 +8,12 @@ public class Driver {
     public static void main(String[] args) {
         STPState s = new STPState();
         STP stp = new STP();
-        s = new STPState(DoRandomWalk_Operator(stp, s, 2));
+        s = new STPState(DoRandomWalk_Operator(stp, s, 1));
+        s.setParent(s);
         STPState goal = new STPState();
 //        System.out.println(BFS.breadthFirst(s, goal));
 
-        System.out.println(DFID.depth_first(s, goal, 1));
+        DFID.depth_first(s, goal, 2);
 
 
 

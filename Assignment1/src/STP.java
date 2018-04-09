@@ -90,7 +90,6 @@ public class STP {
                 break;
         }
         STPState retState = new STPState(state);
-
         return retState;
     }
 
