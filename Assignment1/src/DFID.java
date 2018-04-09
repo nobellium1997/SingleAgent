@@ -74,13 +74,12 @@ public class DFID {
                 new_start.setParent(start.getParent());
                 new_start.setDirection(operator);
                 new_start.setDepth(start.getDepth() + 1);
-                start = new STPState(new_start);
-                System.out.println(start);
+                System.out.println(new_start);
 //                if (start.equals(goal)) {
 //                    System.out.println("GOAL FOUND");
 //                    return start;
 //                }
-                depth_first(start, goal, depth);
+                depth_first(new_start, goal, depth);
             }
 //            } else if (start.getDepth() != depth) {
 ////            else if (start.getDepth() == depth) {

@@ -8,8 +8,21 @@ public class Driver {
     public static void main(String[] args) {
         STPState s = new STPState();
         STP stp = new STP();
-        s = new STPState(DoRandomWalk_Operator(stp, s, 4));
+
+        int[][] arr = new int[5][3];
+        int counter = 0;
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 3; j++) {
+                arr[i][j] = counter;
+                counter++;
+            }
+        }
+        arr[0][0] = arr[2][1];
+        arr[2][1] = 0;
+
+        s = new STPState(arr);
         s.setParent(s);
+        System.out.println(s);
         STPState goal = new STPState();
 //        System.out.println(BFS.breadthFirst(s, goal));
 
