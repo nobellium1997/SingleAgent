@@ -65,31 +65,35 @@ public class DFID {
         }
 
         for(int i = 0; i < operators.size(); i++) {
-            SlideDir operator = operators.get(i);
-            STPState new_start = STP.ApplyOperator(start, operator);
-            new_start.setParent(start.getParent());
-            new_start.setDirection(operator);
-            new_start.setDepth(start.getDepth() + 1);
-            start = new STPState(new_start);
-            if (start.equals(goal)) {
-                System.out.println("GOAL FOUND");
-                return start;
-            } else if (start.getDepth() != depth) {
-//            else if (start.getDepth() == depth) {
-//                System.out.println(start);
-//                new_start = new STPState(STP.UndoOperator(start, start.getDirection()));
-//                new_start.setParent(start.getParent().getParent());
-//                new_start.setDirection(start.getDirection());
-//                new_start.setDepth(start.getParent().getDepth()+1);
-//                start = new STPState(new_start);
-//                System.out.println("Undo");
-//                System.out.println(start);
-////                return start;
-//
-//                continue;
-//            }
+            if(start.getDepth() != depth) {
+                SlideDir operator = operators.get(i);
+                STPState new_start = STP.ApplyOperator(start, operator);
+                new_start.setParent(start.getParent());
+                new_start.setDirection(operator);
+                new_start.setDepth(start.getDepth() + 1);
+                start = new STPState(new_start);
+                if (start.equals(goal)) {
+                    System.out.println("GOAL FOUND");
+                    return start;
+                }
                 depth_first(start, goal, depth);
             }
+//            } else if (start.getDepth() != depth) {
+////            else if (start.getDepth() == depth) {
+////                System.out.println(start);
+////                new_start = new STPState(STP.UndoOperator(start, start.getDirection()));
+////                new_start.setParent(start.getParent().getParent());
+////                new_start.setDirection(start.getDirection());
+////                new_start.setDepth(start.getParent().getDepth()+1);
+////                start = new STPState(new_start);
+////                System.out.println("Undo");
+////                System.out.println(start);
+//////                return start;
+////
+////                continue;
+////            }
+//                depth_first(start, goal, depth);
+//            }
         }
 
         return start;
