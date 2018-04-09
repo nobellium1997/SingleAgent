@@ -55,7 +55,6 @@ public class DFID {
 
     public static STPState depth_first(STPState start, STPState goal, int depth) {
         ArrayList<SlideDir> operators = STP.GetOperators(start);
-        System.out.println(start);
         if(!start.getParent().equals(start)) {
             for(int i = 0; i < operators.size(); i++) {
                 if (operators.get(i) == undo_operator(start.getDirection())) {
@@ -64,7 +63,11 @@ public class DFID {
             }
         }
 
+//        System.out.println(start);
         for(int i = 0; i < operators.size(); i++) {
+            if(start.equals(goal)) {
+                System.out.println("SUCC");
+            }
             if(start.getDepth() != depth) {
                 SlideDir operator = operators.get(i);
                 STPState new_start = STP.ApplyOperator(start, operator);
@@ -72,10 +75,11 @@ public class DFID {
                 new_start.setDirection(operator);
                 new_start.setDepth(start.getDepth() + 1);
                 start = new STPState(new_start);
-                if (start.equals(goal)) {
-                    System.out.println("GOAL FOUND");
-                    return start;
-                }
+                System.out.println(start);
+//                if (start.equals(goal)) {
+//                    System.out.println("GOAL FOUND");
+//                    return start;
+//                }
                 depth_first(start, goal, depth);
             }
 //            } else if (start.getDepth() != depth) {

@@ -8,7 +8,7 @@ public class Driver {
     public static void main(String[] args) {
         STPState s = new STPState();
         STP stp = new STP();
-        s = new STPState(DoRandomWalk_Operator(stp, s, 1));
+        s = new STPState(DoRandomWalk_Operator(stp, s, 4));
         s.setParent(s);
         STPState goal = new STPState();
 //        System.out.println(BFS.breadthFirst(s, goal));
