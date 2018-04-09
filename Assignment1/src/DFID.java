@@ -5,6 +5,7 @@ public class DFID {
     public static int nodes_expanded = 0;
 
     public static boolean GetPath(STPState start, STPState goal) {
+        start.setParent(start);
         int index = 0;
         while(!is_found) {
             nodes_expanded = 0;

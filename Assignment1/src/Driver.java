@@ -10,7 +10,6 @@ public class Driver {
         STP stp = new STP();
 
         s = new STPState(DoRandomWalk_Operator(stp, s, 10));
-        s.setParent(s);
         System.out.println(s);
         STPState goal = new STPState();
 
