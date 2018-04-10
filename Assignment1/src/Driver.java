@@ -1,5 +1,3 @@
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -14,14 +12,14 @@ public class Driver {
         STPState goal = new STPState();
 
         long start = System.currentTimeMillis();
-        System.out.println(DFID.GetPath(s, goal));
+        DFID.GetPath(s, goal);
         System.out.println("Depth first nodes expanded " + DFID.GetNodesExpanded());
         long stop = System.currentTimeMillis();
         System.out.println("Depth first time " + (stop-start) + " milliseconds");
         System.out.println();
 
         start = System.currentTimeMillis();
-        System.out.println(BFS.GetPath(s, goal));
+        BFS.GetPath(s, goal);
         System.out.println("Breadth first nodes expanded " + BFS.GetNodesExpanded());
         stop = System.currentTimeMillis();
         System.out.println("Breadth first time " + (stop-start) + " milliseconds");
