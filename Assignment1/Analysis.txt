@@ -1,0 +1,36 @@
+    The highest measured run was a walk distance of 26. Anything higher than this caused the program to crash,
+because it required to much overhead to process. When this occurred, memory usage was measured at approximately
+2.1 GB. After that, it would stop rising and eventually the program timed out. The maximum 26-distance run
+used ~305 MB. This took DFID 78 ms and BFS 2.04 seconds. Smaller runs with distances of 5, 10, and 15 were
+recorded by the Activity Manager with usages of 168, 189, and 206 MB respectively. The 5-distance took DFID
+2 ms and BFS 5 ms. The 10-distance took DFID 10 ms and BFS 38 ms. Finally, the 15-distance walk took DFID
+19 ms and BFS 72 ms.
+
+
+    Sample Run (for walk distance 10):
+
+1  4  2
+3  5  8
+6  7  11
+9  0  10
+12  13  14
+
+STATE FOUND
+0  1  2
+3  4  5
+6  7  8
+9  10  11
+12  13  14
+true
+Depth first nodes expanded 220
+Depth first time 10 milliseconds
+
+STATE FOUND
+0  1  2
+3  4  5
+6  7  8
+9  10  11
+12  13  14
+true
+Breadth first nodes expanded 1404
+Breadth first time 38 milliseconds
