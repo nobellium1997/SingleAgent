@@ -23,7 +23,8 @@ public class Driver {
         System.out.println("Breadth first nodes expanded " + BFS.GetNodesExpanded());
         stop = System.currentTimeMillis();
         System.out.println("Breadth first time " + (stop-start) + " milliseconds");
-        System.out.println("I hate OS");
+        System.out.println("asiodfiowejf");
+        System.out.println("asidojfiwejfwe");
     }
 
 
