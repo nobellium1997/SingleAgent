@@ -24,7 +24,6 @@ public class Driver {
         stop = System.currentTimeMillis();
         System.out.println("Breadth first time " + (stop-start) + " milliseconds");
         System.out.println("asiodfiowejf");
-        System.out.println("goss SUX");
     }
 
 
@@ -50,6 +49,10 @@ public class Driver {
             state = new STPState(stp.ApplyOperator(state, all_operator.get(op_num)));
         }
         return state;
+    }
+
+    public static int DELETEME(){
+
     }
 
 }
