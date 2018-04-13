@@ -24,7 +24,6 @@ public class Driver {
         stop = System.currentTimeMillis();
         System.out.println("Breadth first time " + (stop-start) + " milliseconds");
         System.out.println("asiodfiowejf");
-        System.out.println("I want to die");
     }
 
 
