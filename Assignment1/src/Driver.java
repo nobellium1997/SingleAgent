@@ -1,30 +1,40 @@
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
 
 public class Driver {
     public static void main(String[] args) {
-        STPState s = new STPState();
-        STP stp = new STP();
+//        STPState s = new STPState();
+//        STP stp = new STP();
+//
+//        s = new STPState(DoRandomWalk_Operator(stp, s, 10));
+//        System.out.println(s);
+//        STPState goal = new STPState();
+//
+//        long start = System.currentTimeMillis();
+//        IDAStar.GetPath(s, goal);
+//        System.out.println("Depth first nodes expanded " + DFID.GetNodesExpanded());
+//        long stop = System.currentTimeMillis();
+//        System.out.println("Depth first time " + (stop-start) + " milliseconds");
+//        System.out.println();
 
-        s = new STPState(DoRandomWalk_Operator(stp, s, 10));
-        System.out.println(s);
-        STPState goal = new STPState();
+//        STPState s1 = new STPState();
+//        int[][] arr = new int[5][3];
+//        int counter = 0;
+//        for(int i = 0; i < 5; i ++) {
+//            for (int j = 0; j < 3; j++) {
+//                arr[i][j] = counter;
+//                counter++;
+//            }
+//        }
+//        arr[0][0] = 1;
+//        arr[0][1] = 0;
+//
+//        STPState s2 = new STPState(arr);
+//        Heuristic mh = new ManhattanDistance();
+//        System.out.println(mh.manhattan_distance(s1, s2));
 
-        long start = System.currentTimeMillis();
-        DFID.GetPath(s, goal);
-        System.out.println("Depth first nodes expanded " + DFID.GetNodesExpanded());
-        long stop = System.currentTimeMillis();
-        System.out.println("Depth first time " + (stop-start) + " milliseconds");
-        System.out.println();
-
-        start = System.currentTimeMillis();
-        BFS.GetPath(s, goal);
-        System.out.println("Breadth first nodes expanded " + BFS.GetNodesExpanded());
-        stop = System.currentTimeMillis();
-        System.out.println("Breadth first time " + (stop-start) + " milliseconds");
-        System.out.println("asiodfiowejf");
-        System.out.println("asidojfiwejfwe");
     }
 
 
@@ -50,14 +60,6 @@ public class Driver {
             state = new STPState(stp.ApplyOperator(state, all_operator.get(op_num)));
         }
         return state;
-    }
-
-    public static int DELETEME(){
-
-    }
-
-    public static double DELME(){
-
     }
 
 }
