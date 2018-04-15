@@ -8,7 +8,7 @@ public class Driver {
         STPState s = new STPState();
         STP stp = new STP();
 
-        s = new STPState(DoRandomWalk_Operator(stp, s, 10));
+        s = new STPState(DoRandomWalk_Operator(stp, s, 50));
         System.out.println(s);
         STPState goal = new STPState();
 

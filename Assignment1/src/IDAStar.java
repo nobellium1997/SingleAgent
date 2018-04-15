@@ -10,7 +10,7 @@ public class IDAStar {
         start.sethCost(h.manhattan_distance(start, goal));
         start.setgCost(0);
         start.setfCost(start.getgCost()+ start.gethCost());
-        int index = start.getfCost();
+        int index = start.getfCost()+1;
         while(!is_found) {
             nodes_expanded = 0;
             ida_star(start, goal, index, h);
@@ -49,7 +49,6 @@ public class IDAStar {
                 new_start.setgCost(start.getgCost() + 1);
                 new_start.sethCost(h.manhattan_distance(new_start, goal));
                 new_start.setfCost(new_start.getgCost()+new_start.gethCost());
-                System.out.println(new_start);
                 ida_star(new_start, goal, fCost, h);
             }
         }
