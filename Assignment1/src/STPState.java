@@ -6,11 +6,17 @@ public class STPState
     private int xBlank;
     private int yBlank;
     private int depth;
+    private int gCost;
+    private int hCost;
+    private int fCost;
     private SlideDir direction;
     private STPState parent;
 
     public STPState()
     {
+        gCost = 0;
+        hCost = 0;
+        fCost = 0;
         depth = 0;
         arr = new int[5][3];
         xBlank = 0;
@@ -36,6 +42,9 @@ public class STPState
         this.yBlank = s.yBlank;
         this.parent = s.parent;
         this.depth = s.depth;
+        this.hCost = s.hCost;
+        this.gCost = s.gCost;
+        this.fCost = s.fCost;
         this.direction = s.direction;
         this.parent = s.parent;
     }
@@ -60,9 +69,13 @@ public class STPState
             }
         }
         this.depth = 0;
+        this.hCost = 0;
+        this.fCost = 0;
+        this.gCost = 0;
         this.parent = null;
     }
 
+    // GET METHODS
     public int[][] getArr() {
         return arr;
     }
@@ -83,6 +96,19 @@ public class STPState
         return parent;
     }
 
+    public int getfCost() {
+        return fCost;
+    }
+
+    public int getgCost() {
+        return gCost;
+    }
+
+    public int gethCost() {
+        return hCost;
+    }
+
+    // SET METHODS
     public void setDirection(SlideDir direction) {
         this.direction = direction;
     }
@@ -97,6 +123,18 @@ public class STPState
 
     public void setDepth(int depth) {
         this.depth = depth;
+    }
+
+    public void setfCost(int fCost) {
+        this.fCost = fCost;
+    }
+
+    public void setgCost(int gCost) {
+        this.gCost = gCost;
+    }
+
+    public void sethCost(int hCost) {
+        this.hCost = hCost;
     }
 
     public String toString() {

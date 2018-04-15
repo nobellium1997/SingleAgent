@@ -5,35 +5,27 @@ import java.util.Random;
 
 public class Driver {
     public static void main(String[] args) {
-//        STPState s = new STPState();
-//        STP stp = new STP();
-//
-//        s = new STPState(DoRandomWalk_Operator(stp, s, 10));
-//        System.out.println(s);
-//        STPState goal = new STPState();
-//
-//        long start = System.currentTimeMillis();
-//        IDAStar.GetPath(s, goal);
-//        System.out.println("Depth first nodes expanded " + DFID.GetNodesExpanded());
+        STPState s = new STPState();
+        STP stp = new STP();
+
+        s = new STPState(DoRandomWalk_Operator(stp, s, 10));
+        System.out.println(s);
+        STPState goal = new STPState();
+
+        Heuristic h = new ManhattanDistance();
+        long start = System.currentTimeMillis();
+        IDAStar.GetPath(s, goal, h);
+        STPState state = new STPState(IDAStar.final_state);
+        System.out.println();
+        System.out.println("PATH");
+        while(!state.equals(state.getParent())) {
+            System.out.println(state);
+            state = new STPState(state.getParent());
+        }
+//        System.out.println("Depth first nodes expanded " + IDAStar.GetNodesExpanded());
 //        long stop = System.currentTimeMillis();
 //        System.out.println("Depth first time " + (stop-start) + " milliseconds");
 //        System.out.println();
-
-        STPState s1 = new STPState();
-        int[][] arr = new int[5][3];
-        int counter = 0;
-        for(int i = 0; i < 5; i ++) {
-            for (int j = 0; j < 3; j++) {
-                arr[i][j] = counter;
-                counter++;
-            }
-        }
-        arr[0][0] = 1;
-        arr[0][1] = 0;
-
-        STPState s2 = new STPState(arr);
-        Heuristic mh = new ManhattanDistance();
-        System.out.println(mh.manhattan_distance(s1, s2));
 
     }
 
