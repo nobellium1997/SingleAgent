@@ -11,6 +11,9 @@ public class ManhattanDistance extends Heuristic {
         int mh_distance = 0;
         for(int i = 0; i < 5; i++) {
             for(int j = 0; j < 3; j++) {
+                if (compare_state.getArr()[i][j] == 0) {
+                    continue;
+                }
                 compareX = j;
                 compareY = i;
                 for(int x = 0; x < 5; x++) {

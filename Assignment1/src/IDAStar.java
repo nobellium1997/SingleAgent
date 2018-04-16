@@ -5,7 +5,7 @@ public class IDAStar {
     public static int nodes_expanded = 0;
     public static STPState final_state;
 
-    public static boolean GetPath(STPState start, STPState goal, Heuristic h) {
+    public static ArrayList<STPState> GetPath(STPState start, STPState goal, Heuristic h) {
         start.setParent(start);
         start.sethCost(h.manhattan_distance(start, goal));
         start.setgCost(0);
@@ -16,7 +16,12 @@ public class IDAStar {
             ida_star(start, goal, index, h);
             index++;
         }
-        return is_found;
+        ArrayList<STPState> path = new ArrayList<>();
+        while(!final_state.equals(final_state.getParent())) {
+            path.add(final_state);
+            final_state = new STPState(final_state.getParent());
+        }
+        return path;
     }
 
     public static STPState ida_star(STPState start, STPState goal, int fCost, Heuristic h) {
@@ -36,7 +41,7 @@ public class IDAStar {
             }
             if(start.equals(goal)) {
                 System.out.println("STATE FOUND");
-                System.out.print(start);
+//                System.out.print(start);
                 is_found = true;
                 final_state = new STPState(start);
                 break;

@@ -9,23 +9,18 @@ public class Driver {
         STP stp = new STP();
 
         s = new STPState(DoRandomWalk_Operator(stp, s, 50));
+        System.out.println("input state: ");
         System.out.println(s);
         STPState goal = new STPState();
 
         Heuristic h = new ManhattanDistance();
         long start = System.currentTimeMillis();
-        IDAStar.GetPath(s, goal, h);
-        STPState state = new STPState(IDAStar.final_state);
+        ArrayList<STPState> path = IDAStar.GetPath(s, goal, h);
+        System.out.println(path);
+        System.out.println("IDA* nodes expanded " + IDAStar.GetNodesExpanded());
+        long stop = System.currentTimeMillis();
+        System.out.println("IDA* time " + (stop-start) + " milliseconds");
         System.out.println();
-        System.out.println("PATH");
-        while(!state.equals(state.getParent())) {
-            System.out.println(state);
-            state = new STPState(state.getParent());
-        }
-//        System.out.println("Depth first nodes expanded " + IDAStar.GetNodesExpanded());
-//        long stop = System.currentTimeMillis();
-//        System.out.println("Depth first time " + (stop-start) + " milliseconds");
-//        System.out.println();
 
     }
 
