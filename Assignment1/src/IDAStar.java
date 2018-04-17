@@ -5,27 +5,26 @@ public class IDAStar {
     public static int nodes_expanded = 0;
     public static STPState final_state;
 
-    public static ArrayList<STPState> GetPath(STPState start, STPState goal, Heuristic h) {
+    public static ArrayList<SlideDir> GetPath(STPState start, STPState goal, Heuristic h) {
         start.setParent(start);
         start.sethCost(h.manhattan_distance(start, goal));
         start.setgCost(0);
         start.setfCost(start.getgCost()+ start.gethCost());
         int index = start.getfCost()+1;
         while(!is_found) {
-            nodes_expanded = 0;
             ida_star(start, goal, index, h);
             index++;
         }
-        ArrayList<STPState> path = new ArrayList<>();
+        ArrayList<SlideDir> path = new ArrayList<>();
         while(!final_state.equals(final_state.getParent())) {
-            path.add(final_state);
+            path.add(final_state.getDirection());
             final_state = new STPState(final_state.getParent());
         }
+        nodes_expanded = path.size();
         return path;
     }
 
     public static STPState ida_star(STPState start, STPState goal, int fCost, Heuristic h) {
-        nodes_expanded++;
         ArrayList<SlideDir> operators = STP.GetOperators(start);
         if(!start.getParent().equals(start)) {
             for(int i = 0; i < operators.size(); i++) {
