@@ -9,3 +9,9 @@ IDA* time 31 milliseconds
 
 DFID nodes expanded 4457841
 DFID time 2535 milliseconds
+
+IDA* nodes expanded 493
+IDA* time 60 milliseconds
+
+DFID nodes expanded 39442736
+DFID time 20066 milliseconds
