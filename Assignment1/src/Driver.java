@@ -8,7 +8,7 @@ public class Driver {
         STPState s = new STPState();
         STP stp = new STP();
 
-        s = new STPState(DoRandomWalk_Operator(stp, s, 50));
+        s = new STPState(DoRandomWalk_Operator(stp, s, 100));
         System.out.println("input state: ");
         System.out.println(s);
         STPState goal = new STPState();
@@ -16,11 +16,24 @@ public class Driver {
         Heuristic h = new ManhattanDistance();
         long start = System.currentTimeMillis();
         ArrayList<STPState> path = IDAStar.GetPath(s, goal, h);
-        System.out.println(path);
+        for(int i = 0; i < path.size(); i++)
+        {
+            System.out.println(path.get(i));
+        }
         System.out.println("IDA* nodes expanded " + IDAStar.GetNodesExpanded());
         long stop = System.currentTimeMillis();
         System.out.println("IDA* time " + (stop-start) + " milliseconds");
         System.out.println();
+
+        Heuristic h2 = new ManhattanDistance();
+        start = System.currentTimeMillis();
+        DFID.GetPath(s, goal);
+        System.out.println("DFID nodes expanded " + DFID.GetNodesExpanded());
+        stop = System.currentTimeMillis();
+        System.out.println("DFID time " + (stop-start) + " milliseconds");
+        System.out.println();
+
+
 
     }
 
