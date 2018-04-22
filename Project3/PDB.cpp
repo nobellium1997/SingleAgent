@@ -73,13 +73,9 @@ long factorial(long n) {
     }
 }
 
-struct BFSNode {
-    STPState s;
-    STPSlideDir forbidden;
-    int depth;
-};
+int counter = 0;
 
-void BFS(STP &stp, STPState start, STPState &goal)
+void PDB::BFS(STP &stp, STPState start, STPState &goal)
 {
     std::deque<BFSNode> q;
     std::vector<STPSlideDir> acts;
