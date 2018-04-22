@@ -15,15 +15,17 @@ public:
     std::vector<uint8_t> dual(const STPState& s);
     void mixed_radix(std::vector<uint8_t>& dual);
     int rank(const STPState& s);
-    void BFS(STP &stp, STPState start, STPState &goal);
+    void BFS(STP &stp, STPState start);
+    void distribution();
 private:
     struct BFSNode {
         STPState s;
         STPSlideDir forbidden;
         int depth;
     };
-    std::vector<uint8_t> pdb;
+    std::vector<int8_t> pdb;
     std::vector<uint8_t> pattern;
+    long counter;
 };
 
 

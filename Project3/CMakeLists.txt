@@ -16,7 +16,9 @@ add_executable(Project3
         main.cpp
         ManhattanDistance.cpp
         ManhattanDistance.h
+        PDB.cpp
+        PDB.h
         STP.cpp
         STP.h
         Timer.cpp
-        Timer.h PDB.cpp PDB.h)
+        Timer.h)

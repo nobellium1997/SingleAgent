@@ -45,18 +45,18 @@ void Analyze(int walkDepth)
 	IDA ida;
 	ManhattanDistance md;
 	std::vector<STPSlideDir> path;
-	
+
 	printf("<--- Starting new problem with random walk depth %d --->\n", walkDepth);
 	DoRandomWalkOperators(stp, start, walkDepth);
 	std::cout << "Initial state:\n";
 	std::cout << start;
-	
+
 	printf("Starting DFID:\n");
 	t.StartTimer();
 	dfid.GetPath(stp, start, goal);
 	t.EndTimer();
 	printf("%1.2fs elapsed\n", t.GetElapsedTime());
-	
+
 	printf("Starting BFS:\n");
 	t.StartTimer();
 	bfs.GetPath(stp, start, goal);
@@ -89,21 +89,22 @@ int main(int argc, const char * argv[]) {
 
 	STPState goal;
 	std::vector<uint8_t> ptrn;
-	for(int i = 0; i < 6; i++) {
+	for(int i = 0; i < 7; i++) {
 		ptrn.push_back(i);
 	}
-	PDB pdb(123, ptrn);
+	PDB pdb(3603600, ptrn);
 //	std::cout << pdb.rank(goal) << std::endl;
 	STP stp;
 	stp.ApplyOperator(goal, kRight);
 	std::cout << goal << std::endl;
 	std::cout << pdb.rank(goal);
+	pdb.distribution();
 	return 0;
 }
 
 /**
  * Transcript:
- 
+
  <--- Starting new problem with random walk depth 20 --->
  Initial state:
  3  4  1
@@ -332,5 +333,5 @@ int main(int argc, const char * argv[]) {
  Goal found at depth 24; 28764560 nodes expanded
  4.91s elapsed
  Program ended with exit code: 0
- 
+
  */

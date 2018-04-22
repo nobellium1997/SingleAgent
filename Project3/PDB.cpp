@@ -7,16 +7,21 @@
 long factorial(long n);
 
 PDB::PDB(const long& size, const std::vector<uint8_t>& pattern) {
+    counter = 0;
     this->pdb.resize(size);
     this->pattern.resize(pattern.size());
 
     for(int i = 0; i < pattern.size(); i++) {
         this->pattern[i] = pattern[i];
     }
-}
 
-int PDB::h(const STPState &s) {
+    for(int i = 0; i < pdb.size(); i++) {
+        this->pdb[i] = -1;
+    }
 
+    STP stp;
+    STPState goal;
+    BFS(stp, goal);
 }
 
 std::vector<uint8_t> PDB::dual(const STPState &s) {
@@ -73,23 +78,21 @@ long factorial(long n) {
     }
 }
 
-int counter = 0;
-
-void PDB::BFS(STP &stp, STPState start, STPState &goal)
+void PDB::BFS(STP &stp, STPState start)
 {
     std::deque<BFSNode> q;
     std::vector<STPSlideDir> acts;
     q.push_back({start, kNone, 0});
 
     int currDepth = 0;
-    while (q.size() > 0)
+    while (counter < pdb.size()-1)
     {
+        std::cout << q.size() << std::endl;
         BFSNode n = q.front();
         q.pop_front();
 
         if (n.depth != currDepth)
         {
-            printf("Depth %d complete; \n", currDepth);
             currDepth = n.depth;
         }
 
@@ -99,15 +102,33 @@ void PDB::BFS(STP &stp, STPState start, STPState &goal)
             if (act == n.forbidden)
                 continue;
 
+
             stp.ApplyOperator(n.s, act);
-            if (n.s == goal)
-            {
-                printf("Goal found at depth %d;\n", n.depth+1);
-                return;
-            }
             stp.InvertOperator(act);
-            q.push_back({n.s, act, n.depth+1});
+            long rnk = rank(n.s);
+//            std::cout  << "I want to die ";
+            int8_t val = pdb[rnk];
+            if(val == -1) {
+//                std::cout << counter << std::endl;
+                pdb[rnk] = n.depth+1;
+                q.push_back({n.s, act, n.depth+1});
+                counter++;
+            }
             stp.ApplyOperator(n.s, act);
         }
     }
 }
+
+void PDB::distribution() {
+    std::vector<int> distribution;
+    distribution.resize(64);
+    for(int i = 0; i < pdb.size(); i++) {
+        distribution[pdb[i]]++;
+    }
+
+    for(int i = 0; i < distribution.size(); i++) {
+        std::cout << i << ": " << distribution[i] << std::endl;
+    }
+}
+
+int PDB::h(const STPState &s) {}
