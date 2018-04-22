@@ -10,6 +10,7 @@
 #include "BFS.h"
 #include "IDA.h"
 #include "ManhattanDistance.h"
+#include "PDB.h"
 
 void GenerateInstance(int walkDepth)
 {
@@ -22,13 +23,13 @@ void GenerateInstance(int walkDepth)
 	std::vector<STPSlideDir> path;
 
 	std::cout << start << "\n";
-	
+
 	printf("Starting IDA (MD):\n");
 	t.StartTimer();
 	ida.GetPath(stp, start, goal, &md, path);
 	t.EndTimer();
 	printf("%1.2fs elapsed\n", t.GetElapsedTime());
-	
+
 	for (auto i : path)
 		std::cout << i << " ";
 	std::cout << "\n";
@@ -79,12 +80,24 @@ int main(int argc, const char * argv[]) {
 //	Analyze(40);
 //	Analyze(50);
 //	Analyze(60); // This used approximately 1.7 GB on our machine
+//
+//	for (int x = 10; x < 200; x+=10)
+//	{
+//		GenerateInstance(x);
+//	}
+//	GenerateInstance(10000000);
 
-	for (int x = 10; x < 200; x+=10)
-	{
-		GenerateInstance(x);
+	STPState goal;
+	std::vector<uint8_t> ptrn;
+	for(int i = 0; i < 6; i++) {
+		ptrn.push_back(i);
 	}
-	GenerateInstance(10000000);
+	PDB pdb(123, ptrn);
+//	std::cout << pdb.rank(goal) << std::endl;
+	STP stp;
+	stp.ApplyOperator(goal, kRight);
+	std::cout << goal << std::endl;
+	std::cout << pdb.rank(goal);
 	return 0;
 }
 

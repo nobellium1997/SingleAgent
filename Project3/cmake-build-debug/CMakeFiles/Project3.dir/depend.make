@@ -19,6 +19,11 @@ CMakeFiles/Project3.dir/ManhattanDistance.cpp.o: ../ManhattanDistance.cpp
 CMakeFiles/Project3.dir/ManhattanDistance.cpp.o: ../ManhattanDistance.h
 CMakeFiles/Project3.dir/ManhattanDistance.cpp.o: ../STP.h
 
+CMakeFiles/Project3.dir/PDB.cpp.o: ../Heuristic.h
+CMakeFiles/Project3.dir/PDB.cpp.o: ../PDB.cpp
+CMakeFiles/Project3.dir/PDB.cpp.o: ../PDB.h
+CMakeFiles/Project3.dir/PDB.cpp.o: ../STP.h
+
 CMakeFiles/Project3.dir/STP.cpp.o: ../STP.cpp
 CMakeFiles/Project3.dir/STP.cpp.o: ../STP.h
 
@@ -30,6 +35,7 @@ CMakeFiles/Project3.dir/main.cpp.o: ../DFID.h
 CMakeFiles/Project3.dir/main.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/main.cpp.o: ../IDA.h
 CMakeFiles/Project3.dir/main.cpp.o: ../ManhattanDistance.h
+CMakeFiles/Project3.dir/main.cpp.o: ../PDB.h
 CMakeFiles/Project3.dir/main.cpp.o: ../STP.h
 CMakeFiles/Project3.dir/main.cpp.o: ../Timer.h
 CMakeFiles/Project3.dir/main.cpp.o: ../main.cpp

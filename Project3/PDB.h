@@ -10,10 +10,14 @@
 
 class PDB : public  Heuristic{
 public:
-    PDB(uint64_t size);
+    PDB(const long& size, const std::vector<uint8_t>& pattern);
     int h(const STPState &s);
+    std::vector<uint8_t> dual(const STPState& s);
+    void mixed_radix(std::vector<uint8_t>& dual);
+    int rank(const STPState& s);
 private:
-    uint8_t* pdbA;
+    std::vector<uint8_t> pdb;
+    std::vector<uint8_t> pattern;
 };
 
 

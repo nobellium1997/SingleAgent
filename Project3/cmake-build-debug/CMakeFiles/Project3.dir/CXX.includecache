@@ -56,6 +56,14 @@ stdio.h
 Heuristic.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
 
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.cpp
+PDB.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+Heuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.cpp
 STP.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
@@ -97,4 +105,6 @@ IDA.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.h
 ManhattanDistance.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+PDB.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
 
