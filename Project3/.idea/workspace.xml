@@ -23,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PDB.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PDB.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PDB.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+            <state relative-caret-position="187">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="e#41#57#0" expanded="true" />
               </folding>
@@ -35,14 +35,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="712" column="21" lean-forward="true" selection-start-line="712" selection-start-column="21" selection-end-line="712" selection-end-column="21" />
+            <state relative-caret-position="1343">
+              <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
               <folding>
                 <element signature="e#28#47#0" expanded="true" />
-                <marker date="1524519705880" expanded="true" signature="1760:1902" ph="..." />
+                <marker date="1524520902661" expanded="true" signature="1763:1905" ph="..." />
               </folding>
             </state>
           </provider>
@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/All_Heruistics.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -60,8 +60,8 @@
       <file leaf-file-name="All_Heruistics.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/All_Heruistics.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -116,10 +116,10 @@
         <option value="$PROJECT_DIR$/STP.h" />
         <option value="$PROJECT_DIR$/PDB.h" />
         <option value="$PROJECT_DIR$/IDA.cpp" />
-        <option value="$PROJECT_DIR$/PDB.cpp" />
         <option value="$PROJECT_DIR$/All_Heruistics.h" />
         <option value="$PROJECT_DIR$/All_Heruistics.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/PDB.cpp" />
       </list>
     </option>
   </component>
@@ -197,12 +197,15 @@
       <workItem from="1524437993132" duration="1495000" />
       <workItem from="1524451659740" duration="13797000" />
       <workItem from="1524495744495" duration="1327000" />
-      <workItem from="1524515932147" duration="4380000" />
+      <workItem from="1524515932147" duration="4427000" />
+      <workItem from="1524520801362" duration="13000" />
+      <workItem from="1524520880333" duration="118000" />
+      <workItem from="1524521044013" duration="433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44095000" />
+    <option name="totallyTimeSpent" value="44706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -214,7 +217,7 @@
       <window_info anchor="bottom" id="CMake" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32912722" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -425,7 +428,7 @@
           <caret line="98" column="35" lean-forward="true" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
-            <marker date="1524519705880" expanded="true" signature="1760:1902" ph="..." />
+            <marker date="1524520902661" expanded="true" signature="1763:1905" ph="..." />
           </folding>
         </state>
       </provider>
@@ -470,7 +473,7 @@
           <caret line="91" column="32" lean-forward="true" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
-            <marker date="1524519705880" expanded="true" signature="1760:1902" ph="..." />
+            <marker date="1524520902661" expanded="true" signature="1763:1905" ph="..." />
           </folding>
         </state>
       </provider>
@@ -515,7 +518,7 @@
           <caret line="100" column="23" lean-forward="true" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
-            <marker date="1524519705880" expanded="true" signature="1760:1902" ph="..." />
+            <marker date="1524520902661" expanded="true" signature="1763:1905" ph="..." />
           </folding>
         </state>
       </provider>
@@ -662,37 +665,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PDB.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
-          <folding>
-            <element signature="e#41#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/All_Heruistics.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/All_Heruistics.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="712" column="21" lean-forward="true" selection-start-line="712" selection-start-column="21" selection-end-line="712" selection-end-column="21" />
+        <state relative-caret-position="1343">
+          <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
-            <marker date="1524519705880" expanded="true" signature="1760:1902" ph="..." />
+            <marker date="1524520902661" expanded="true" signature="1763:1905" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PDB.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#41#57#0" expanded="true" />
           </folding>
         </state>
       </provider>

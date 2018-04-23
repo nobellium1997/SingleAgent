@@ -101,7 +101,7 @@ void PDB::BFS(STP &stp, STPState start)
 //            pdb[rank1] = n.depth;
 //            counter++;
 //        }
-        std::cout << counter << std::endl;
+//        std::cout << counter << std::endl;
 
         if (n.depth != currDepth)
         {

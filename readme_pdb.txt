@@ -3,7 +3,9 @@ Below is the distribution for the second pdb table, forgot to print the first on
 20 minutes. 
 
 IDA* with both pdbs and mh ran much faster and expanded way fewer nodes for each test except for the first few where there was really only 
-one limit to choose from. Times are listed under the distribution along with the path.
+one limit to choose from and since there are three heuristics to choose from, the very first tests took a little longer with the pdb 
+because there was a little more overhead. However, by the last problem, pdb cut time spent by more than half. 
+Times are listed under the distribution along with the path.
 
 DISTRIBUTION FOR PDB2
 0: 1

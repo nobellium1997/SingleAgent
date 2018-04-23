@@ -77,7 +77,7 @@ void Analyze(int walkDepth)
 
 int main(int argc, const char * argv[]) {
     // These might take a while to finish but shouldn't take more than
-    // five minutes or so to build the pdbs,
+    // 10 minutes to build the pdb give or take
     // the tests should also not take too long
 
     // pattern 1 generation
