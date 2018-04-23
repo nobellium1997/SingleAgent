@@ -102,42 +102,165 @@ int main(int argc, const char * argv[]) {
 	STPState goal;
 	std::vector<STPSlideDir> sol;
 
-	STPState state1;
-	state1.tiles[0][0] = 3;
-	state1.tiles[1][0] = 1;
-	state1.tiles[2][0] = 2;
+	STPState state;
+	state.tiles[0][0] = 3;
+	state.tiles[1][0] = 1;
+	state.tiles[2][0] = 2;
 
-	state1.tiles[0][1] = 6;
-	state1.tiles[1][1] = 4;
-	state1.tiles[2][1] = 5;
+	state.tiles[0][1] = 6;
+	state.tiles[1][1] = 4;
+	state.tiles[2][1] = 5;
 
-	state1.tiles[0][2] = 7;
-	state1.tiles[1][2] = 8;
-	state1.tiles[2][2] = 0;
+	state.tiles[0][2] = 7;
+	state.tiles[1][2] = 8;
+	state.tiles[2][2] = 0;
 
-	state1.tiles[0][3] = 9;
-	state1.tiles[1][3] = 10;
-	state1.tiles[2][3] = 11;
+	state.tiles[0][3] = 9;
+	state.tiles[1][3] = 10;
+	state.tiles[2][3] = 11;
 
-	state1.tiles[0][4] = 12;
-	state1.tiles[1][4] = 13;
-	state1.tiles[2][4] = 14;
+	state.tiles[0][4] = 12;
+	state.tiles[1][4] = 13;
+	state.tiles[2][4] = 14;
 
-	state1.blankx = 2;
-	state1.blanky = 2;
+	state.blankx = 2;
+	state.blanky = 2;
 
 	IDA ida;
 	STP stp;
 
-    std::cout << state1 << std::endl;
-    std::cout << goal << std::endl;
+    std::cout << state << std::endl;
 
     ManhattanDistance mh;
 
-	ida.GetPath(stp, state1, goal, &mh, sol);
+	ida.GetPath(stp, state, goal, &mh, sol);
 	for(int i = 0; i < sol.size(); i++) {
 	    std::cout << sol[i] << " ";
 	}
+
+    state.tiles[0][0] = 3;
+    state.tiles[1][0] = 4;
+    state.tiles[2][0] = 1;
+
+    state.tiles[0][1] = 6;
+    state.tiles[1][1] = 0;
+    state.tiles[2][1] = 2;
+
+    state.tiles[0][2] = 7;
+    state.tiles[1][2] = 8;
+    state.tiles[2][2] = 5;
+
+    state.tiles[0][3] = 9;
+    state.tiles[1][3] = 10;
+    state.tiles[2][3] = 11;
+
+    state.tiles[0][4] = 12;
+    state.tiles[1][4] = 13;
+    state.tiles[2][4] = 14;
+
+    state.blankx = 1;
+    state.blanky = 1;
+
+    std::cout << state << std::endl;
+
+    ida.GetPath(stp, state, goal, &mh, sol);
+    for(int i = 0; i < sol.size(); i++) {
+        std::cout << sol[i] << " ";
+    }
+
+    state.tiles[0][0] = 3;
+    state.tiles[1][0] = 4;
+    state.tiles[2][0] = 1;
+
+    state.tiles[0][1] = 6;
+    state.tiles[1][1] = 8;
+    state.tiles[2][1] = 2;
+
+    state.tiles[0][2] = 9;
+    state.tiles[1][2] = 7;
+    state.tiles[2][2] = 5;
+
+    state.tiles[0][3] = 10;
+    state.tiles[1][3] = 13;
+    state.tiles[2][3] = 11;
+
+    state.tiles[0][4] = 12;
+    state.tiles[1][4] = 14;
+    state.tiles[2][4] = 0;
+
+    state.blankx = 2;
+    state.blanky = 4;
+
+    std::cout << state << std::endl;
+
+    ida.GetPath(stp, state, goal, &mh, sol);
+    for(int i = 0; i < sol.size(); i++) {
+        std::cout << sol[i] << " ";
+    }
+
+    state.tiles[0][0] = 0;
+    state.tiles[1][0] = 3;
+    state.tiles[2][0] = 1;
+
+    state.tiles[0][1] = 6;
+    state.tiles[1][1] = 4;
+    state.tiles[2][1] = 8;
+
+    state.tiles[0][2] = 9;
+    state.tiles[1][2] = 7;
+    state.tiles[2][2] = 2;
+
+    state.tiles[0][3] = 10;
+    state.tiles[1][3] = 13;
+    state.tiles[2][3] = 5;
+
+    state.tiles[0][4] = 12;
+    state.tiles[1][4] = 14;
+    state.tiles[2][4] = 11;
+
+    state.blankx = 0;
+    state.blanky = 0;
+
+    std::cout << state << std::endl;
+
+    ida.GetPath(stp, state, goal, &mh, sol);
+    for(int i = 0; i < sol.size(); i++) {
+        std::cout << sol[i] << " ";
+    }
+    std::cout << std::endl;
+
+    state.tiles[0][0] = 6;
+    state.tiles[1][0] = 3;
+    state.tiles[2][0] = 1;
+
+    state.tiles[0][1] = 4;
+    state.tiles[1][1] = 0;
+    state.tiles[2][1] = 8;
+
+    state.tiles[0][2] = 9;
+    state.tiles[1][2] = 7;
+    state.tiles[2][2] = 2;
+
+    state.tiles[0][3] = 10;
+    state.tiles[1][3] = 13;
+    state.tiles[2][3] = 5;
+
+    state.tiles[0][4] = 12;
+    state.tiles[1][4] = 14;
+    state.tiles[2][4] = 11;
+
+    state.blankx = 1;
+    state.blanky = 1;
+
+    std::cout << state << std::endl;
+
+    ida.GetPath(stp, state, goal, &mh, sol);
+    for(int i = 0; i < sol.size(); i++) {
+        std::cout << sol[i] << " ";
+    }
+    std::cout << std::endl;
+
+    
 
 	return 0;
 }
