@@ -53,7 +53,6 @@ bool IDA::BoundedSearch(STP &stp, STPState &curr, STPState &goal, int gcost, STP
 	{
 		if (act == forbidden)
 			continue;
-		
 		path.push_back(act);
 		stp.ApplyOperator(curr, act);
 		stp.InvertOperator(act);

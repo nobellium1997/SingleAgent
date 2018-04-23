@@ -12,13 +12,12 @@
 
 class All_Heruistics : public Heuristic {
 public:
-    All_Heruistics(const PDB& pdb1, const PDB& pdb2);
+    All_Heruistics(const PDB& pdb1);
     int h(const STPState& s);
 
 private:
     ManhattanDistance mh;
     PDB pdb1;
-    PDB pdb2;
 };
 
 

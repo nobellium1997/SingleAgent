@@ -81,19 +81,20 @@ int main(int argc, const char * argv[]) {
     // the tests should also not take too long
 
     // pattern 1 generation
-    std::vector<uint8_t> ptrn1;
-    for(int i = 0; i < 6; i++) {
-        ptrn1.push_back(i);
-    }
-    PDB pdb1(ptrn1);
+//    std::vector<uint8_t> ptrn1;
+//    for(int i = 0; i < 6; i++) {
+//        ptrn1.push_back(i);
+//    }
+//    PDB pdb1(ptrn1);
+//    pdb1.distribution();
 
-	// pattern 2 generation
-    std::vector<uint8_t> ptrn2;
-    ptrn2.push_back(0);
-    for(int i = 0; i < 6; i++) {
-        ptrn2.push_back(9+i);
-    }
-    PDB pdb2(ptrn2);
+//	// pattern 2 generation
+//    std::vector<uint8_t> ptrn2;
+//    ptrn2.push_back(0);
+//    for(int i = 0; i < 6; i++) {
+//        ptrn2.push_back(9+i);
+//    }
+//    PDB pdb2(ptrn2);
 
     std::cout << " PDB DONE " << std:: endl;
 
@@ -121,12 +122,15 @@ int main(int argc, const char * argv[]) {
 	state1.tiles[1][4] = 13;
 	state1.tiles[2][4] = 14;
 
-	All_Heruistics ah(pdb1, pdb2);
-//	std::cout << ah.h(state1);
+	std::cout << state1 << std::endl;
+	std::cout << goal << std::endl;
 
+//	All_Heruistics ah(pdb1);
+
+	ManhattanDistance mh;
 	IDA ida;
 	STP stp;
-	ida.GetPath(stp, state1, goal, &ah, sol);
+	ida.GetPath(stp, state1, goal, &mh, sol);
 
 	return 0;
 }

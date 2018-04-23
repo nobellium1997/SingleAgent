@@ -23,11 +23,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PDB.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PDB.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+              <folding>
+                <element signature="e#41#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="127" column="12" lean-forward="true" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+            <state relative-caret-position="238">
+              <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
               <folding>
                 <element signature="e#28#47#0" expanded="true" />
               </folding>
@@ -35,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDA.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IDA.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IDA.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDA.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IDA.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+            <state relative-caret-position="393">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#29#47#0" expanded="true" />
               </folding>
@@ -50,8 +71,8 @@
       <file leaf-file-name="All_Heruistics.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/All_Heruistics.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#111#133#0" expanded="true" />
               </folding>
@@ -59,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="All_Heruistics.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="All_Heruistics.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/All_Heruistics.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -83,14 +104,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IDA.cpp" />
         <option value="$PROJECT_DIR$/STP.cpp" />
         <option value="$PROJECT_DIR$/STP.h" />
         <option value="$PROJECT_DIR$/PDB.h" />
         <option value="$PROJECT_DIR$/PDB.cpp" />
+        <option value="$PROJECT_DIR$/All_Heruistics.cpp" />
         <option value="$PROJECT_DIR$/All_Heruistics.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/All_Heruistics.cpp" />
+        <option value="$PROJECT_DIR$/IDA.cpp" />
       </list>
     </option>
   </component>
@@ -102,8 +123,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
+    <option name="x" value="-58" />
+    <option name="y" value="-25" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -166,24 +187,23 @@
       <workItem from="1524420933219" duration="10668000" />
       <workItem from="1524433544924" duration="4443000" />
       <workItem from="1524437993132" duration="1495000" />
-      <workItem from="1524451659740" duration="9477000" />
+      <workItem from="1524451659740" duration="13797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31078000" />
+    <option name="totallyTimeSpent" value="35398000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1578125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1578125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32492113" />
       <window_info anchor="bottom" id="CMake" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33123028" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33123028" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32912722" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -208,7 +228,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/All_Heruistics.cpp</url>
-          <line>12</line>
+          <line>11</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -452,10 +472,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_HW3.zip/main.cpp">
+    <entry file="file://$PROJECT_DIR$/PDB.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_HW3.zip/BFS.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PDB.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#41#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All_Heruistics.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All_Heruistics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#111#133#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -466,27 +520,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PDB.cpp">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_HW3.zip/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#41#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PDB.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="289">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="127" column="12" lean-forward="true" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+        <state relative-caret-position="238">
+          <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
           </folding>
@@ -495,28 +539,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IDA.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        <state relative-caret-position="393">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#29#47#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All_Heruistics.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#111#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All_Heruistics.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -88,15 +88,21 @@ void PDB::BFS(STP &stp, STPState start)
     std::deque<BFSNode> q;
     std::vector<STPSlideDir> acts;
     q.push_back({start, kNone, 0});
-    long rnk = rank(start);
-    pdb[rnk] = 0;
+//    long rnk = rank(start);
+//    pdb[rnk] = 0;
 
     int currDepth = 0;
-    while (counter < pdb.size()-1)
+    while (counter < pdb.size())
     {
 //        std::cout << q.size() << std::endl;
         BFSNode n = q.front();
         q.pop_front();
+        long rank1 = rank(n.s);
+        if(pdb[rank1] == -1) {
+            pdb[rank1] = n.depth;
+            counter++;
+        }
+//        std::cout << counter << std::endl;
 
         if (n.depth != currDepth)
         {
@@ -113,13 +119,11 @@ void PDB::BFS(STP &stp, STPState start)
             stp.ApplyOperator(n.s, act);
             stp.InvertOperator(act);
             long rnk = rank(n.s);
-//            std::cout  << "I want to die ";
             int8_t val = pdb[rnk];
             if(val == -1) {
-//                std::cout << counter << std::endl;
-                pdb[rnk] = n.depth+1;
+//                pdb[rnk] = n.depth+1;
                 q.push_back({n.s, act, n.depth+1});
-                counter++;
+//                counter++;
             }
             stp.ApplyOperator(n.s, act);
         }
