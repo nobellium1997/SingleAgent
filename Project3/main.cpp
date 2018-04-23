@@ -88,16 +88,17 @@ int main(int argc, const char * argv[]) {
 //    PDB pdb1(ptrn1);
 //    pdb1.distribution();
 
-//	// pattern 2 generation
+	// pattern 2 generation
 //    std::vector<uint8_t> ptrn2;
 //    ptrn2.push_back(0);
 //    for(int i = 0; i < 6; i++) {
 //        ptrn2.push_back(9+i);
 //    }
 //    PDB pdb2(ptrn2);
+//    pdb2.distribution();
 
-    std::cout << " PDB DONE " << std:: endl;
-
+//    std::cout << " PDB DONE " << std:: endl;
+//
 	STPState goal;
 	std::vector<STPSlideDir> sol;
 
@@ -122,15 +123,21 @@ int main(int argc, const char * argv[]) {
 	state1.tiles[1][4] = 13;
 	state1.tiles[2][4] = 14;
 
-	std::cout << state1 << std::endl;
-	std::cout << goal << std::endl;
+	state1.blankx = 2;
+	state1.blanky = 2;
 
-//	All_Heruistics ah(pdb1);
-
-	ManhattanDistance mh;
 	IDA ida;
 	STP stp;
+
+    std::cout << state1 << std::endl;
+    std::cout << goal << std::endl;
+
+    ManhattanDistance mh;
+
 	ida.GetPath(stp, state1, goal, &mh, sol);
+	for(int i = 0; i < sol.size(); i++) {
+	    std::cout << sol[i] << " ";
+	}
 
 	return 0;
 }
