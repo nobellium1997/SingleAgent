@@ -11,6 +11,7 @@
 #include "IDA.h"
 #include "ManhattanDistance.h"
 #include "PDB.h"
+#include "All_Heruistics.h"
 
 void GenerateInstance(int walkDepth)
 {
@@ -75,30 +76,58 @@ void Analyze(int walkDepth)
 }
 
 int main(int argc, const char * argv[]) {
-//	Analyze(20);
-//	Analyze(30);
-//	Analyze(40);
-//	Analyze(50);
-//	Analyze(60); // This used approximately 1.7 GB on our machine
-//
-//	for (int x = 10; x < 200; x+=10)
-//	{
-//		GenerateInstance(x);
-//	}
-//	GenerateInstance(10000000);
+    // These might take a while to finish but shouldn't take more than
+    // five minutes or so to build the pdbs,
+    // the tests should also not take too long
+
+    // pattern 1 generation
+    std::vector<uint8_t> ptrn1;
+    for(int i = 0; i < 6; i++) {
+        ptrn1.push_back(i);
+    }
+    PDB pdb1(ptrn1);
+
+	// pattern 2 generation
+    std::vector<uint8_t> ptrn2;
+    ptrn2.push_back(0);
+    for(int i = 0; i < 6; i++) {
+        ptrn2.push_back(9+i);
+    }
+    PDB pdb2(ptrn2);
+
+    std::cout << " PDB DONE " << std:: endl;
 
 	STPState goal;
-	std::vector<uint8_t> ptrn;
-	for(int i = 0; i < 7; i++) {
-		ptrn.push_back(i);
-	}
-	PDB pdb(3603600, ptrn);
-//	std::cout << pdb.rank(goal) << std::endl;
+	std::vector<STPSlideDir> sol;
+
+	STPState state1;
+	state1.tiles[0][0] = 3;
+	state1.tiles[1][0] = 1;
+	state1.tiles[2][0] = 2;
+
+	state1.tiles[0][1] = 6;
+	state1.tiles[1][1] = 4;
+	state1.tiles[2][1] = 5;
+
+	state1.tiles[0][2] = 7;
+	state1.tiles[1][2] = 8;
+	state1.tiles[2][2] = 0;
+
+	state1.tiles[0][3] = 9;
+	state1.tiles[1][3] = 10;
+	state1.tiles[2][3] = 11;
+
+	state1.tiles[0][4] = 12;
+	state1.tiles[1][4] = 13;
+	state1.tiles[2][4] = 14;
+
+	All_Heruistics ah(pdb1, pdb2);
+//	std::cout << ah.h(state1);
+
+	IDA ida;
 	STP stp;
-	stp.ApplyOperator(goal, kRight);
-	std::cout << goal << std::endl;
-	std::cout << pdb.rank(goal);
-	pdb.distribution();
+	ida.GetPath(stp, state1, goal, &ah, sol);
+
 	return 0;
 }
 

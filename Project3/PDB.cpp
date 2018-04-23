@@ -6,8 +6,13 @@
 #include "PDB.h"
 long factorial(long n);
 
-PDB::PDB(const long& size, const std::vector<uint8_t>& pattern) {
+PDB::PDB() {
+
+}
+
+PDB::PDB(const std::vector<uint8_t>& pattern) {
     counter = 0;
+    long size = factorial(15) / factorial(15-pattern.size());
     this->pdb.resize(size);
     this->pattern.resize(pattern.size());
 
@@ -83,11 +88,13 @@ void PDB::BFS(STP &stp, STPState start)
     std::deque<BFSNode> q;
     std::vector<STPSlideDir> acts;
     q.push_back({start, kNone, 0});
+    long rnk = rank(start);
+    pdb[rnk] = 0;
 
     int currDepth = 0;
     while (counter < pdb.size()-1)
     {
-        std::cout << q.size() << std::endl;
+//        std::cout << q.size() << std::endl;
         BFSNode n = q.front();
         q.pop_front();
 
@@ -121,7 +128,7 @@ void PDB::BFS(STP &stp, STPState start)
 
 void PDB::distribution() {
     std::vector<int> distribution;
-    distribution.resize(64);
+    distribution.resize(65);
     for(int i = 0; i < pdb.size(); i++) {
         distribution[pdb[i]]++;
     }
@@ -131,4 +138,7 @@ void PDB::distribution() {
     }
 }
 
-int PDB::h(const STPState &s) {}
+int PDB::h(const STPState &s) {
+    long rnk = rank(s);
+    return pdb[rnk];
+}

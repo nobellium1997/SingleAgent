@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/Nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/Nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/Nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/Nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ Project3: cmake_check_build_system
 Project3/fast:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/build
 .PHONY : Project3/fast
+
+All_Heruistics.o: All_Heruistics.cpp.o
+
+.PHONY : All_Heruistics.o
+
+# target to build an object file
+All_Heruistics.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/All_Heruistics.cpp.o
+.PHONY : All_Heruistics.cpp.o
+
+All_Heruistics.i: All_Heruistics.cpp.i
+
+.PHONY : All_Heruistics.i
+
+# target to preprocess a source file
+All_Heruistics.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/All_Heruistics.cpp.i
+.PHONY : All_Heruistics.cpp.i
+
+All_Heruistics.s: All_Heruistics.cpp.s
+
+.PHONY : All_Heruistics.s
+
+# target to generate assembly for a file
+All_Heruistics.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/All_Heruistics.cpp.s
+.PHONY : All_Heruistics.cpp.s
 
 BFS.o: BFS.cpp.o
 
@@ -348,6 +375,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Project3"
+	@echo "... All_Heruistics.o"
+	@echo "... All_Heruistics.i"
+	@echo "... All_Heruistics.s"
 	@echo "... BFS.o"
 	@echo "... BFS.i"
 	@echo "... BFS.s"

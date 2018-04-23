@@ -57,6 +57,7 @@ STPState::STPState()
 {
 	Reset();
 }
+
 void STPState::Reset()
 {
 	blankx = blanky = 0;

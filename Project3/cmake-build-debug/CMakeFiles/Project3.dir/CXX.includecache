@@ -6,73 +6,85 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.cpp
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/All_Heruistics.cpp
+All_Heruistics.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/All_Heruistics.h
+
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/All_Heruistics.h
+Heuristic.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
+ManhattanDistance.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+PDB.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/PDB.h
+
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/BFS.cpp
 deque
 -
 BFS.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/BFS.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/BFS.h
 stdio.h
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.cpp
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/DFID.cpp
 DFID.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/DFID.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/DFID.h
 stdio.h
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.cpp
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/IDA.cpp
 climits
 -
 IDA.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/IDA.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/IDA.h
 stdio.h
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp
 ManhattanDistance.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
 stdio.h
 -
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.cpp
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/PDB.cpp
 deque
 -
 PDB.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/PDB.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/PDB.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.cpp
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.cpp
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
 random
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
 stdio.h
 -
 vector
@@ -80,11 +92,11 @@ vector
 iostream
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.cpp
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Timer.cpp
 Timer.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Timer.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Timer.h
 stdint.h
 -
 fstream
@@ -92,21 +104,23 @@ fstream
 chrono
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/main.cpp
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/main.cpp
 iostream
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
 Timer.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Timer.h
 DFID.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/DFID.h
 BFS.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/BFS.h
 IDA.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/IDA.h
 ManhattanDistance.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
 PDB.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/PDB.h
+All_Heruistics.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/All_Heruistics.h
 

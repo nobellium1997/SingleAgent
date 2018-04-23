@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/. 
+CXX_INCLUDES = -I/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/. 
 
