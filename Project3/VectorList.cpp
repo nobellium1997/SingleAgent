@@ -40,7 +40,7 @@ STPState VectorList::remove_best() {
             index = i;
         }
     }
-
+    temp = list[index];
     list.erase(list.begin() + index);
-
+    return temp;
 }

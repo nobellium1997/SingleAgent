@@ -50,5 +50,6 @@ CMakeFiles/Project3.dir/main.cpp.o: ../ManhattanDistance.h
 CMakeFiles/Project3.dir/main.cpp.o: ../PDB.h
 CMakeFiles/Project3.dir/main.cpp.o: ../STP.h
 CMakeFiles/Project3.dir/main.cpp.o: ../Timer.h
+CMakeFiles/Project3.dir/main.cpp.o: ../VectorList.h
 CMakeFiles/Project3.dir/main.cpp.o: ../main.cpp
 

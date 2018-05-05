@@ -231,6 +231,33 @@ IDA.cpp.s:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/IDA.cpp.s
 .PHONY : IDA.cpp.s
 
+InefficientAStar.o: InefficientAStar.cpp.o
+
+.PHONY : InefficientAStar.o
+
+# target to build an object file
+InefficientAStar.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/InefficientAStar.cpp.o
+.PHONY : InefficientAStar.cpp.o
+
+InefficientAStar.i: InefficientAStar.cpp.i
+
+.PHONY : InefficientAStar.i
+
+# target to preprocess a source file
+InefficientAStar.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/InefficientAStar.cpp.i
+.PHONY : InefficientAStar.cpp.i
+
+InefficientAStar.s: InefficientAStar.cpp.s
+
+.PHONY : InefficientAStar.s
+
+# target to generate assembly for a file
+InefficientAStar.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/InefficientAStar.cpp.s
+.PHONY : InefficientAStar.cpp.s
+
 ManhattanDistance.o: ManhattanDistance.cpp.o
 
 .PHONY : ManhattanDistance.o
@@ -414,6 +441,9 @@ help:
 	@echo "... IDA.o"
 	@echo "... IDA.i"
 	@echo "... IDA.s"
+	@echo "... InefficientAStar.o"
+	@echo "... InefficientAStar.i"
+	@echo "... InefficientAStar.s"
 	@echo "... ManhattanDistance.o"
 	@echo "... ManhattanDistance.i"
 	@echo "... ManhattanDistance.s"

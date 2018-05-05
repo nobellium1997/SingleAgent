@@ -109,6 +109,12 @@
 		<Unit filename="/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/IDA.h">
 			<Option target="Project3"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.cpp">
+			<Option target="Project3"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.h">
+			<Option target="Project3"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp">
 			<Option target="Project3"/>
 		</Unit>

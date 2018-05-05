@@ -12,6 +12,7 @@
 #include "ManhattanDistance.h"
 #include "PDB.h"
 #include "All_Heruistics.h"
+#include "VectorList.h"
 
 void GenerateInstance(int walkDepth)
 {
