@@ -37,6 +37,10 @@ CMakeFiles/Project3.dir/STP.cpp.o: ../STP.h
 CMakeFiles/Project3.dir/Timer.cpp.o: ../Timer.cpp
 CMakeFiles/Project3.dir/Timer.cpp.o: ../Timer.h
 
+CMakeFiles/Project3.dir/VectorList.cpp.o: ../STP.h
+CMakeFiles/Project3.dir/VectorList.cpp.o: ../VectorList.cpp
+CMakeFiles/Project3.dir/VectorList.cpp.o: ../VectorList.h
+
 CMakeFiles/Project3.dir/main.cpp.o: ../All_Heruistics.h
 CMakeFiles/Project3.dir/main.cpp.o: ../BFS.h
 CMakeFiles/Project3.dir/main.cpp.o: ../DFID.h

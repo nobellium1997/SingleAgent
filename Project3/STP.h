@@ -25,8 +25,10 @@ class STPState {
 public:
 	STPState();   // Init to goal state - default constructor will copy
 	void Reset(); // Reset to goal state
+	STPState& operator=(const STPState& s2);
 	int tiles[kMaxWidth][kMaxHeight];
 	int blankx, blanky;
+	int gcost, hcost, fcost;
 };
 
 std::ostream& operator<<(std::ostream& out, const STPState& s);

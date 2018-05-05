@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project3.dir/STP.cpp.o"
   "CMakeFiles/Project3.dir/Timer.cpp.o"
   "CMakeFiles/Project3.dir/All_Heruistics.cpp.o"
+  "CMakeFiles/Project3.dir/VectorList.cpp.o"
   "Project3.pdb"
   "Project3.exe"
   "libProject3.dll.a"

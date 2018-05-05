@@ -71,6 +71,22 @@ void STPState::Reset()
 	}
 }
 
+STPState& STPState::operator=(const STPState &s2) {
+	for(int y = 0; y < kMaxHeight; y++) {
+		for(int x = 0; x < kMaxWidth; x++) {
+			this->tiles[x][y] = s2.tiles[x][y];
+		}
+	}
+	this->gcost = s2.gcost;
+	this->hcost = s2.hcost;
+	this->fcost = s2.fcost;
+
+	this->blankx = s2.blankx;
+	this->blanky = s2.blanky;
+
+	return *this;
+}
+
 void STP::GetSuccessors(STPState &s, std::vector<STPState> &states)
 {
 	states.clear();

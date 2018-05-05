@@ -21,4 +21,4 @@ add_executable(Project3
         STP.cpp
         STP.h
         Timer.cpp
-        Timer.h All_Heruistics.cpp All_Heruistics.h)
+        Timer.h All_Heruistics.cpp All_Heruistics.h VectorList.cpp VectorList.h)
