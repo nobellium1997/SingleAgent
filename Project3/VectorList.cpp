@@ -22,12 +22,18 @@ bool VectorList::check_duplicates(const STPState& s) {
     return false;
 }
 
-void VectorList::update_cost(const int& index, const int& gcost, const int& hcost, const int& fcost) {
-    if(list[index].fcost > fcost || (list[index].fcost == fcost && list[index].hcost < hcost)) {
-        list[index].gcost = gcost;
-        list[index].hcost = hcost;
-        list[index].fcost = fcost;
+void VectorList::update_cost(const STPState& state, const int& gcost, const int& hcost, const int& fcost) {
+
+    for(int i = 0; i < list.size(); i++) {
+        if(list[i] == state) {
+            if(list[i].gcost < gcost + 1) {
+                list[i].gcost = gcost + 1;
+                list[i].fcost = list[i].gcost + list[i].hcost;
+                break;
+            }
+        }
     }
+
 }
 
 STPState VectorList::remove_best() {

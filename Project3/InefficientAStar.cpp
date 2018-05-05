@@ -18,7 +18,9 @@ void InefficientAStar::GetPath(STP& stp, STPState start, STPState &goal, Heurist
         STPState current_state = open_list.remove_best();
         std::cout << "Current state is " << std::endl;
         std::cout << current_state;
-        std::cout << "Fcost is " << current_state.fcost << std::endl;
+        std::cout << "gcost is " << current_state.gcost << std::endl;
+        std::cout << "hcost is " << current_state.hcost << std::endl;
+        std::cout << "fcost is " << current_state.fcost << std::endl;
 
         if(current_state == goal) {
             std::cout << "goal found " << std::endl;
@@ -31,9 +33,14 @@ void InefficientAStar::GetPath(STP& stp, STPState start, STPState &goal, Heurist
 
         for(auto state : states) {
             if(!open_list.check_duplicates(state) && !closed_list.check_duplicates(state)) {
+                state.hcost = h->h(state);
+                state.gcost = current_state.gcost + 1;
+                state.fcost = state.hcost + state.gcost;
+//                std::cout << "STATE ADDED WITH HCOST " << state.hcost << " AND GCOST " << state.gcost << std::endl;
                 open_list.add_element(state);
+                continue;
             } else if(open_list.check_duplicates(state)) {
-                // TODO fix the update method to find the state instead of taking an index
+                open_list.update_cost(state, current_state.gcost, current_state.hcost, current_state.fcost);
             }
         }
 
