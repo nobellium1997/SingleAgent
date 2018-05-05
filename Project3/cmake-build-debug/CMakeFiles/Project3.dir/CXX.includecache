@@ -58,6 +58,18 @@ STP.h
 Heuristic.h
 /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
 
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.cpp
+InefficientAStar.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.h
+
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.h
+STP.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
+VectorList.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/VectorList.h
+Heuristic.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
+
 /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp
 ManhattanDistance.h
 /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
@@ -135,4 +147,6 @@ All_Heruistics.h
 /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/All_Heruistics.h
 VectorList.h
 /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/VectorList.h
+InefficientAStar.h
+/cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.h
 

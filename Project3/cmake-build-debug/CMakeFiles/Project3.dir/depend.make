@@ -21,6 +21,12 @@ CMakeFiles/Project3.dir/IDA.cpp.o: ../IDA.cpp
 CMakeFiles/Project3.dir/IDA.cpp.o: ../IDA.h
 CMakeFiles/Project3.dir/IDA.cpp.o: ../STP.h
 
+CMakeFiles/Project3.dir/InefficientAStar.cpp.o: ../Heuristic.h
+CMakeFiles/Project3.dir/InefficientAStar.cpp.o: ../InefficientAStar.cpp
+CMakeFiles/Project3.dir/InefficientAStar.cpp.o: ../InefficientAStar.h
+CMakeFiles/Project3.dir/InefficientAStar.cpp.o: ../STP.h
+CMakeFiles/Project3.dir/InefficientAStar.cpp.o: ../VectorList.h
+
 CMakeFiles/Project3.dir/ManhattanDistance.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/ManhattanDistance.cpp.o: ../ManhattanDistance.cpp
 CMakeFiles/Project3.dir/ManhattanDistance.cpp.o: ../ManhattanDistance.h
@@ -46,6 +52,7 @@ CMakeFiles/Project3.dir/main.cpp.o: ../BFS.h
 CMakeFiles/Project3.dir/main.cpp.o: ../DFID.h
 CMakeFiles/Project3.dir/main.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/main.cpp.o: ../IDA.h
+CMakeFiles/Project3.dir/main.cpp.o: ../InefficientAStar.h
 CMakeFiles/Project3.dir/main.cpp.o: ../ManhattanDistance.h
 CMakeFiles/Project3.dir/main.cpp.o: ../PDB.h
 CMakeFiles/Project3.dir/main.cpp.o: ../STP.h

@@ -21,6 +21,12 @@ CMakeFiles/Project3.dir/IDA.cpp.o
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/IDA.cpp
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/IDA.h
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
+CMakeFiles/Project3.dir/InefficientAStar.cpp.o
+ /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
+ /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.cpp
+ /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.h
+ /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
+ /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/VectorList.h
 CMakeFiles/Project3.dir/ManhattanDistance.cpp.o
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp
@@ -47,6 +53,7 @@ CMakeFiles/Project3.dir/main.cpp.o
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/DFID.h
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/Heuristic.h
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/IDA.h
+ /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/InefficientAStar.h
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/PDB.h
  /cygdrive/c/Users/Nobel/Documents/SingleAgent/Project3/STP.h
