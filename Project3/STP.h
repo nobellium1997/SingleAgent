@@ -29,6 +29,8 @@ public:
 	int tiles[kMaxWidth][kMaxHeight];
 	int blankx, blanky;
 	int gcost, hcost, fcost;
+	STPSlideDir direction;
+	STPState* parent_state;
 };
 
 std::ostream& operator<<(std::ostream& out, const STPState& s);

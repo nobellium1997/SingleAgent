@@ -12,11 +12,10 @@
 
 class InefficientAStar {
 public:
-    void GetPath(STP& stp, STPState start, STPState& goal, Heuristic* h);
+    void GetPath(STP& stp, STPState start, STPState& goal, Heuristic* h, std::vector<STPSlideDir>& path);
     uint64_t GetNodesExpanded();
+    STPSlideDir opposite_direction(const STPSlideDir& s);
 private:
-//    VectorList open_list;
-//    VectorList closed_list;
     uint64_t expansions;
 };
 

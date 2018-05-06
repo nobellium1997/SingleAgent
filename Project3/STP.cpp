@@ -84,6 +84,9 @@ STPState& STPState::operator=(const STPState &s2) {
 	this->blankx = s2.blankx;
 	this->blanky = s2.blanky;
 
+	this->direction = s2.direction;
+	this->parent_state = s2.parent_state;
+
 	return *this;
 }
 
