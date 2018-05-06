@@ -17,8 +17,6 @@ CMakeFiles/Project3.dir/DFID.cpp.o: ../DFID.h
 CMakeFiles/Project3.dir/DFID.cpp.o: ../STP.h
 
 CMakeFiles/Project3.dir/HashmapList.cpp.o: ../HashmapList.cpp
-CMakeFiles/Project3.dir/HashmapList.cpp.o: ../HashmapList.h
-CMakeFiles/Project3.dir/HashmapList.cpp.o: ../STP.h
 
 CMakeFiles/Project3.dir/IDA.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/IDA.cpp.o: ../IDA.cpp
