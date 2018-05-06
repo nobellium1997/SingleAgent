@@ -36,7 +36,6 @@ void InefficientAStar::GetPath(STP& stp, STPState start, STPState &goal, Heurist
                 state.hcost = h->h(state);
                 state.gcost = current_state.gcost + 1;
                 state.fcost = state.hcost + state.gcost;
-//                std::cout << "STATE ADDED WITH HCOST " << state.hcost << " AND GCOST " << state.gcost << std::endl;
                 open_list.add_element(state);
                 continue;
             } else if(open_list.check_duplicates(state)) {

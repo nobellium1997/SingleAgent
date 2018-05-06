@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project3.dir/All_Heruistics.cpp.o"
   "CMakeFiles/Project3.dir/VectorList.cpp.o"
   "CMakeFiles/Project3.dir/InefficientAStar.cpp.o"
+  "CMakeFiles/Project3.dir/HashmapList.cpp.o"
   "Project3.pdb"
   "Project3"
 )

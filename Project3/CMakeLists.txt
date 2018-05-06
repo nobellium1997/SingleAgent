@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(Project3)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
@@ -21,4 +21,4 @@ add_executable(Project3
         STP.cpp
         STP.h
         Timer.cpp
-        Timer.h All_Heruistics.cpp All_Heruistics.h VectorList.cpp VectorList.h InefficientAStar.cpp InefficientAStar.h)
+        Timer.h All_Heruistics.cpp All_Heruistics.h VectorList.cpp VectorList.h InefficientAStar.cpp InefficientAStar.h HashmapList.cpp HashmapList.h)
