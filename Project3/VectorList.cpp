@@ -22,20 +22,25 @@ bool VectorList::check_duplicates(const STPState& s) {
     return false;
 }
 
-void VectorList::update_cost(const STPState& state, const int& gcost, const int& hcost, const int& fcost) {
-
+void VectorList::update_cost(const STPState& state, const STPState& state2) {
+    STP stp;
     for(int i = 0; i < list.size(); i++) {
         if(list[i] == state) {
-            if(list[i].gcost < gcost + 1) {
-                list[i].gcost = gcost + 1;
+            if(list[i].gcost < state2.gcost + 1) {
+                list[i].gcost = state2.gcost + 1;
                 list[i].fcost = list[i].gcost + list[i].hcost;
-                break;
+                STPSlideDir temp = state2.direction;
+                stp.InvertOperator(temp);
+                list[i].direction = temp;
+                list[i].parent_state = state2.parent_state;
             }
+            break;
         }
     }
 
 }
 
+// TODO fix tie break so that it goes to lower h cost
 STPState VectorList::remove_best() {
     STPState temp;
     int index = 0;

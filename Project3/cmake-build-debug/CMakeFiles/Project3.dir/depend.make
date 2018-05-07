@@ -21,6 +21,8 @@ CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../FourWayMovement.h
 CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../STP.h
 
 CMakeFiles/Project3.dir/HashmapList.cpp.o: ../HashmapList.cpp
+CMakeFiles/Project3.dir/HashmapList.cpp.o: ../HashmapList.h
+CMakeFiles/Project3.dir/HashmapList.cpp.o: ../STP.h
 
 CMakeFiles/Project3.dir/IDA.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/IDA.cpp.o: ../IDA.cpp

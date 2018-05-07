@@ -20,7 +20,7 @@ public:
 
     // updates the cost of a state if the state at index has an fcost less than or equal to the fcost put in
     // as a parameter
-    void update_cost(const STPState& state, const int& gcost, const int& hcost, const int& fcost);
+    void update_cost(const STPState& state, const STPState& state2);
 
     // returns the state with the lowest fcost
     STPState remove_best();

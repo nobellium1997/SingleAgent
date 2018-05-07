@@ -52,7 +52,7 @@ void InefficientAStar::GetPath(STP& stp, STPState start, STPState &goal, Heurist
                 *state.parent_state = current_state;
                 open_list.add_element(state);
             } else if(open_list.check_duplicates(state)) {
-                open_list.update_cost(state, current_state.gcost, current_state.hcost, current_state.fcost);
+                open_list.update_cost(state, current_state);
             }
         }
 
