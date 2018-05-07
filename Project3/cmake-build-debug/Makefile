@@ -285,6 +285,33 @@ HashmapList.cpp.s:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/HashmapList.cpp.s
 .PHONY : HashmapList.cpp.s
 
+HashmapListMap.o: HashmapListMap.cpp.o
+
+.PHONY : HashmapListMap.o
+
+# target to build an object file
+HashmapListMap.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/HashmapListMap.cpp.o
+.PHONY : HashmapListMap.cpp.o
+
+HashmapListMap.i: HashmapListMap.cpp.i
+
+.PHONY : HashmapListMap.i
+
+# target to preprocess a source file
+HashmapListMap.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/HashmapListMap.cpp.i
+.PHONY : HashmapListMap.cpp.i
+
+HashmapListMap.s: HashmapListMap.cpp.s
+
+.PHONY : HashmapListMap.s
+
+# target to generate assembly for a file
+HashmapListMap.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/HashmapListMap.cpp.s
+.PHONY : HashmapListMap.cpp.s
+
 IDA.o: IDA.cpp.o
 
 .PHONY : IDA.o
@@ -555,6 +582,9 @@ help:
 	@echo "... HashmapList.o"
 	@echo "... HashmapList.i"
 	@echo "... HashmapList.s"
+	@echo "... HashmapListMap.o"
+	@echo "... HashmapListMap.i"
+	@echo "... HashmapListMap.s"
 	@echo "... IDA.o"
 	@echo "... IDA.i"
 	@echo "... IDA.s"

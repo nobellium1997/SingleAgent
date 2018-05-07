@@ -10,6 +10,7 @@
 
 class FourWayMovement {
 public:
+    FourWayMovement(const int& height, const int& width);
     FourWayMovement(std::string file_name);
     ~FourWayMovement();
     FourWayMovement& operator=(const FourWayMovement& fw);
@@ -23,6 +24,7 @@ public:
 };
 
 std::ostream& operator<<(std::ostream&out, const FourWayMovement& fw);
+bool operator==(const FourWayMovement& fw1, const FourWayMovement& fw2);
 
 class FWM {
 public:

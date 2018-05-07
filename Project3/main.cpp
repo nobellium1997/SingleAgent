@@ -18,6 +18,7 @@
 #include "FourWayMovement.h"
 #include "HashmapList.h"
 #include "AStar.h"
+#include "HashmapListMap.h"
 
 void GenerateInstance(int walkDepth)
 {
@@ -82,89 +83,32 @@ void Analyze(int walkDepth)
 }
 
 int main(int argc, const char * argv[]) {
-        Timer t;
-	STPState goal;
-	std::vector<STPSlideDir> sol;
+//     pattern 1 generation
+//    std::vector<uint8_t> ptrn1;
+//    for(int i = 0; i < 6; i++) {
+//        ptrn1.push_back(i);
+//    }
+//    PDB pdb1(ptrn1);
+//    pdb1.distribution();
+//    std::cout << std::endl;
 
-	STPState state;
-	state.tiles[0][0] = 3;
-	state.tiles[1][0] = 1;
-	state.tiles[2][0] = 2;
-
-	state.tiles[0][1] = 6;
-	state.tiles[1][1] = 4;
-	state.tiles[2][1] = 5;
-
-	state.tiles[0][2] = 7;
-	state.tiles[1][2] = 8;
-	state.tiles[2][2] = 0;
-
-	state.tiles[0][3] = 9;
-	state.tiles[1][3] = 10;
-	state.tiles[2][3] = 11;
-
-	state.tiles[0][4] = 12;
-	state.tiles[1][4] = 13;
-	state.tiles[2][4] = 14;
-
-	state.blankx = 2;
-	state.blanky = 2;
-
-//	IDA ida;
-    AStar a;
-	STP stp;
-
-    std::cout << state << std::endl;
-
-//    All_Heruistics ah(pdb1, pdb2);
-    ManhattanDistance m;
-    t.StartTimer();
-    std::vector<STPSlideDir> path;
-	a.GetPath(stp, state, goal, &m, path);
-	t.EndTimer();
-	for(int i = 0; i < path.size(); i++) {
-		std::cout << path[i] << " ";
-	}
-	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << "Time is " << t.GetElapsedTime() << " seconds " << std::endl;
-	std::cout << std::endl;
-
-        state.tiles[0][0] = 0;
-    state.tiles[1][0] = 6;
-    state.tiles[2][0] = 1;
-
-    state.tiles[0][1] = 9;
-    state.tiles[1][1] = 3;
-    state.tiles[2][1] = 8;
-
-    state.tiles[0][2] = 7;
-    state.tiles[1][2] = 4;
-    state.tiles[2][2] = 2;
-
-    state.tiles[0][3] = 10;
-    state.tiles[1][3] = 13;
-    state.tiles[2][3] = 5;
-
-    state.tiles[0][4] = 12;
-    state.tiles[1][4] = 14;
-    state.tiles[2][4] = 11;
-
-    state.blankx = 0;
-    state.blanky = 0;
-
-    std::cout << state << std::endl;
-	t.StartTimer();
-	path.clear();
-	a.GetPath(stp, state, goal, &m, path);
-	t.EndTimer();
-	for(int i = 0; i < path.size(); i++) {
-		std::cout << path[i] << " ";
-	}
-	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << "Time is " << t.GetElapsedTime() << " seconds " << std::endl;
-	std::cout << std::endl;
-
+	// pattern 2 generation
+//    std::vector<uint8_t> ptrn2;
+//    ptrn2.push_back(0);
+//    for(int i = 0; i < 6; i++) {
+//        ptrn2.push_back(9+i);
+//    }
+//    PDB pdb2(ptrn2);
+//    pdb2.distribution();
+//    std::cout << std::endl;
+	FourWayMovement fw("orz301d.map");
+	std::cout << fw;
+	HashmapListMap list;
+	fw.gcost = 13;
+	list.add_element(fw);
+	FourWayMovement fw2("orz301d.map");
+	fw2.gcost = 3;
+	list.update_cost(fw, fw2);
+	std::cout << list.list.at(fw).gcost;
 	return 0;
 }

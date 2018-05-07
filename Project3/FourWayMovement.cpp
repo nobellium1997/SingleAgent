@@ -6,6 +6,15 @@
 #include <sstream>
 #include "FourWayMovement.h"
 
+FourWayMovement::FourWayMovement(const int& height, const int& width) {
+    map_height = height;
+    map_width = width;
+    map = new int*[map_height];
+    for(int i = 0; i < map_height; i++) {
+        map[i] = new int[map_width];
+    }
+}
+
 FourWayMovement::FourWayMovement(std::string file_name) {
     std::ifstream file;
     file.open(file_name);
@@ -99,6 +108,17 @@ std::ostream& operator<<(std::ostream& out, const FourWayMovement& fw) {
         out << "\n";
     }
     return out;
+}
+
+bool operator==(const FourWayMovement& fw1, const FourWayMovement& fw2) {
+    for(int i = 0; i < fw1.map_height; i++) {
+        for(int j = 0; j < fw1.map_width; j++) {
+            if(fw1.map[i][j] != fw2.map[i][j]) {
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 void FWM::GetOperators(FourWayMovement &fw, std::vector<STPSlideDir> &operators) {

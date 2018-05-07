@@ -30,11 +30,11 @@ void HashmapList::update_cost(const STPState &state, const STPState& state2) {
         STPSlideDir temp = state2.direction;
         stp.InvertOperator(temp);
         list.at(state).direction = temp;
-        list.at(state).parent_state = state2.parent_state;
+        list.at(state).parent_state = new STPState;
+        *list.at(state).parent_state = state2;
     }
 }
 
-// TODO fix this
 STPState HashmapList::remove_best() {
     STPState temp;
     int min_value = INT_MAX;

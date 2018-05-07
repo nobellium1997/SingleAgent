@@ -118,6 +118,12 @@
 		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.h">
 			<Option target="Project3"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapListMap.cpp">
+			<Option target="Project3"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapListMap.h">
+			<Option target="Project3"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h">
 			<Option target="Project3"/>
 		</Unit>

@@ -31,4 +31,4 @@ add_executable(Project3
         Timer.cpp
         Timer.h
         VectorList.cpp
-        VectorList.h MDFourway.cpp MDFourway.h AStar.cpp AStar.h)
+        VectorList.h MDFourway.cpp MDFourway.h AStar.cpp AStar.h HashmapListMap.cpp HashmapListMap.h)
