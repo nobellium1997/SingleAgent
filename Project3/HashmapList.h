@@ -37,7 +37,7 @@ public:
     // all same methods from vector list
     void add_element(const STPState& s);
     bool check_duplicates(const STPState& s);
-    void update_cost(const STPState& state, const int& gcost, const int& hcost, const int& fcost);
+    void update_cost(const STPState& state, const STPState& state2);
     STPState remove_best();
     std::unordered_map<STPState, STPState> list;
 };
