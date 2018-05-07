@@ -1,12 +1,13 @@
 //
-// Created by Nobel on 5/5/2018.
+// Created by nobel on 5/7/2018.
 //
 
-#include "InefficientAStar.h"
+#include "AStar.h"
+#include "HashmapList.h"
 
-void InefficientAStar::GetPath(STP& stp, STPState start, STPState &goal, Heuristic* h, std::vector<STPSlideDir>& path) {
-    VectorList open_list;
-    VectorList closed_list;
+void AStar::GetPath(STP &stp, STPState start, STPState &goal, Heuristic *h, std::vector<STPSlideDir> &path) {
+    HashmapList open_list;
+    HashmapList closed_list;
     std::vector<STPSlideDir> directions;
 
     start.gcost = 0;
@@ -60,7 +61,7 @@ void InefficientAStar::GetPath(STP& stp, STPState start, STPState &goal, Heurist
     }
 }
 
-STPSlideDir InefficientAStar::opposite_direction(const STPSlideDir &s) {
+STPSlideDir AStar::opposite_direction(const STPSlideDir &s) {
     switch(s) {
         case kUp:
             return kDown;

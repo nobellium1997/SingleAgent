@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.cpp">
+			<Option target="Project3"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.h">
+			<Option target="Project3"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.cpp">
 			<Option target="Project3"/>
 		</Unit>

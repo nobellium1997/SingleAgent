@@ -123,6 +123,33 @@ Project3/fast:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/build
 .PHONY : Project3/fast
 
+AStar.o: AStar.cpp.o
+
+.PHONY : AStar.o
+
+# target to build an object file
+AStar.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/AStar.cpp.o
+.PHONY : AStar.cpp.o
+
+AStar.i: AStar.cpp.i
+
+.PHONY : AStar.i
+
+# target to preprocess a source file
+AStar.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/AStar.cpp.i
+.PHONY : AStar.cpp.i
+
+AStar.s: AStar.cpp.s
+
+.PHONY : AStar.s
+
+# target to generate assembly for a file
+AStar.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/AStar.cpp.s
+.PHONY : AStar.cpp.s
+
 All_Heruistics.o: All_Heruistics.cpp.o
 
 .PHONY : All_Heruistics.o
@@ -510,6 +537,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Project3"
+	@echo "... AStar.o"
+	@echo "... AStar.i"
+	@echo "... AStar.s"
 	@echo "... All_Heruistics.o"
 	@echo "... All_Heruistics.i"
 	@echo "... All_Heruistics.s"

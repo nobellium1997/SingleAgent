@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.cpp
+AStar.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.h
+HashmapList.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.h
+
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.h
+STP.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+Heuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.cpp
 All_Heruistics.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.h
@@ -189,4 +201,6 @@ FourWayMovement.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
 HashmapList.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.h
+AStar.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.h
 

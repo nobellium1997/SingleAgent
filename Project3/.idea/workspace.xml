@@ -25,36 +25,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="HashmapList.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/HashmapList.h">
+          <file leaf-file-name="InefficientAStar.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/InefficientAStar.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#101#125#0" expanded="true" />
-                    <element signature="e#287#289#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="357">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FourWayMovement.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FourWayMovement.h">
+          <file leaf-file-name="InefficientAStar.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/InefficientAStar.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FourWayMovement.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FourWayMovement.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1445">
-                  <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#38#56#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="191">
+                  <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="24" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -62,30 +46,11 @@
           <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+                <state relative-caret-position="378">
+                  <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
                   <folding>
                     <element signature="e#28#47#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ManhattanDistance.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ManhattanDistance.cpp">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="ManhattanDistance.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ManhattanDistance.h">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="InefficientAStar.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/InefficientAStar.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="918">
-                  <caret line="54" column="58" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
@@ -94,16 +59,26 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ManhattanDistance.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ManhattanDistance.h">
-              <provider selected="true" editor-type-id="text-editor" />
+          <file leaf-file-name="AStar.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AStar.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#92#108#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
             </entry>
           </file>
-          <file leaf-file-name="HashmapList.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/HashmapList.cpp">
+          <file leaf-file-name="AStar.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/AStar.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="417">
-                  <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+                <state relative-caret-position="279">
+                  <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="25" selection-end-column="71" />
+                  <folding>
+                    <element signature="e#40#58#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -142,7 +117,6 @@
         <option value="$PROJECT_DIR$/STP.cpp" />
         <option value="$PROJECT_DIR$/STP.h" />
         <option value="$PROJECT_DIR$/VectorList.h" />
-        <option value="$PROJECT_DIR$/InefficientAStar.cpp" />
         <option value="$PROJECT_DIR$/HashmapList.h" />
         <option value="$PROJECT_DIR$/VectorList.cpp" />
         <option value="$PROJECT_DIR$/FourWayMovement.h" />
@@ -150,6 +124,9 @@
         <option value="$PROJECT_DIR$/FourWayMovement.cpp" />
         <option value="$PROJECT_DIR$/MDFourway.cpp" />
         <option value="$PROJECT_DIR$/HashmapList.cpp" />
+        <option value="$PROJECT_DIR$/AStar.h" />
+        <option value="$PROJECT_DIR$/AStar.cpp" />
+        <option value="$PROJECT_DIR$/InefficientAStar.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -182,11 +159,6 @@
             <path>
               <item name="Project3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project3" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,12 +228,13 @@
       <workItem from="1525645574133" duration="357000" />
       <workItem from="1525675655568" duration="5733000" />
       <workItem from="1525702355002" duration="269000" />
-      <workItem from="1525702628365" duration="1552000" />
+      <workItem from="1525702628365" duration="1624000" />
+      <workItem from="1525705123521" duration="1635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90687000" />
+    <option name="totallyTimeSpent" value="92394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -272,12 +245,12 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.31987247" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33049947" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33049947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3279743" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40170032" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32731137" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40170032" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -301,8 +274,13 @@
           <line>14</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>118</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -330,6 +308,13 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HashmapList.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/STP.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
@@ -494,9 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/All_Heruistics.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -525,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InefficientAStar.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/temp.map" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/temp.txt" />
     <entry file="file:///usr/include/c++/6/bits/unordered_map.h" />
@@ -550,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InefficientAStar.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="58" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VectorList.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -567,16 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManhattanDistance.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/MDFourway.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="e#100#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,12 +549,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManhattanDistance.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/FourWayMovement.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="289">
           <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
@@ -614,17 +573,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/STP.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HashmapList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
             <element signature="e#101#125#0" expanded="true" />
             <element signature="e#287#289#0" expanded="true" />
@@ -639,10 +591,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/STP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="e#92#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InefficientAStar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="25" selection-end-column="71" />
+          <folding>
+            <element signature="e#40#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InefficientAStar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="24" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+        <state relative-caret-position="378">
+          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
           </folding>
