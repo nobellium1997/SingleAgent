@@ -21,67 +21,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <splitter split-orientation="horizontal" split-proportion="0.5">
-            <split-first>
-              <leaf>
-                <file leaf-file-name="orz301d.map" pinned="false" current-in-tab="false">
-                  <entry file="file://$PROJECT_DIR$/cmake-build-debug/orz301d.map">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="810">
-                        <caret line="54" column="120" lean-forward="true" selection-end-line="184" />
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-                <file leaf-file-name="temp.txt" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/cmake-build-debug/temp.txt">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state>
-                        <caret column="59" lean-forward="true" selection-start-column="59" selection-end-column="59" />
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-first>
-            <split-second>
-              <leaf>
-                <file leaf-file-name="orz301d.map" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/cmake-build-debug/orz301d.map">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="60">
-                        <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-second>
-          </splitter>
-        </state>
-      </content>
-    </window>
     <window id="1">
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="STP.h" pinned="false" current-in-tab="false">
+            <file leaf-file-name="STP.h" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/STP.h">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="255">
-                    <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+                  <state relative-caret-position="655">
+                    <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="67" selection-end-column="19" />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="STP.cpp" pinned="false" current-in-tab="true">
+            <file leaf-file-name="STP.cpp" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/STP.cpp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-1425">
-                    <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                  <state relative-caret-position="517">
+                    <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
                   </state>
                 </provider>
               </entry>
@@ -96,11 +53,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="FourWayMovement.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="FourWayMovement.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/FourWayMovement.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="124" column="42" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
+                <state>
+                  <caret column="2" selection-start-column="2" selection-end-column="2" />
                   <folding>
                     <element signature="e#38#56#0" expanded="true" />
                   </folding>
@@ -108,13 +65,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="HashmapList.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/HashmapList.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                  <folding>
+                    <element signature="e#101#125#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="751" column="12" selection-start-line="751" selection-start-column="12" selection-end-line="751" selection-end-column="12" />
+                <state relative-caret-position="433">
+                  <caret line="780" column="29" selection-start-line="780" selection-start-column="29" selection-end-line="780" selection-end-column="29" />
                   <folding>
                     <element signature="e#28#47#0" expanded="true" />
+                    <element signature="e#349#351#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -123,12 +93,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="FourWayMovement.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/FourWayMovement.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+                <state relative-caret-position="327">
+                  <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
                 </state>
               </provider>
             </entry>
@@ -161,17 +131,17 @@
         <option value="$PROJECT_DIR$/VectorList.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/HashmapList.cpp" />
-        <option value="$PROJECT_DIR$/HashmapList.h" />
         <option value="$PROJECT_DIR$/InefficientAStar.h" />
-        <option value="$PROJECT_DIR$/STP.cpp" />
         <option value="$PROJECT_DIR$/InefficientAStar.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/temp.map" />
-        <option value="$PROJECT_DIR$/STP.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/temp.txt" />
         <option value="$PROJECT_DIR$/cmake-build-debug/orz301d.map" />
-        <option value="$PROJECT_DIR$/FourWayMovement.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/FourWayMovement.cpp" />
+        <option value="$PROJECT_DIR$/STP.cpp" />
+        <option value="$PROJECT_DIR$/FourWayMovement.h" />
+        <option value="$PROJECT_DIR$/STP.h" />
+        <option value="$PROJECT_DIR$/HashmapList.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -186,16 +156,16 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,7 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,11 +239,12 @@
       <workItem from="1525633600888" duration="1818000" />
       <workItem from="1525636533021" duration="8624000" />
       <workItem from="1525645574133" duration="357000" />
+      <workItem from="1525675655568" duration="2470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83069000" />
+    <option name="totallyTimeSpent" value="85603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1040" extended-state="6" />
@@ -282,32 +252,22 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15677084" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32047158" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32047158" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33226153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33156216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32912722" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32837406" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40192926" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40170032" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15677084" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32837406" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40170032" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33156216" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +286,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>147</line>
+          <line>170</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
@@ -358,6 +318,24 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11265">
+          <caret line="751" column="12" selection-start-line="751" selection-start-column="12" selection-end-line="751" selection-end-column="12" />
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+            <element signature="e#349#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FourWayMovement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PDB.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -385,6 +363,7 @@
           <caret line="91" column="32" lean-forward="true" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
+            <element signature="e#349#351#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -423,6 +402,7 @@
           <caret line="100" column="23" lean-forward="true" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
+            <element signature="e#349#351#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -536,19 +516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/6/bits/hashtable_policy.h" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/6/bits/unordered_map.h" />
-    <entry file="file://$PROJECT_DIR$/HashmapList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -618,44 +589,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManhattanDistance.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/temp.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="120" lean-forward="true" selection-start-line="18" selection-start-column="120" selection-end-line="18" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orz301d.map">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/STP.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FourWayMovement.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/STP.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1425">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/temp.map" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/orz301d.map">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="120" lean-forward="true" selection-end-line="184" />
+        <state relative-caret-position="60">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -666,22 +604,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file:///usr/include/c++/6/bits/unordered_map.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="751" column="12" selection-start-line="751" selection-start-column="12" selection-end-line="751" selection-end-column="12" />
-          <folding>
-            <element signature="e#28#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="202">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/STP.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FourWayMovement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/STP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="67" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/6/bits/hashtable_policy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="752" column="47" selection-start-line="752" selection-start-column="47" selection-end-line="752" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FourWayMovement.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="124" column="42" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
           <folding>
             <element signature="e#38#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashmapList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#101#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="780" column="29" selection-start-line="780" selection-start-column="29" selection-end-line="780" selection-end-column="29" />
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+            <element signature="e#349#351#0" expanded="true" />
           </folding>
         </state>
       </provider>

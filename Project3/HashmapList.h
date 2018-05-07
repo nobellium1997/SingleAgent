@@ -1,24 +1,45 @@
-////
-//// Created by nobel on 5/5/18.
-////
 //
-//#ifndef PROJECT3_HASHMAPLIST_H
-//#define PROJECT3_HASHMAPLIST_H
+// Created by nobel on 5/5/18.
 //
-//#include <unordered_map>
-//#include "STP.h"
+
+#ifndef PROJECT3_HASHMAPLIST_H
+#define PROJECT3_HASHMAPLIST_H
+
+#include <unordered_map>
+#include "STP.h"
+
+
+//namespace std {
+//    template<> struct hash<STPState> {
+//        std::size_t operator()(STPState const& s) const noexcept {
+//            std::vector<std::size_t> vec;
 //
-//class HashmapList {
-//public:
-//    HashmapList();
+//            for(int y = 0; y < kMaxHeight; y++) {
+//                for(int x = 0; x < kMaxWidth; x++) {
+//                    vec.push_back(std::hash<int>{}(s.tiles[x][y]));
+//                }
+//            }
 //
-//    // all same methods from vector list
-//    void add_element(const STPState& s);
-//    bool check_duplicates(const STPState& s);
-//    void update_cost(const STPState& state, const int& gcost, const int& hcost, const int& fcost);
-//    STPState remove_best();
-//    std::unordered_map<STPState, STPState> list;
-//};
-//
-//
-//#endif //PROJECT3_HASHMAPLIST_H
+//            std::size_t ret = vec[0];
+//            for(int i = 1; i < vec.size(); i++) {
+//                ret ^= (vec[i] << i);
+//            }
+//            return ret;
+//        }
+//    };
+//}
+
+class HashmapList {
+public:
+    HashmapList();
+
+    // all same methods from vector list
+    void add_element(const STPState& s);
+    bool check_duplicates(const STPState& s);
+    void update_cost(const STPState& state, const int& gcost, const int& hcost, const int& fcost);
+    STPState remove_best();
+    std::unordered_map<STPState, STPState> list;
+};
+
+
+#endif //PROJECT3_HASHMAPLIST_H
