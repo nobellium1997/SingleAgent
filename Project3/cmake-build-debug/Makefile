@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /home/nobel/Downloads/clion-2018.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /home/nobel/Downloads/clion-2018.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3
+CMAKE_SOURCE_DIR = /home/nobel/Documents/SingleAgent/Project3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nobel/Documents/SingleAgent/Project3/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/nobel/Downloads/clion-2018.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/nobel/Downloads/clion-2018.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles /home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,33 @@ DFID.s: DFID.cpp.s
 DFID.cpp.s:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/DFID.cpp.s
 .PHONY : DFID.cpp.s
+
+FourWayMovement.o: FourWayMovement.cpp.o
+
+.PHONY : FourWayMovement.o
+
+# target to build an object file
+FourWayMovement.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/FourWayMovement.cpp.o
+.PHONY : FourWayMovement.cpp.o
+
+FourWayMovement.i: FourWayMovement.cpp.i
+
+.PHONY : FourWayMovement.i
+
+# target to preprocess a source file
+FourWayMovement.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/FourWayMovement.cpp.i
+.PHONY : FourWayMovement.cpp.i
+
+FourWayMovement.s: FourWayMovement.cpp.s
+
+.PHONY : FourWayMovement.s
+
+# target to generate assembly for a file
+FourWayMovement.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/FourWayMovement.cpp.s
+.PHONY : FourWayMovement.cpp.s
 
 HashmapList.o: HashmapList.cpp.o
 
@@ -453,8 +480,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... Project3"
 	@echo "... All_Heruistics.o"
 	@echo "... All_Heruistics.i"
@@ -465,6 +492,9 @@ help:
 	@echo "... DFID.o"
 	@echo "... DFID.i"
 	@echo "... DFID.s"
+	@echo "... FourWayMovement.o"
+	@echo "... FourWayMovement.i"
+	@echo "... FourWayMovement.s"
 	@echo "... HashmapList.o"
 	@echo "... HashmapList.i"
 	@echo "... HashmapList.s"

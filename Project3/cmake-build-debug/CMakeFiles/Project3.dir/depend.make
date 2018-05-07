@@ -16,6 +16,10 @@ CMakeFiles/Project3.dir/DFID.cpp.o: ../DFID.cpp
 CMakeFiles/Project3.dir/DFID.cpp.o: ../DFID.h
 CMakeFiles/Project3.dir/DFID.cpp.o: ../STP.h
 
+CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../FourWayMovement.cpp
+CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../FourWayMovement.h
+CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../STP.h
+
 CMakeFiles/Project3.dir/HashmapList.cpp.o: ../HashmapList.cpp
 
 CMakeFiles/Project3.dir/IDA.cpp.o: ../Heuristic.h
@@ -52,6 +56,7 @@ CMakeFiles/Project3.dir/VectorList.cpp.o: ../VectorList.h
 CMakeFiles/Project3.dir/main.cpp.o: ../All_Heruistics.h
 CMakeFiles/Project3.dir/main.cpp.o: ../BFS.h
 CMakeFiles/Project3.dir/main.cpp.o: ../DFID.h
+CMakeFiles/Project3.dir/main.cpp.o: ../FourWayMovement.h
 CMakeFiles/Project3.dir/main.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/main.cpp.o: ../IDA.h
 CMakeFiles/Project3.dir/main.cpp.o: ../InefficientAStar.h

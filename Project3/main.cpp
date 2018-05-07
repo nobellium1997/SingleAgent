@@ -14,6 +14,7 @@
 #include "All_Heruistics.h"
 #include "VectorList.h"
 #include "InefficientAStar.h"
+#include "FourWayMovement.h"
 
 void GenerateInstance(int walkDepth)
 {
@@ -103,54 +104,56 @@ int main(int argc, const char * argv[]) {
 //
 //    std::cout << " PDB DONE " << std:: endl;
 
-    Timer t;
-	STPState goal;
-	std::vector<STPSlideDir> sol;
-
-	STPState state;
-	state.tiles[0][0] = 3;
-	state.tiles[1][0] = 1;
-	state.tiles[2][0] = 2;
-
-	state.tiles[0][1] = 6;
-	state.tiles[1][1] = 4;
-	state.tiles[2][1] = 5;
-
-	state.tiles[0][2] = 7;
-	state.tiles[1][2] = 8;
-	state.tiles[2][2] = 0;
-
-	state.tiles[0][3] = 9;
-	state.tiles[1][3] = 10;
-	state.tiles[2][3] = 11;
-
-	state.tiles[0][4] = 12;
-	state.tiles[1][4] = 13;
-	state.tiles[2][4] = 14;
-
-	state.blankx = 2;
-	state.blanky = 2;
-
-//	IDA ida;
-    InefficientAStar a;
-	STP stp;
-
-    std::cout << state << std::endl;
-
-//    All_Heruistics ah(pdb1, pdb2);
-    ManhattanDistance m;
-    t.StartTimer();
-    std::vector<STPSlideDir> path;
-	a.GetPath(stp, state, goal, &m, path);
-	t.EndTimer();
-	for(int i = 0; i < path.size(); i++) {
-		std::cout << path[i] << " ";
-	}
-	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << "Time is " << t.GetElapsedTime() << " seconds " << std::endl;
-	std::cout << std::endl;
+//    Timer t;
+//	STPState goal;
+//	std::vector<STPSlideDir> sol;
 //
+//	STPState state;
+//	state.tiles[0][0] = 3;
+//	state.tiles[1][0] = 1;
+//	state.tiles[2][0] = 2;
+//
+//	state.tiles[0][1] = 6;
+//	state.tiles[1][1] = 4;
+//	state.tiles[2][1] = 5;
+//
+//	state.tiles[0][2] = 7;
+//	state.tiles[1][2] = 8;
+//	state.tiles[2][2] = 0;
+//
+//	state.tiles[0][3] = 9;
+//	state.tiles[1][3] = 10;
+//	state.tiles[2][3] = 11;
+//
+//	state.tiles[0][4] = 12;
+//	state.tiles[1][4] = 13;
+//	state.tiles[2][4] = 14;
+//
+//	state.blankx = 2;
+//	state.blanky = 2;
+//
+////	IDA ida;
+//    InefficientAStar a;
+//	STP stp;
+//
+//    std::cout << state << std::endl;
+//
+////    All_Heruistics ah(pdb1, pdb2);
+//    ManhattanDistance m;
+//    t.StartTimer();
+//    std::vector<STPSlideDir> path;
+//	a.GetPath(stp, state, goal, &m, path);
+//	t.EndTimer();
+//	for(int i = 0; i < path.size(); i++) {
+//		std::cout << path[i] << " ";
+//	}
+//	std::cout << std::endl;
+//	std::cout << std::endl;
+//	std::cout << "Time is " << t.GetElapsedTime() << " seconds " << std::endl;
+//	std::cout << std::endl;
+
+
+
 //    state.tiles[0][0] = 3;
 //    state.tiles[1][0] = 4;
 //    state.tiles[2][0] = 1;
@@ -185,41 +188,46 @@ int main(int argc, const char * argv[]) {
 //    std::cout << "Total time is " << t.GetElapsedTime() << " seconds " << std::endl;
 //    std::cout << std::endl;
 //
-    state.tiles[0][0] = 3;
-    state.tiles[1][0] = 4;
-    state.tiles[2][0] = 1;
 
-    state.tiles[0][1] = 6;
-    state.tiles[1][1] = 8;
-    state.tiles[2][1] = 2;
 
-    state.tiles[0][2] = 9;
-    state.tiles[1][2] = 7;
-    state.tiles[2][2] = 5;
 
-    state.tiles[0][3] = 10;
-    state.tiles[1][3] = 13;
-    state.tiles[2][3] = 11;
+//    state.tiles[0][0] = 3;
+//    state.tiles[1][0] = 4;
+//    state.tiles[2][0] = 1;
+//
+//    state.tiles[0][1] = 6;
+//    state.tiles[1][1] = 8;
+//    state.tiles[2][1] = 2;
+//
+//    state.tiles[0][2] = 9;
+//    state.tiles[1][2] = 7;
+//    state.tiles[2][2] = 5;
+//
+//    state.tiles[0][3] = 10;
+//    state.tiles[1][3] = 13;
+//    state.tiles[2][3] = 11;
+//
+//    state.tiles[0][4] = 12;
+//    state.tiles[1][4] = 14;
+//    state.tiles[2][4] = 0;
+//
+//    state.blankx = 2;
+//    state.blanky = 4;
+//
+//    std::cout << state << std::endl;
+//    t.StartTimer();
+//    path.clear();
+//    a.GetPath(stp, state, goal, &m, path);
+//    t.EndTimer();
+//    for(int i = 0; i < path.size(); i++) {
+//        std::cout << path[i] << " ";
+//    }
+//    std::cout << std::endl;
+//    std::cout << std::endl;
+//    std::cout << "Time is " << t.GetElapsedTime() << " seconds " << std::endl;
+//    std::cout << std::endl;
 
-    state.tiles[0][4] = 12;
-    state.tiles[1][4] = 14;
-    state.tiles[2][4] = 0;
 
-    state.blankx = 2;
-    state.blanky = 4;
-
-    std::cout << state << std::endl;
-    t.StartTimer();
-    path.clear();
-    a.GetPath(stp, state, goal, &m, path);
-    t.EndTimer();
-    for(int i = 0; i < path.size(); i++) {
-        std::cout << path[i] << " ";
-    }
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << "Time is " << t.GetElapsedTime() << " seconds " << std::endl;
-    std::cout << std::endl;
 
 //    state.tiles[0][0] = 0;
 //    state.tiles[1][0] = 3;
@@ -733,6 +741,16 @@ int main(int argc, const char * argv[]) {
 //    std::cout << "Total time is " << t.GetElapsedTime() << " seconds " << std::endl;
 //    std::cout << std::endl;
 
+	FourWayMovement fw("orz301d.map");
+//	FWM fwm;
+//	std::vector<FourWayMovement> vec;
+//	fwm.GetSuccessors(fw, vec);
+//
+//	for(int i = 0; i < vec.size(); i++) {
+//		std::cout << vec[i] << std::endl;
+//	}
+	FWM fwm;
+	std::cout << fw;
 
 	return 0;
 }
