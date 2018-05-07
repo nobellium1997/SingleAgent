@@ -24,7 +24,7 @@ bool HashmapList::check_duplicates(const STPState &s) {
 
 void HashmapList::update_cost(const STPState &state, const STPState& state2) {
     STP stp;
-    if(list.at(state).gcost < state2.gcost + 1) {
+    if(list.at(state).gcost > state2.gcost + 1) {
         list.at(state).gcost = state2.gcost + 1;
         list.at(state).fcost = list.at(state).gcost + list.at(state).hcost;
         STPSlideDir temp = state2.direction;
@@ -41,6 +41,9 @@ STPState HashmapList::remove_best() {
     for(auto it = list.begin(); it != list.end(); it++) {
         if(it->second.fcost < min_value) {
             min_value = it->second.fcost;
+            temp = it->second;
         }
     }
+    list.erase(temp);
+    return temp;
 }

@@ -82,6 +82,9 @@ FourWayMovement& FourWayMovement::operator=(const FourWayMovement& fw) {
     this->posX = fw.posX;
     this->posY = fw.posY;
 
+    this->goalX = fw.goalX;
+    this->goalY = fw.goalY;
+
     this->direction= fw.direction;
     this->parent_state = fw.parent_state;
 

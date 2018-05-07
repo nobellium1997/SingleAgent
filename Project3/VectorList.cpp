@@ -32,7 +32,8 @@ void VectorList::update_cost(const STPState& state, const STPState& state2) {
                 STPSlideDir temp = state2.direction;
                 stp.InvertOperator(temp);
                 list[i].direction = temp;
-                list[i].parent_state = state2.parent_state;
+                list[i].parent_state = new STPState;
+                *list[i].parent_state = state2;
             }
             break;
         }

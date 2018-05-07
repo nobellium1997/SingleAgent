@@ -15,6 +15,7 @@ public:
     FourWayMovement& operator=(const FourWayMovement& fw);
     int** map;
     int posX, posY;
+    int goalX, goalY;
     int map_width, map_height;
     int gcost, hcost, fcost;
     STPSlideDir direction;
