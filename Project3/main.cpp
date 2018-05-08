@@ -74,11 +74,11 @@ int main(int argc, const char * argv[]) {
 
     // first test case for map
     FourWayMovement fw("orz301d.map");
-    fw.posX = start_points.at(20).first;
-    fw.posY = start_points.at(20).second;
+    fw.posX = start_points.at(0).first;
+    fw.posY = start_points.at(0).second;
 
-    fw.goalX = end_points.at(20).first;
-    fw.goalY = end_points.at(20).second;
+    fw.goalX = end_points.at(0).first;
+    fw.goalY = end_points.at(0).second;
 
     AStarMap a;
     FWM fwm;

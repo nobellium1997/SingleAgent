@@ -46,6 +46,8 @@ fourway_struct VectorListMap::remove_best() {
         if(list.at(i).fcost < min_value) {
             min_value = list.at(i).fcost;
             index = i;
+        } else if (list.at(i).fcost == min_value && list.at(i).hcost < list.at(i-1).hcost) {
+            index = i;
         }
     }
     fourway_struct temp = list.at(index);
