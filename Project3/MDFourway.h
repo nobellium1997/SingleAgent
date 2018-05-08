@@ -9,7 +9,7 @@
 #include "Heuristic.h"
 #include "FourWayMovement.h"
 
-class MDFourway : public Heuristic {
+class MDFourway {
 public:
     int h(const FourWayMovement &start);
 };

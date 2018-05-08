@@ -92,6 +92,12 @@
 		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/AStar.h">
 			<Option target="Project3"/>
 		</Unit>
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/AStarMap.cpp">
+			<Option target="Project3"/>
+		</Unit>
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/AStarMap.h">
+			<Option target="Project3"/>
+		</Unit>
 		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/All_Heruistics.cpp">
 			<Option target="Project3"/>
 		</Unit>
@@ -108,6 +114,12 @@
 			<Option target="Project3"/>
 		</Unit>
 		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/DFID.h">
+			<Option target="Project3"/>
+		</Unit>
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/EfficientDataStructure.cpp">
+			<Option target="Project3"/>
+		</Unit>
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/EfficientDataStructure.h">
 			<Option target="Project3"/>
 		</Unit>
 		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.cpp">
@@ -177,6 +189,12 @@
 			<Option target="Project3"/>
 		</Unit>
 		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/VectorList.h">
+			<Option target="Project3"/>
+		</Unit>
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/VectorListMap.cpp">
+			<Option target="Project3"/>
+		</Unit>
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/VectorListMap.h">
 			<Option target="Project3"/>
 		</Unit>
 		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/main.cpp">

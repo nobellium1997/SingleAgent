@@ -5,6 +5,9 @@
 
 #include <iostream>
 #include <unordered_map>
+#include <deque>
+#include <queue>
+#include <sstream>
 #include "STP.h"
 #include "Timer.h"
 #include "DFID.h"
@@ -16,73 +19,58 @@
 #include "VectorList.h"
 #include "InefficientAStar.h"
 #include "FourWayMovement.h"
-#include "HashmapList.h"
-#include "AStar.h"
 #include "HashmapListMap.h"
-
-void GenerateInstance(int walkDepth)
-{
-	STPState start, goal;
-	STP stp;
-	IDA ida;
-	ManhattanDistance md;
-	DoRandomWalkOperators(stp, start, walkDepth);
-	Timer t;
-	std::vector<STPSlideDir> path;
-
-	std::cout << start << "\n";
-
-	printf("Starting IDA (MD):\n");
-	t.StartTimer();
-	ida.GetPath(stp, start, goal, &md, path);
-	t.EndTimer();
-	printf("%1.2fs elapsed\n", t.GetElapsedTime());
-
-	for (auto i : path)
-		std::cout << i << " ";
-	std::cout << "\n";
-}
-
-void Analyze(int walkDepth)
-{
-	STPState start, goal;
-	STP stp;
-	Timer t;
-	DFID dfid;
-	BFS bfs;
-	IDA ida;
-	ManhattanDistance md;
-	std::vector<STPSlideDir> path;
-
-	printf("<--- Starting new problem with random walk depth %d --->\n", walkDepth);
-	DoRandomWalkOperators(stp, start, walkDepth);
-	std::cout << "Initial state:\n";
-	std::cout << start;
-
-	printf("Starting DFID:\n");
-	t.StartTimer();
-	dfid.GetPath(stp, start, goal);
-	t.EndTimer();
-	printf("%1.2fs elapsed\n", t.GetElapsedTime());
-
-	printf("Starting BFS:\n");
-	t.StartTimer();
-	bfs.GetPath(stp, start, goal);
-	t.EndTimer();
-	printf("%1.2fs elapsed\n", t.GetElapsedTime());
-
-	printf("Starting IDA (MD):\n");
-	t.StartTimer();
-	ida.GetPath(stp, start, goal, &md, path);
-	t.EndTimer();
-	printf("%1.2fs elapsed\n", t.GetElapsedTime());
-
-	for (auto i : path)
-		std::cout << i << " ";
-	std::cout << "\n";
-}
+#include "AStarMap.h"
 
 int main(int argc, const char * argv[]) {
+    std::ifstream file;
+    std::string file_name = "orz301d.map.scen";
+    file.open(file_name);
+
+    // retrieving start and goal coordinates
+    std::vector<std::pair<int, int>> start_points;
+    std::vector<std::pair<int, int>> end_points;
+
+    std::string line;
+    if(file.is_open()) {
+        int counter = 0;
+        while(std::getline(file, line)) {
+            if(counter == 0) {
+                counter++;
+                continue;
+            }
+            std::pair<int, int> coords;
+            std::istringstream stream(line);
+            std::string temp;
+            for (int i = 0; i < 4; i++) {
+                stream >> temp;
+            }
+            stream >> temp;
+            coords.first = std::stoi(temp, nullptr, 10);
+            stream >> temp;
+            coords.second = std::stoi(temp, nullptr, 10);
+            start_points.push_back(coords);
+
+            stream >> temp;
+            coords.first = std::stoi(temp, nullptr, 10);
+            stream >> temp;
+            coords.second = std::stoi(temp, nullptr, 10);
+            end_points.push_back(coords);
+        }
+    }
+
+    // first test case for map
+    FourWayMovement fw("orz301d.map");
+    fw.posX = start_points.at(20).first;
+    fw.posY = start_points.at(20).second;
+
+    fw.goalX = end_points.at(20).first;
+    fw.goalY = end_points.at(20).second;
+
+    AStarMap a;
+    FWM fwm;
+    MDFourway md;
+    a.GetPath(fwm, fw, md);
 
 
     return 0;

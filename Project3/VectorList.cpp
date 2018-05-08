@@ -41,7 +41,6 @@ void VectorList::update_cost(const state_struct& state, const state_struct& stat
 
 }
 
-// TODO fix tie break so that it goes to lower h cost
 state_struct VectorList::remove_best() {
     state_struct temp;
     int index = 0;
@@ -50,9 +49,14 @@ state_struct VectorList::remove_best() {
         if(list[i].fcost < min_value) {
             min_value = list[i].fcost;
             index = i;
+            temp = list[i];
+        } else if(list[i].fcost == min_value) {
+            if(list[i].hcost < temp.hcost) {
+                temp = list[i];
+                index = i;
+            }
         }
     }
-    temp = list[index];
     list.erase(list.begin() + index);
     return temp;
 }

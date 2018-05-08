@@ -51,10 +51,6 @@ FourWayMovement::FourWayMovement(std::string file_name) {
             for(int i = 0; i < command.length(); i++) {
                 if(command.at(i) == '.') {
                     map[row_counter][i] = 1;
-                } else if(command.at(i) == 'P') {
-                    map[row_counter][i] = 2;
-                    posX = i;
-                    posY = row_counter;
                 } else {
                     map[row_counter][i] = 0;
                 }
@@ -70,12 +66,12 @@ FourWayMovement::FourWayMovement(std::string file_name) {
     file.close();
 }
 
-FourWayMovement::~FourWayMovement() {
-//    for(int i = 0; i < this->map_width; i++) {
-//        delete[] map[i];
-//    }
-//    delete[] map;
-}
+//FourWayMovement::~FourWayMovement() {
+////    for(int i = 0; i < this->map_width; i++) {
+////        delete[] map[i];
+////    }
+////    delete[] map;
+//}
 
 FourWayMovement& FourWayMovement::operator=(const FourWayMovement& fw) {
     for(int i = 0; i < this->map_width; i++) {
@@ -84,9 +80,9 @@ FourWayMovement& FourWayMovement::operator=(const FourWayMovement& fw) {
         }
     }
 
-    this->fcost = fw.fcost;
-    this->gcost = fw.gcost;
-    this->hcost = fw.hcost;
+//    this->fcost = fw.fcost;
+//    this->gcost = fw.gcost;
+//    this->hcost = fw.hcost;
 
     this->posX = fw.posX;
     this->posY = fw.posY;
@@ -94,8 +90,8 @@ FourWayMovement& FourWayMovement::operator=(const FourWayMovement& fw) {
     this->goalX = fw.goalX;
     this->goalY = fw.goalY;
 
-    this->direction= fw.direction;
-    this->parent_state = fw.parent_state;
+//    this->direction= fw.direction;
+//    this->parent_state = fw.parent_state;
 
     return *this;
 }
@@ -111,14 +107,18 @@ std::ostream& operator<<(std::ostream& out, const FourWayMovement& fw) {
 }
 
 bool operator==(const FourWayMovement& fw1, const FourWayMovement& fw2) {
-    for(int i = 0; i < fw1.map_height; i++) {
-        for(int j = 0; j < fw1.map_width; j++) {
-            if(fw1.map[i][j] != fw2.map[i][j]) {
-                return false;
-            }
-        }
+//    for(int i = 0; i < fw1.map_height; i++) {
+//        for(int j = 0; j < fw1.map_width; j++) {
+//            if(fw1.map[i][j] != fw2.map[i][j]) {
+//                return false;
+//            }
+//        }
+//    }
+
+    if(fw1.posX == fw2.posX && fw1.posY == fw2.posY) {
+        return true;
     }
-    return true;
+    return false;
 }
 
 void FWM::GetOperators(FourWayMovement &fw, std::vector<STPSlideDir> &operators) {

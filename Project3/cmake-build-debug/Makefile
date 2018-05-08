@@ -150,6 +150,33 @@ AStar.cpp.s:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/AStar.cpp.s
 .PHONY : AStar.cpp.s
 
+AStarMap.o: AStarMap.cpp.o
+
+.PHONY : AStarMap.o
+
+# target to build an object file
+AStarMap.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/AStarMap.cpp.o
+.PHONY : AStarMap.cpp.o
+
+AStarMap.i: AStarMap.cpp.i
+
+.PHONY : AStarMap.i
+
+# target to preprocess a source file
+AStarMap.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/AStarMap.cpp.i
+.PHONY : AStarMap.cpp.i
+
+AStarMap.s: AStarMap.cpp.s
+
+.PHONY : AStarMap.s
+
+# target to generate assembly for a file
+AStarMap.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/AStarMap.cpp.s
+.PHONY : AStarMap.cpp.s
+
 All_Heruistics.o: All_Heruistics.cpp.o
 
 .PHONY : All_Heruistics.o
@@ -230,6 +257,33 @@ DFID.s: DFID.cpp.s
 DFID.cpp.s:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/DFID.cpp.s
 .PHONY : DFID.cpp.s
+
+EfficientDataStructure.o: EfficientDataStructure.cpp.o
+
+.PHONY : EfficientDataStructure.o
+
+# target to build an object file
+EfficientDataStructure.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/EfficientDataStructure.cpp.o
+.PHONY : EfficientDataStructure.cpp.o
+
+EfficientDataStructure.i: EfficientDataStructure.cpp.i
+
+.PHONY : EfficientDataStructure.i
+
+# target to preprocess a source file
+EfficientDataStructure.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/EfficientDataStructure.cpp.i
+.PHONY : EfficientDataStructure.cpp.i
+
+EfficientDataStructure.s: EfficientDataStructure.cpp.s
+
+.PHONY : EfficientDataStructure.s
+
+# target to generate assembly for a file
+EfficientDataStructure.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/EfficientDataStructure.cpp.s
+.PHONY : EfficientDataStructure.cpp.s
 
 FourWayMovement.o: FourWayMovement.cpp.o
 
@@ -528,6 +582,33 @@ VectorList.cpp.s:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/VectorList.cpp.s
 .PHONY : VectorList.cpp.s
 
+VectorListMap.o: VectorListMap.cpp.o
+
+.PHONY : VectorListMap.o
+
+# target to build an object file
+VectorListMap.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/VectorListMap.cpp.o
+.PHONY : VectorListMap.cpp.o
+
+VectorListMap.i: VectorListMap.cpp.i
+
+.PHONY : VectorListMap.i
+
+# target to preprocess a source file
+VectorListMap.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/VectorListMap.cpp.i
+.PHONY : VectorListMap.cpp.i
+
+VectorListMap.s: VectorListMap.cpp.s
+
+.PHONY : VectorListMap.s
+
+# target to generate assembly for a file
+VectorListMap.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/VectorListMap.cpp.s
+.PHONY : VectorListMap.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -567,6 +648,9 @@ help:
 	@echo "... AStar.o"
 	@echo "... AStar.i"
 	@echo "... AStar.s"
+	@echo "... AStarMap.o"
+	@echo "... AStarMap.i"
+	@echo "... AStarMap.s"
 	@echo "... All_Heruistics.o"
 	@echo "... All_Heruistics.i"
 	@echo "... All_Heruistics.s"
@@ -576,6 +660,9 @@ help:
 	@echo "... DFID.o"
 	@echo "... DFID.i"
 	@echo "... DFID.s"
+	@echo "... EfficientDataStructure.o"
+	@echo "... EfficientDataStructure.i"
+	@echo "... EfficientDataStructure.s"
 	@echo "... FourWayMovement.o"
 	@echo "... FourWayMovement.i"
 	@echo "... FourWayMovement.s"
@@ -609,6 +696,9 @@ help:
 	@echo "... VectorList.o"
 	@echo "... VectorList.i"
 	@echo "... VectorList.s"
+	@echo "... VectorListMap.o"
+	@echo "... VectorListMap.i"
+	@echo "... VectorListMap.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

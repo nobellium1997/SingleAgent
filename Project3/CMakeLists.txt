@@ -8,14 +8,16 @@ include_directories(.)
 add_executable(Project3
         All_Heruistics.cpp
         All_Heruistics.h
+        AStar.cpp
+        AStar.h
+        HashmapList.cpp
+        HashmapList.h
         BFS.cpp
         BFS.h
         DFID.cpp
         DFID.h
         FourWayMovement.cpp
         FourWayMovement.h
-        HashmapList.cpp
-        HashmapList.h
         Heuristic.h
         IDA.cpp
         IDA.h
@@ -31,4 +33,4 @@ add_executable(Project3
         Timer.cpp
         Timer.h
         VectorList.cpp
-        VectorList.h MDFourway.cpp MDFourway.h AStar.cpp AStar.h HashmapListMap.cpp HashmapListMap.h)
+        VectorList.h MDFourway.cpp MDFourway.h HashmapListMap.cpp HashmapListMap.h EfficientDataStructure.cpp EfficientDataStructure.h VectorListMap.cpp VectorListMap.h AStarMap.cpp AStarMap.h)
