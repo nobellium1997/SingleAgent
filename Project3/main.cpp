@@ -83,32 +83,7 @@ void Analyze(int walkDepth)
 }
 
 int main(int argc, const char * argv[]) {
-//     pattern 1 generation
-//    std::vector<uint8_t> ptrn1;
-//    for(int i = 0; i < 6; i++) {
-//        ptrn1.push_back(i);
-//    }
-//    PDB pdb1(ptrn1);
-//    pdb1.distribution();
-//    std::cout << std::endl;
 
-	// pattern 2 generation
-//    std::vector<uint8_t> ptrn2;
-//    ptrn2.push_back(0);
-//    for(int i = 0; i < 6; i++) {
-//        ptrn2.push_back(9+i);
-//    }
-//    PDB pdb2(ptrn2);
-//    pdb2.distribution();
-//    std::cout << std::endl;
-	FourWayMovement fw("orz301d.map");
-	std::cout << fw;
-	HashmapListMap list;
-	fw.gcost = 13;
-	list.add_element(fw);
-	FourWayMovement fw2("orz301d.map");
-	fw2.gcost = 3;
-	list.update_cost(fw, fw2);
-	std::cout << list.list.at(fw).gcost;
-	return 0;
+
+    return 0;
 }

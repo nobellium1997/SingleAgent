@@ -16,8 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project3.dir/AStar.cpp.o"
   "CMakeFiles/Project3.dir/HashmapListMap.cpp.o"
   "Project3.pdb"
-  "Project3.exe"
-  "libProject3.dll.a"
+  "Project3"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,155 +6,155 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.cpp
+/home/nobel/Documents/SingleAgent/Project3/AStar.cpp
 AStar.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.h
+/home/nobel/Documents/SingleAgent/Project3/AStar.h
 HashmapList.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.h
+/home/nobel/Documents/SingleAgent/Project3/HashmapList.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.h
+/home/nobel/Documents/SingleAgent/Project3/AStar.h
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.cpp
+/home/nobel/Documents/SingleAgent/Project3/All_Heruistics.cpp
 All_Heruistics.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.h
+/home/nobel/Documents/SingleAgent/Project3/All_Heruistics.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.h
+/home/nobel/Documents/SingleAgent/Project3/All_Heruistics.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 ManhattanDistance.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+/home/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
 PDB.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+/home/nobel/Documents/SingleAgent/Project3/PDB.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.cpp
+/home/nobel/Documents/SingleAgent/Project3/BFS.cpp
 deque
 -
 BFS.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.h
+/home/nobel/Documents/SingleAgent/Project3/BFS.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.h
+/home/nobel/Documents/SingleAgent/Project3/BFS.h
 stdio.h
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.cpp
+/home/nobel/Documents/SingleAgent/Project3/DFID.cpp
 DFID.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.h
+/home/nobel/Documents/SingleAgent/Project3/DFID.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.h
+/home/nobel/Documents/SingleAgent/Project3/DFID.h
 stdio.h
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.cpp
+/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.cpp
 fstream
 -
 sstream
 -
 FourWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
+/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
+/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.cpp
+/home/nobel/Documents/SingleAgent/Project3/HashmapList.cpp
 climits
 -
 HashmapList.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.h
+/home/nobel/Documents/SingleAgent/Project3/HashmapList.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.h
+/home/nobel/Documents/SingleAgent/Project3/HashmapList.h
 unordered_map
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapListMap.cpp
+/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.cpp
 climits
 -
 HashmapListMap.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapListMap.h
+/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapListMap.h
+/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.h
 unordered_map
 -
 FourWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
+/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.cpp
+/home/nobel/Documents/SingleAgent/Project3/IDA.cpp
 climits
 -
 IDA.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.h
+/home/nobel/Documents/SingleAgent/Project3/IDA.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.h
+/home/nobel/Documents/SingleAgent/Project3/IDA.h
 stdio.h
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/InefficientAStar.cpp
+/home/nobel/Documents/SingleAgent/Project3/InefficientAStar.cpp
 InefficientAStar.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/InefficientAStar.h
+/home/nobel/Documents/SingleAgent/Project3/InefficientAStar.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/InefficientAStar.h
+/home/nobel/Documents/SingleAgent/Project3/InefficientAStar.h
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 VectorList.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/VectorList.h
+/home/nobel/Documents/SingleAgent/Project3/VectorList.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/MDFourway.cpp
+/home/nobel/Documents/SingleAgent/Project3/MDFourway.cpp
 MDFourway.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/MDFourway.h
+/home/nobel/Documents/SingleAgent/Project3/MDFourway.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/MDFourway.h
+/home/nobel/Documents/SingleAgent/Project3/MDFourway.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 FourWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
+/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp
+/home/nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp
 ManhattanDistance.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+/home/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+/home/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
 stdio.h
 -
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.cpp
+/home/nobel/Documents/SingleAgent/Project3/PDB.cpp
 deque
 -
 PDB.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+/home/nobel/Documents/SingleAgent/Project3/PDB.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+/home/nobel/Documents/SingleAgent/Project3/PDB.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.cpp
+/home/nobel/Documents/SingleAgent/Project3/STP.cpp
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 random
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 stdio.h
 -
 vector
@@ -162,11 +162,11 @@ vector
 iostream
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.cpp
+/home/nobel/Documents/SingleAgent/Project3/Timer.cpp
 Timer.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.h
+/home/nobel/Documents/SingleAgent/Project3/Timer.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.h
+/home/nobel/Documents/SingleAgent/Project3/Timer.h
 stdint.h
 -
 fstream
@@ -174,47 +174,47 @@ fstream
 chrono
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/VectorList.cpp
+/home/nobel/Documents/SingleAgent/Project3/VectorList.cpp
 climits
 -
 VectorList.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/VectorList.h
+/home/nobel/Documents/SingleAgent/Project3/VectorList.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/VectorList.h
+/home/nobel/Documents/SingleAgent/Project3/VectorList.h
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/main.cpp
+/home/nobel/Documents/SingleAgent/Project3/main.cpp
 iostream
 -
 unordered_map
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h
+/home/nobel/Documents/SingleAgent/Project3/STP.h
 Timer.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.h
+/home/nobel/Documents/SingleAgent/Project3/Timer.h
 DFID.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.h
+/home/nobel/Documents/SingleAgent/Project3/DFID.h
 BFS.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.h
+/home/nobel/Documents/SingleAgent/Project3/BFS.h
 IDA.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.h
+/home/nobel/Documents/SingleAgent/Project3/IDA.h
 ManhattanDistance.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
+/home/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h
 PDB.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h
+/home/nobel/Documents/SingleAgent/Project3/PDB.h
 All_Heruistics.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.h
+/home/nobel/Documents/SingleAgent/Project3/All_Heruistics.h
 VectorList.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/VectorList.h
+/home/nobel/Documents/SingleAgent/Project3/VectorList.h
 InefficientAStar.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/InefficientAStar.h
+/home/nobel/Documents/SingleAgent/Project3/InefficientAStar.h
 FourWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
+/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
 HashmapList.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.h
+/home/nobel/Documents/SingleAgent/Project3/HashmapList.h
 AStar.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.h
+/home/nobel/Documents/SingleAgent/Project3/AStar.h
 HashmapListMap.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapListMap.h
+/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.h
 

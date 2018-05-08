@@ -8,177 +8,181 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
+				<Option working_dir="/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
+				<Option working_dir="/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project3">
-				<Option output="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Project3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
+				<Option output="/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Project3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/."/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/home/nobel/Documents/SingleAgent/Project3/."/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project3"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project3/fast">
-				<Option output="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Project3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
+				<Option output="/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Project3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/."/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/home/nobel/Documents/SingleAgent/Project3/."/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project3/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nobel/Documents/SingleAgent/Project3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/AStar.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/AStar.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/AStar.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/All_Heruistics.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/All_Heruistics.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/All_Heruistics.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/BFS.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/BFS.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/BFS.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/DFID.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/DFID.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/DFID.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/FourWayMovement.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/HashmapList.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapList.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/HashmapList.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapListMap.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/HashmapListMap.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Heuristic.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/Heuristic.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/IDA.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/IDA.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/IDA.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/InefficientAStar.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/InefficientAStar.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/InefficientAStar.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/InefficientAStar.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/MDFourway.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/MDFourway.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/MDFourway.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/MDFourway.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/ManhattanDistance.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/ManhattanDistance.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/PDB.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/PDB.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/PDB.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/STP.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/STP.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/STP.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/Timer.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/Timer.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/Timer.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/VectorList.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/VectorList.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/VectorList.h">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/VectorList.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/main.cpp">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/main.cpp">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project3/CMakeLists.txt">
+		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
