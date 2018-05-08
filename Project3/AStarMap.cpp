@@ -19,7 +19,7 @@ STPSlideDir opposite_direction(const STPSlideDir& s) {
     }
 }
 
-void AStarMap::GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h) {
+void AStarMap::GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h, std::vector<STPSlideDir>& path) {
     VectorListMap open_list;
     VectorListMap closed_list;
     std::vector<STPSlideDir> directions;
@@ -29,16 +29,9 @@ void AStarMap::GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h) {
             h.h(fw),
             0 + h.h(fw),
             fw,
-            0,
-            kNone
+            kNone,
+            0
     };
-//    s.state = fw;
-//    s.gcost = 0;
-//    s.hcost = h.h(fw);
-//    s.fcost = s.gcost + s.hcost;
-//    s.direction = kNone;
-//    s.parent = 0;
-
     open_list.add_element(s);
     int goalX = fw.goalX;
     int goalY = fw.goalY;
@@ -54,6 +47,12 @@ void AStarMap::GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h) {
             std::cout << "GOAL FOUND" << std::endl;
             std::cout << "x coord is " << current_state.state.posX << " y coord is " << current_state.state.posY << std::endl;
 
+            direction_struct curr = current_state.dir;
+            while(curr.direction != kNone) {
+                path.push_back(opposite_direction(curr.direction));
+                curr = *curr.parent;
+            }
+
             break;
         }
 
@@ -67,7 +66,9 @@ void AStarMap::GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h) {
                 state.hcost = h.h(state.state);
                 state.gcost = current_state.gcost + 1;
                 state.fcost = state.hcost + state.gcost;
-                state.direction = opposite_direction(direction);
+                state.dir.direction = opposite_direction(direction);
+                state.dir.parent = new direction_struct;
+                *state.dir.parent = current_state.dir;
                 open_list.add_element(state);
             } else if(open_list.check_duplicates(state)) {
                 open_list.update_cost(state, current_state);

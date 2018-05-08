@@ -29,13 +29,11 @@ void VectorListMap::update_cost(const fourway_struct &fw1, const fourway_struct 
             if(list.at(i).gcost > fw2.gcost + 1) {
                 list.at(i).gcost = fw2.gcost + 1;
                 list.at(i).fcost = list.at(i).gcost + list.at(i).hcost;
-                STPSlideDir temp = fw2.direction;
+                STPSlideDir temp = fw2.dir.direction;
                 stp.InvertOperator(temp);
-                list.at(i).direction = temp;
-
-                // TODO FIX THE PARENT
-//                list.at(i).parent = new fourway_struct;
-//                *list.at(i).parent = fw2;
+                list.at(i).dir.direction= temp;
+                list.at(i).dir.parent = new direction_struct;
+                *list.at(i).dir.parent = fw2.dir;
             }
         }
     }

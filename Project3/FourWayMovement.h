@@ -33,11 +33,15 @@ public:
     void ApplyOperator(FourWayMovement& fw, STPSlideDir o);
 };
 
+struct direction_struct {
+    STPSlideDir direction;
+    direction_struct* parent;
+};
+
 struct fourway_struct {
     int gcost, hcost, fcost;
     FourWayMovement state;
-    fourway_struct* parent;
-    STPSlideDir direction;
+    direction_struct dir;
 };
 
 

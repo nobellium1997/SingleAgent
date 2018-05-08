@@ -70,7 +70,11 @@ int main(int argc, const char * argv[]) {
     AStarMap a;
     FWM fwm;
     MDFourway md;
-    a.GetPath(fwm, fw, md);
+    std::vector<STPSlideDir> path;
+    a.GetPath(fwm, fw, md, path);
+    for(int i = 0; i < path.size(); i++) {
+        std::cout << path.at(i) << " ";
+    }
 
 
     return 0;

@@ -67,10 +67,10 @@ FourWayMovement::FourWayMovement(std::string file_name) {
 }
 
 //FourWayMovement::~FourWayMovement() {
-////    for(int i = 0; i < this->map_width; i++) {
-////        delete[] map[i];
-////    }
-////    delete[] map;
+//    for(int i = 0; i < this->map_width; i++) {
+//        delete[] map[i];
+//    }
+//    delete[] map;
 //}
 
 FourWayMovement& FourWayMovement::operator=(const FourWayMovement& fw) {

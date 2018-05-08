@@ -12,7 +12,7 @@
 
 class AStarMap {
 public:
-    void GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h);
+    void GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h, std::vector<STPSlideDir>& path);
     uint64_t GetNodesExpanded();
 
 private:
