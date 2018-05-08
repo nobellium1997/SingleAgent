@@ -37,7 +37,6 @@ std::ostream& operator<<(std::ostream& out, const STPState& s);
 std::ostream& operator<<(std::ostream& out, const STPSlideDir& s);
 bool operator==(const STPState &s1, const STPState &s2);
 
-
 class STP {
 public:
 	void GetSuccessors(STPState &s, std::vector<STPState> &states);
@@ -57,5 +56,7 @@ struct state_struct {
 	int gcost, hcost, fcost;
 	STPSlideDir direction;
 };
+
+bool operator>(const state_struct &s1, const state_struct &s2);
 
 #endif /* STP_hpp */

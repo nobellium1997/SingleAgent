@@ -31,6 +31,8 @@ CMakeFiles/Project3.dir/DFID.cpp.o: ../DFID.h
 CMakeFiles/Project3.dir/DFID.cpp.o: ../STP.h
 
 CMakeFiles/Project3.dir/EfficientDataStructure.cpp.o: ../EfficientDataStructure.cpp
+CMakeFiles/Project3.dir/EfficientDataStructure.cpp.o: ../EfficientDataStructure.h
+CMakeFiles/Project3.dir/EfficientDataStructure.cpp.o: ../STP.h
 
 CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../FourWayMovement.cpp
 CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../FourWayMovement.h

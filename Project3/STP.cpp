@@ -35,6 +35,15 @@ bool operator==(const STPState &s1, const STPState &s2)
 	return true;
 }
 
+bool operator>(const state_struct &s1, const state_struct &s2) {
+	if(s1.fcost > s2.fcost) {
+		return true;
+	} else if (s1.fcost == s2.fcost && s1.gcost < s2.gcost) {
+		return true;
+	}
+	return false;
+}
+
 std::ostream& operator<<(std::ostream& out, const STPSlideDir& s)
 {
 	switch (s)
