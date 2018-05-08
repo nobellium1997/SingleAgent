@@ -23,6 +23,19 @@
 #include "AStarMap.h"
 
 int main(int argc, const char * argv[]) {
+
+
+
+
+
+
+
+
+
+
+
+
+    // all this code is to test the map
     std::ifstream file;
     std::string file_name = "orz301d.map.scen";
     file.open(file_name);
