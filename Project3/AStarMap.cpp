@@ -40,10 +40,10 @@ void AStarMap::GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h, std::vector<S
 
     while(!open_list.list.empty()) {
         fourway_struct current_state = open_list.remove_best();
-        std::cout << "CURRENT STATE X " << current_state.state.posX << " CURRENT STATE Y " << current_state.state.posY << std::endl;
-        std::cout << "CURRENT STATE GCOST " << current_state.gcost << std::endl;
-        std::cout << "CURRENT STATE HCOST " << current_state.hcost << std::endl;
-        std::cout << "CURRENT STATE FCOST " << current_state.fcost << std::endl;
+//        std::cout << "CURRENT STATE X " << current_state.state.posX << " CURRENT STATE Y " << current_state.state.posY << std::endl;
+//        std::cout << "CURRENT STATE GCOST " << current_state.gcost << std::endl;
+//        std::cout << "CURRENT STATE HCOST " << current_state.hcost << std::endl;
+//        std::cout << "CURRENT STATE FCOST " << current_state.fcost << std::endl;
 
         if(current_state.state.posX == goalX && current_state.state.posY == goalY) {
             std::cout << "GOAL FOUND" << std::endl;

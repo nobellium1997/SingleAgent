@@ -23,15 +23,15 @@ void InefficientAStar::GetPath(STP& stp, STPState start, STPState &goal, Heurist
 
     while(!open_list.list.empty()) {
         state_struct current_state = open_list.remove_best();
-        std::cout << "Current state is " << std::endl;
-        std::cout << current_state.state;
-        std::cout << "gcost is " << current_state.gcost << std::endl;
-        std::cout << "hcost is " << current_state.hcost << std::endl;
-        std::cout << "fcost is " << current_state.fcost << std::endl;
+//        std::cout << "Current state is " << std::endl;
+//        std::cout << current_state.state;
+//        std::cout << "gcost is " << current_state.gcost << std::endl;
+//        std::cout << "hcost is " << current_state.hcost << std::endl;
+//        std::cout << "fcost is " << current_state.fcost << std::endl;
 
         if(current_state.state == goal) {
             std::cout << "goal found " << std::endl;
-            std::cout << current_state.state;
+//            std::cout << current_state.state;
 
             state_struct curr = current_state;
             while(curr.direction != kNone) {
