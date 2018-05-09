@@ -26,11 +26,29 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="703" column="6" lean-forward="true" selection-start-line="703" selection-start-column="6" selection-end-line="751" selection-end-column="29" />
+            <state relative-caret-position="445">
+              <caret line="149" selection-start-line="149" selection-start-column="2" selection-end-line="1003" selection-end-column="29" />
               <folding>
                 <element signature="e#28#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InefficientAStar.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InefficientAStar.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EfficientDataStructure.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EfficientDataStructure.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -44,23 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EfficientDataStructure.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EfficientDataStructure.cpp">
+      <file leaf-file-name="AStar.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AStar.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3300">
-              <caret line="220" column="1" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AStar.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AStar.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#40#58#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -101,7 +107,6 @@
         <option value="$PROJECT_DIR$/All_Heruistics.cpp" />
         <option value="$PROJECT_DIR$/PDB.cpp" />
         <option value="$PROJECT_DIR$/AStarDataStructure.h" />
-        <option value="$PROJECT_DIR$/InefficientAStar.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/temp.map" />
         <option value="$PROJECT_DIR$/cmake-build-debug/temp.txt" />
         <option value="$PROJECT_DIR$/MDFourway.cpp" />
@@ -128,6 +133,7 @@
         <option value="$PROJECT_DIR$/AStar.cpp" />
         <option value="$PROJECT_DIR$/InefficientAStar.cpp" />
         <option value="$PROJECT_DIR$/AStarMap.cpp" />
+        <option value="$PROJECT_DIR$/InefficientAStar.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -239,26 +245,26 @@
       <workItem from="1525836682704" duration="69000" />
       <workItem from="1525836752852" duration="9612000" />
       <workItem from="1525875444426" duration="2079000" />
-      <workItem from="1525881806401" duration="718000" />
+      <workItem from="1525881806401" duration="3057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143260000" />
+    <option name="totallyTimeSpent" value="145599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15677084" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15677084" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49947917" weight="0.3180363" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.32870865" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.32870865" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.32870865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32583067" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32550693" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40085745" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -343,13 +349,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EfficientDataStructure.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="1" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AStar.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -490,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InefficientAStar.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MDFourway.h" />
     <entry file="file:///usr/include/c++/6/bits/stl_algobase.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -560,23 +552,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AStar.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
-            <element signature="e#40#58#0" expanded="true" />
+            <element signature="e#123#140#0" expanded="true" />
+            <element signature="e#475#477#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EfficientDataStructure.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="220" column="1" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -587,6 +566,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AStar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#40#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InefficientAStar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AStarMap.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -594,10 +597,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EfficientDataStructure.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="703" column="6" lean-forward="true" selection-start-line="703" selection-start-column="6" selection-end-line="751" selection-end-column="29" />
+        <state relative-caret-position="445">
+          <caret line="149" selection-start-line="149" selection-start-column="2" selection-end-line="1003" selection-end-column="29" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
           </folding>
