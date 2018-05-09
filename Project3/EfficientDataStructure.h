@@ -49,9 +49,13 @@ public:
     // search, O(1) to remove, and O(ln) to re-heapify
     void update_cost (const state_struct& state, const state_struct& state2);
     state_struct remove_best();
+    void heapify();
+    void heapify_helper();
+    int get_left_child(const int& x);
+    int get_right_child(const int& x);
 private:
-    std::vector<state_struct> heap;
-    std::unordered_map<STPState, state_struct>  map;
+    std::deque<state_struct> queue;
+    std::unordered_map<STPState, int>  map;
 };
 
 
