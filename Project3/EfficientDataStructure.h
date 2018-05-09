@@ -51,8 +51,16 @@ public:
     state_struct remove_best();
     void heapify();
     void heapify_helper(const int& node);
-    int get_left_child(const int& x);
-    int get_right_child(const int& x);
+
+
+
+    bool has_left_child(const int& x);
+    bool has_right_child(const int& x);
+    bool has_parent(const int& x);
+
+    int get_left_child_index(const int& x);
+    int get_right_child_index(const int& x);
+    int get_parent_index(const int& x);
 //private:
     std::deque<state_struct> queue;
     std::unordered_map<STPState, int>  map;
