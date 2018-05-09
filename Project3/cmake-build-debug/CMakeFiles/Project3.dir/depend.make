@@ -90,6 +90,7 @@ CMakeFiles/Project3.dir/main.cpp.o: ../AStarMap.h
 CMakeFiles/Project3.dir/main.cpp.o: ../All_Heruistics.h
 CMakeFiles/Project3.dir/main.cpp.o: ../BFS.h
 CMakeFiles/Project3.dir/main.cpp.o: ../DFID.h
+CMakeFiles/Project3.dir/main.cpp.o: ../EfficientDataStructure.h
 CMakeFiles/Project3.dir/main.cpp.o: ../FourWayMovement.h
 CMakeFiles/Project3.dir/main.cpp.o: ../HashmapListMap.h
 CMakeFiles/Project3.dir/main.cpp.o: ../Heuristic.h

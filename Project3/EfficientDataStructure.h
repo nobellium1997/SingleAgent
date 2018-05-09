@@ -50,7 +50,7 @@ public:
     void update_cost (const state_struct& state, const state_struct& state2);
     state_struct remove_best();
     void heapify();
-    void heapify_helper();
+    void heapify_helper(const int& node);
     int get_left_child(const int& x);
     int get_right_child(const int& x);
 private:

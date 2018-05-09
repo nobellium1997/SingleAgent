@@ -53,10 +53,80 @@ state_struct EfficientDataStructure::remove_best() {
 
 
 void EfficientDataStructure::heapify() {
-
+    for(int i = queue.size()/2; i != 0; i--) {
+        heapify_helper(i-1);
+    }
 }
 
-void EfficientDataStructure::heapify_helper() {
+void EfficientDataStructure::heapify_helper(const int& node) {
+    int left_child = get_left_child(node);
+    int right_child = get_right_child(node);
+
+    if(node > queue.size()/2 - 1) {
+        return;
+    }
+
+    if(left_child < queue.size() && right_child < queue.size()) {
+        if (queue.at(node).fcost > queue.at(left_child).fcost && queue.at(node).fcost > queue.at(right_child).fcost) {
+            if (queue.at(left_child).fcost < queue.at(right_child).fcost) {
+                auto temp = queue.at(node);
+                queue.at(node) = queue.at(left_child);
+                queue.at(left_child) = temp;
+                heapify_helper(left_child);
+            } else if (queue.at(left_child).fcost > queue.at(right_child).fcost) {
+                auto temp = queue.at(node);
+                queue.at(node) = queue.at(right_child);
+                queue.at(right_child) = temp;
+                heapify_helper(right_child);
+            } else if (queue.at(left_child).hcost < queue.at(right_child).hcost) {
+                auto temp = queue.at(node);
+                queue.at(node) = queue.at(left_child);
+                queue.at(left_child) = temp;
+                heapify_helper(left_child);
+            } else if (queue.at(left_child).hcost > queue.at(right_child).hcost) {
+                auto temp = queue.at(node);
+                queue.at(node) = queue.at(right_child);
+                queue.at(right_child) = temp;
+                heapify_helper(right_child);
+            }
+        } else if (queue.at(node).fcost == queue.at(left_child).fcost && queue.at(node).fcost == queue.at(right_child).fcost) {
+            if(queue.at(left_child).hcost < queue.at(right_child).hcost) {
+                auto temp = queue.at(node);
+                queue.at(node) = queue.at(left_child);
+                queue.at(left_child) = temp;
+                heapify_helper(left_child);
+            } else if(queue.at(left_child).hcost >= queue.at(right_child).hcost) {
+                auto temp = queue.at(node);
+                queue.at(node) = queue.at(right_child);
+                queue.at(right_child) = temp;
+                heapify_helper(right_child);
+            }
+        } else if (queue.at(node).fcost > queue.at(left_child).fcost) {
+            auto temp = queue.at(node);
+            queue.at(node) = queue.at(left_child);
+            queue.at(left_child) = temp;
+            heapify_helper(left_child);
+        } else if (queue.at(node).fcost > queue.at(right_child).fcost) {
+            auto temp = queue.at(node);
+            queue.at(node) = queue.at(right_child);
+            queue.at(right_child) = temp;
+            heapify_helper(right_child);
+        }
+    } else if (left_child < queue.size()) {
+        if(queue.at(node).fcost > queue.at(left_child).fcost) {
+            auto temp = queue.at(node);
+            queue.at(node) = queue.at(left_child);
+            queue.at(left_child) = temp;
+            heapify_helper(left_child);
+        }
+    } else if (right_child < queue.size()) {
+        if(queue.at(node).fcost > queue.at(right_child).fcost) {
+            auto temp = queue.at(node);
+            queue.at(node) = queue.at(right_child);
+            queue.at(right_child) = temp;
+            heapify_helper(right_child);
+        }
+    }
 
 }
 
@@ -65,5 +135,5 @@ int EfficientDataStructure::get_left_child(const int &x) {
 }
 
 int EfficientDataStructure::get_right_child(const int &x) {
-    return (x*2) + 1;
+    return (x*2) + 2;
 }

@@ -10,14 +10,20 @@ add_executable(Project3
         All_Heruistics.h
         AStar.cpp
         AStar.h
-        HashmapList.cpp
-        HashmapList.h
+        AStarMap.cpp
+        AStarMap.h
         BFS.cpp
         BFS.h
         DFID.cpp
         DFID.h
+        EfficientDataStructure.cpp
+        EfficientDataStructure.h
         FourWayMovement.cpp
         FourWayMovement.h
+        HashmapList.cpp
+        HashmapList.h
+        HashmapListMap.cpp
+        HashmapListMap.h
         Heuristic.h
         IDA.cpp
         IDA.h
@@ -26,6 +32,8 @@ add_executable(Project3
         main.cpp
         ManhattanDistance.cpp
         ManhattanDistance.h
+        MDFourway.cpp
+        MDFourway.h
         PDB.cpp
         PDB.h
         STP.cpp
@@ -33,4 +41,6 @@ add_executable(Project3
         Timer.cpp
         Timer.h
         VectorList.cpp
-        VectorList.h MDFourway.cpp MDFourway.h HashmapListMap.cpp HashmapListMap.h EfficientDataStructure.cpp EfficientDataStructure.h VectorListMap.cpp VectorListMap.h AStarMap.cpp AStarMap.h)
+        VectorList.h
+        VectorListMap.cpp
+        VectorListMap.h)
