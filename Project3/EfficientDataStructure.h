@@ -49,11 +49,10 @@ public:
     // search, O(1) to remove, and O(ln) to re-heapify
     void update_cost (const state_struct& state, const state_struct& state2);
     state_struct remove_best();
-    void heapify();
-    void heapify_helper(const int& node);
 
-
-
+    // All these methods are for maintaining the heap after insertions and deletions
+    // this way inserts and deletes remain o(lgn) while lookup in the hashmap remains
+    // o(1)
     bool has_left_child(const int& x);
     bool has_right_child(const int& x);
     bool has_parent(const int& x);
@@ -61,7 +60,16 @@ public:
     int get_left_child_index(const int& x);
     int get_right_child_index(const int& x);
     int get_parent_index(const int& x);
-//private:
+
+    state_struct get_left_child(const int& x);
+    state_struct get_right_child(const int& x);
+    state_struct get_parent(const int& x);
+
+    void swap(const int& first_state_index, const int& second_state_index);
+    void heapify_down();
+    void heapify_up();
+    void heapify_up(const int& index);
+
     std::deque<state_struct> queue;
     std::unordered_map<STPState, int>  map;
 };
