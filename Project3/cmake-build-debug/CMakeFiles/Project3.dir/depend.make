@@ -3,7 +3,7 @@
 
 CMakeFiles/Project3.dir/AStar.cpp.o: ../AStar.cpp
 CMakeFiles/Project3.dir/AStar.cpp.o: ../AStar.h
-CMakeFiles/Project3.dir/AStar.cpp.o: ../HashmapList.h
+CMakeFiles/Project3.dir/AStar.cpp.o: ../EfficientDataStructure.h
 CMakeFiles/Project3.dir/AStar.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/AStar.cpp.o: ../STP.h
 
@@ -37,12 +37,6 @@ CMakeFiles/Project3.dir/EfficientDataStructure.cpp.o: ../STP.h
 CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../FourWayMovement.cpp
 CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../FourWayMovement.h
 CMakeFiles/Project3.dir/FourWayMovement.cpp.o: ../STP.h
-
-CMakeFiles/Project3.dir/HashmapList.cpp.o: ../HashmapList.cpp
-CMakeFiles/Project3.dir/HashmapList.cpp.o: ../HashmapList.h
-CMakeFiles/Project3.dir/HashmapList.cpp.o: ../STP.h
-
-CMakeFiles/Project3.dir/HashmapListMap.cpp.o: ../HashmapListMap.cpp
 
 CMakeFiles/Project3.dir/IDA.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/IDA.cpp.o: ../IDA.cpp
@@ -86,13 +80,13 @@ CMakeFiles/Project3.dir/VectorListMap.cpp.o: ../STP.h
 CMakeFiles/Project3.dir/VectorListMap.cpp.o: ../VectorListMap.cpp
 CMakeFiles/Project3.dir/VectorListMap.cpp.o: ../VectorListMap.h
 
+CMakeFiles/Project3.dir/main.cpp.o: ../AStar.h
 CMakeFiles/Project3.dir/main.cpp.o: ../AStarMap.h
 CMakeFiles/Project3.dir/main.cpp.o: ../All_Heruistics.h
 CMakeFiles/Project3.dir/main.cpp.o: ../BFS.h
 CMakeFiles/Project3.dir/main.cpp.o: ../DFID.h
 CMakeFiles/Project3.dir/main.cpp.o: ../EfficientDataStructure.h
 CMakeFiles/Project3.dir/main.cpp.o: ../FourWayMovement.h
-CMakeFiles/Project3.dir/main.cpp.o: ../HashmapListMap.h
 CMakeFiles/Project3.dir/main.cpp.o: ../Heuristic.h
 CMakeFiles/Project3.dir/main.cpp.o: ../IDA.h
 CMakeFiles/Project3.dir/main.cpp.o: ../InefficientAStar.h

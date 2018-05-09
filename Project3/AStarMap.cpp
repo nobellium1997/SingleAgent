@@ -24,6 +24,8 @@ void AStarMap::GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h, std::vector<S
     VectorListMap closed_list;
     std::vector<STPSlideDir> directions;
 
+    expansions = 0;
+
     fourway_struct s = {
             0,
             h.h(fw),
@@ -75,4 +77,8 @@ void AStarMap::GetPath(FWM& fwm, FourWayMovement fw, MDFourway& h, std::vector<S
             }
         }
     }
+}
+
+uint64_t AStarMap::GetNodesExpanded() {
+    return expansions;
 }

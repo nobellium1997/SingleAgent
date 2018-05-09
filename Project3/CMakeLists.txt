@@ -20,10 +20,6 @@ add_executable(Project3
         EfficientDataStructure.h
         FourWayMovement.cpp
         FourWayMovement.h
-        HashmapList.cpp
-        HashmapList.h
-        HashmapListMap.cpp
-        HashmapListMap.h
         Heuristic.h
         IDA.cpp
         IDA.h

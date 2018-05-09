@@ -9,8 +9,8 @@
 /home/nobel/Documents/SingleAgent/Project3/AStar.cpp
 AStar.h
 /home/nobel/Documents/SingleAgent/Project3/AStar.h
-HashmapList.h
-/home/nobel/Documents/SingleAgent/Project3/HashmapList.h
+EfficientDataStructure.h
+/home/nobel/Documents/SingleAgent/Project3/EfficientDataStructure.h
 
 /home/nobel/Documents/SingleAgent/Project3/AStar.h
 STP.h
@@ -93,26 +93,6 @@ FourWayMovement.h
 /home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
 STP.h
 /home/nobel/Documents/SingleAgent/Project3/STP.h
-
-/home/nobel/Documents/SingleAgent/Project3/HashmapList.cpp
-climits
--
-HashmapList.h
-/home/nobel/Documents/SingleAgent/Project3/HashmapList.h
-
-/home/nobel/Documents/SingleAgent/Project3/HashmapList.h
-unordered_map
--
-STP.h
-/home/nobel/Documents/SingleAgent/Project3/STP.h
-
-/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.cpp
-
-/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.h
-unordered_map
--
-FourWayMovement.h
-/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
 
 /home/nobel/Documents/SingleAgent/Project3/Heuristic.h
 STP.h
@@ -253,10 +233,10 @@ InefficientAStar.h
 /home/nobel/Documents/SingleAgent/Project3/InefficientAStar.h
 FourWayMovement.h
 /home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h
-HashmapListMap.h
-/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.h
 AStarMap.h
 /home/nobel/Documents/SingleAgent/Project3/AStarMap.h
 EfficientDataStructure.h
 /home/nobel/Documents/SingleAgent/Project3/EfficientDataStructure.h
+AStar.h
+/home/nobel/Documents/SingleAgent/Project3/AStar.h
 

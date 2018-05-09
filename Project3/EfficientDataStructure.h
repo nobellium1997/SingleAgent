@@ -53,7 +53,7 @@ public:
     void heapify_helper(const int& node);
     int get_left_child(const int& x);
     int get_right_child(const int& x);
-private:
+//private:
     std::deque<state_struct> queue;
     std::unordered_map<STPState, int>  map;
 };

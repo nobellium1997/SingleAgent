@@ -9,6 +9,8 @@ void InefficientAStar::GetPath(STP& stp, STPState start, STPState &goal, Heurist
     VectorList closed_list;
     std::vector<STPSlideDir> directions;
 
+    expansions = 0;
+
     state_struct s;
     s.state = start;
     s.gcost = 0;
@@ -74,4 +76,8 @@ STPSlideDir InefficientAStar::opposite_direction(const STPSlideDir &s) {
         case kRight:
             return kLeft;
     }
+}
+
+uint64_t InefficientAStar::GetNodesExpanded() {
+    return expansions;
 }

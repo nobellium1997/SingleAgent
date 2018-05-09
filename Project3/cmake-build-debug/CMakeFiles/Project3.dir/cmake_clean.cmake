@@ -6,8 +6,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project3.dir/DFID.cpp.o"
   "CMakeFiles/Project3.dir/EfficientDataStructure.cpp.o"
   "CMakeFiles/Project3.dir/FourWayMovement.cpp.o"
-  "CMakeFiles/Project3.dir/HashmapList.cpp.o"
-  "CMakeFiles/Project3.dir/HashmapListMap.cpp.o"
   "CMakeFiles/Project3.dir/IDA.cpp.o"
   "CMakeFiles/Project3.dir/InefficientAStar.cpp.o"
   "CMakeFiles/Project3.dir/main.cpp.o"

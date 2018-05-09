@@ -128,18 +128,6 @@
 		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/FourWayMovement.h">
 			<Option target="Project3"/>
 		</Unit>
-		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/HashmapList.cpp">
-			<Option target="Project3"/>
-		</Unit>
-		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/HashmapList.h">
-			<Option target="Project3"/>
-		</Unit>
-		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.cpp">
-			<Option target="Project3"/>
-		</Unit>
-		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/HashmapListMap.h">
-			<Option target="Project3"/>
-		</Unit>
 		<Unit filename="/home/nobel/Documents/SingleAgent/Project3/Heuristic.h">
 			<Option target="Project3"/>
 		</Unit>
