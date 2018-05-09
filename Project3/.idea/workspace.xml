@@ -28,8 +28,8 @@
           <file leaf-file-name="EfficientDataStructure.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/EfficientDataStructure.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+                <state relative-caret-position="397">
+                  <caret line="57" column="43" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
                   <folding>
                     <element signature="e#123#140#0" expanded="true" />
                   </folding>
@@ -50,11 +50,28 @@
       </split-first>
       <split-second>
         <leaf>
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="26" selection-start-line="26" selection-end-line="79" />
+                  <folding>
+                    <element signature="e#28#47#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AStarMap.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AStarMap.cpp">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
           <file leaf-file-name="EfficientDataStructure.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/EfficientDataStructure.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="556">
-                  <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+                <state relative-caret-position="291">
+                  <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -112,8 +129,8 @@
         <option value="$PROJECT_DIR$/VectorListMap.cpp" />
         <option value="$PROJECT_DIR$/STP.h" />
         <option value="$PROJECT_DIR$/STP.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/EfficientDataStructure.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/EfficientDataStructure.cpp" />
       </list>
     </option>
@@ -221,24 +238,24 @@
       <workItem from="1525802818409" duration="2680000" />
       <workItem from="1525808408968" duration="169000" />
       <workItem from="1525810036978" duration="5436000" />
-      <workItem from="1525827462421" duration="6008000" />
+      <workItem from="1525827462421" duration="6234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130556000" />
+    <option name="totallyTimeSpent" value="130782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15677084" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15677084" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3191035" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3191035" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32977587" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32977587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32657418" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -507,7 +524,6 @@
     <entry file="file://$PROJECT_DIR$/VectorListMap.h" />
     <entry file="file://$PROJECT_DIR$/AStarMap.h" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt" />
-    <entry file="file://$PROJECT_DIR$/AStarMap.cpp" />
     <entry file="file://$PROJECT_DIR$/VectorListMap.cpp" />
     <entry file="file://$PROJECT_DIR$/InefficientAStar.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -544,16 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#28#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/orz301d.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -567,10 +573,23 @@
     <entry file="file://$PROJECT_DIR$/HashmapList.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="26" selection-start-line="26" selection-end-line="79" />
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStarMap.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/EfficientDataStructure.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        <state relative-caret-position="397">
+          <caret line="57" column="43" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
           <folding>
             <element signature="e#123#140#0" expanded="true" />
           </folding>
@@ -579,8 +598,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EfficientDataStructure.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="291">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
         </state>
       </provider>
     </entry>
