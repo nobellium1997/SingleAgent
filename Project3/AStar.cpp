@@ -4,10 +4,11 @@
 
 #include "AStar.h"
 #include "EfficientDataStructure.h"
+#include "HashmapList.h"
 
 void AStar::GetPath(STP &stp, STPState start, STPState &goal, Heuristic *h, std::vector<STPSlideDir> &path) {
     EfficientDataStructure open_list;
-    EfficientDataStructure closed_list;
+    HashmapList closed_list;
     std::vector<STPSlideDir> directions;
 
     expansions = 0;
@@ -23,11 +24,11 @@ void AStar::GetPath(STP &stp, STPState start, STPState &goal, Heuristic *h, std:
 
     while(!open_list.queue.empty()) {
         state_struct current_state = open_list.remove_best();
-        std::cout << "Current state is " << std::endl;
-        std::cout << current_state.state;
-        std::cout << "gcost is " << current_state.gcost << std::endl;
-        std::cout << "hcost is " << current_state.hcost << std::endl;
-        std::cout << "fcost is " << current_state.fcost << std::endl;
+//        std::cout << "Current state is " << std::endl;
+//        std::cout << current_state.state;
+//        std::cout << "gcost is " << current_state.gcost << std::endl;
+//        std::cout << "hcost is " << current_state.hcost << std::endl;
+//        std::cout << "fcost is " << current_state.fcost << std::endl;
 
         if(current_state.state == goal) {
             std::cout << "goal found " << std::endl;

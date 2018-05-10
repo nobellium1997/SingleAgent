@@ -312,6 +312,33 @@ FourWayMovement.cpp.s:
 	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/FourWayMovement.cpp.s
 .PHONY : FourWayMovement.cpp.s
 
+HashmapList.o: HashmapList.cpp.o
+
+.PHONY : HashmapList.o
+
+# target to build an object file
+HashmapList.cpp.o:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/HashmapList.cpp.o
+.PHONY : HashmapList.cpp.o
+
+HashmapList.i: HashmapList.cpp.i
+
+.PHONY : HashmapList.i
+
+# target to preprocess a source file
+HashmapList.cpp.i:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/HashmapList.cpp.i
+.PHONY : HashmapList.cpp.i
+
+HashmapList.s: HashmapList.cpp.s
+
+.PHONY : HashmapList.s
+
+# target to generate assembly for a file
+HashmapList.cpp.s:
+	$(MAKE) -f CMakeFiles/Project3.dir/build.make CMakeFiles/Project3.dir/HashmapList.cpp.s
+.PHONY : HashmapList.cpp.s
+
 IDA.o: IDA.cpp.o
 
 .PHONY : IDA.o
@@ -612,6 +639,9 @@ help:
 	@echo "... FourWayMovement.o"
 	@echo "... FourWayMovement.i"
 	@echo "... FourWayMovement.s"
+	@echo "... HashmapList.o"
+	@echo "... HashmapList.i"
+	@echo "... HashmapList.s"
 	@echo "... IDA.o"
 	@echo "... IDA.i"
 	@echo "... IDA.s"

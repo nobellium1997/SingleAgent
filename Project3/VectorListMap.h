@@ -8,6 +8,11 @@
 
 #include "FourWayMovement.h"
 
+/*
+ * same as normal vector list except for a struct
+ * for the fourway class which just owns different values
+ */
+
 class VectorListMap {
 public:
     VectorListMap();

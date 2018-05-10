@@ -44,9 +44,8 @@ public:
     // checks for duplicates only in hashmap so that this only takes o(1)
     bool check_duplicates(const state_struct& s);
 
-    // finds the value in the hashmap and updates it. We also have to heap search the array and find it, remove it from
-    // the heap, update it, and re-insert and re-heapify. Probs not the best implementation but, hey it takes O(ln) to
-    // search, O(1) to remove, and O(ln) to re-heapify
+    // gets the index of where it is in the queue and updates it. after updating we heapify up from the index
+    // since this is a min heap we only need to do this once which makes this run time o(ln)
     void update_cost (const state_struct& state, const state_struct& state2);
     state_struct remove_best();
 

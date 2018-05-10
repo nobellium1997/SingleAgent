@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project3.dir/Timer.cpp.o"
   "CMakeFiles/Project3.dir/VectorList.cpp.o"
   "CMakeFiles/Project3.dir/VectorListMap.cpp.o"
+  "CMakeFiles/Project3.dir/HashmapList.cpp.o"
   "Project3.pdb"
   "Project3"
 )

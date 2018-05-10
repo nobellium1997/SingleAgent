@@ -31,7 +31,6 @@ bool EfficientDataStructure::check_duplicates(const state_struct &s) {
 void EfficientDataStructure::update_cost(const state_struct &state, const state_struct &state2) {
     STP stp;
     int index = map.at(state.state);
-    int old_fcost = state.fcost;
     if(queue.at(index).gcost > state2.gcost + 1) {
         queue.at(index).gcost = state2.gcost + 1;
         queue.at(index).fcost = queue.at(index).gcost + queue.at(index).hcost;
@@ -109,11 +108,11 @@ void EfficientDataStructure::heapify_down() {
     int index = 0;
     while(has_left_child(index)) {
         int smaller_child = get_left_child_index(index);
-        if(has_right_child(index) && get_right_child(index).fcost < get_left_child(index).fcost) {
+        if(has_right_child(index) && (get_right_child(index).fcost < get_left_child(index).fcost || (get_right_child(index).fcost == get_left_child(index).fcost && get_right_child(index).hcost < get_left_child(index).hcost))) {
             smaller_child = get_right_child_index(index);
         }
 
-        if(queue.at(index).fcost < queue.at(smaller_child).fcost) {
+        if(queue.at(index).fcost < queue.at(smaller_child).fcost || (queue.at(index).fcost == queue.at(smaller_child).fcost && queue.at(index).hcost < queue.at(smaller_child).hcost)) {
             break;
         } else {
             swap(index, smaller_child);
@@ -124,8 +123,7 @@ void EfficientDataStructure::heapify_down() {
 
 void EfficientDataStructure::heapify_up() {
     int index = queue.size()-1;
-    // TODO add condition that tie breaks
-    while(has_parent(index) && get_parent(index).fcost > queue.at(index).fcost) {
+    while(has_parent(index) && (get_parent(index).fcost > queue.at(index).fcost || (get_parent(index).fcost == queue.at(index).fcost && get_parent(index).hcost > queue.at(index).hcost))) {
         swap(get_parent_index(index), index);
         index = get_parent_index(index);
     }
@@ -133,7 +131,7 @@ void EfficientDataStructure::heapify_up() {
 
 void EfficientDataStructure::heapify_up(const int &index) {
     int temp_index = index;
-    while(has_parent(index) && get_parent(index).fcost > queue.at(index).fcost) {
+    while(has_parent(temp_index) && (get_parent(temp_index).fcost > queue.at(temp_index).fcost || (get_parent(temp_index).fcost == queue.at(temp_index).fcost && get_parent(temp_index).hcost > queue.at(temp_index).hcost))) {
         swap(get_parent_index(index), index);
         temp_index = get_parent_index(index);
     }

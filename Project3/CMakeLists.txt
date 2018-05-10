@@ -39,4 +39,4 @@ add_executable(Project3
         VectorList.cpp
         VectorList.h
         VectorListMap.cpp
-        VectorListMap.h)
+        VectorListMap.h HashmapList.cpp HashmapList.h)
