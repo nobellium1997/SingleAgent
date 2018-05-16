@@ -22,12 +22,13 @@ enum EWMoves {
 
 class EightWayMovement {
 public:
-    EightWayMovement(const std::string& file_name);
+    EightWayMovement(/*const std::string& file_name*/);
 //    ~EightWayMovement();
 //    EightWayMovement& operator=(const EightWayMovement& ew);
     int** map;
     int posx, posy;
     int map_width, map_height;
+    std::string file_name;
 };
 
 std::ostream& operator<<(std::ostream& out, const EightWayMovement& ew);

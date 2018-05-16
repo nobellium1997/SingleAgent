@@ -7,9 +7,10 @@
 #include <iostream>
 #include "EightWayMovement.h"
 
-EightWayMovement::EightWayMovement(const std::string &file_name) {
+EightWayMovement::EightWayMovement(/*const std::string &file_name*/) {
+    this->file_name = "lak303d.map";
     std::ifstream file;
-    file.open(file_name);
+    file.open(this->file_name);
     this->posx = 0;
     this->posy = 0;
 

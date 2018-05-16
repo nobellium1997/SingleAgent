@@ -10,6 +10,7 @@
 #define AStar_h
 
 #include <vector>
+#include <cmath>
 #include "AStarOpenList.h"
 #include "Heuristic.h"
 
@@ -44,7 +45,11 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 		{
 			state tmp = next.state;
 			env->ApplyOperator(tmp, op);
-			q.Add(tmp, next.g+1, h->h(next.state, goal), next.state);
+			if(op == up || op == down || op == left || op == right) {
+				q.Add(tmp, next.g+1, h->h(next.state, goal), next.state);
+			} else {
+				q.Add(tmp, next.g+std::sqrt(2), h->h(next.state, goal), next.state);
+			}
 		}
 	}
 }
