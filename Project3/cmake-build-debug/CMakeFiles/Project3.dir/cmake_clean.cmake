@@ -18,7 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project3.dir/VectorListMap.cpp.o"
   "CMakeFiles/Project3.dir/HashmapList.cpp.o"
   "Project3.pdb"
-  "Project3"
+  "Project3.exe"
+  "libProject3.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
