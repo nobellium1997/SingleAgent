@@ -40,4 +40,14 @@ public:
     void ApplyOperator(EightWayMovement& ew, EWMoves o);
 };
 
+namespace std {
+    template<> struct hash<EightWayMovement> {
+        std::size_t operator()(EightWayMovement const& s) const noexcept {
+            size_t hash1 = std::hash<int>()(s.posx);
+            size_t hash2 = std::hash<int>()(s.posy);
+            return hash1 ^ (hash2 << 1);
+        }
+    };
+}
+
 #endif //PROJECT6_EIGHTWAYMOVEMENT_H
