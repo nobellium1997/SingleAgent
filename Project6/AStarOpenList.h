@@ -25,15 +25,15 @@ template <class s>
 class AStarOpenList {
 public:
 	void Reset();
-	void Add(const s &state, int g, int h);
-	void Add(const s &state, int g, int h, const s &parent);
+	void Add(const s &state, double g, double h);
+	void Add(const s &state, double g, double h, const s &parent);
 	bool Empty();
 	AStarData<s> GetNext();
 	void GetPath(s state, std::vector<s> &path);
 private:
 	struct OpenListData {
 		s state;
-		int g, h;
+		double g, h;
 		size_t openLocation;
 		size_t parent;
 	};
@@ -57,7 +57,7 @@ void AStarOpenList<s>::Reset()
 }
 
 template <class s>
-void AStarOpenList<s>::Add(const s &state, int g, int h)
+void AStarOpenList<s>::Add(const s &state, double g, double h)
 {
 	// add to hash lookup
 	hash[state] = data.size();
@@ -69,7 +69,7 @@ void AStarOpenList<s>::Add(const s &state, int g, int h)
 }
 
 template <class s>
-void AStarOpenList<s>::Add(const s &state, int g, int h, const s &parent)
+void AStarOpenList<s>::Add(const s &state, double g, double h, const s &parent)
 {
 	auto i = hash.find(state);
 	if (i == hash.end()) // not found

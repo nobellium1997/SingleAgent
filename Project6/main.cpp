@@ -15,7 +15,7 @@
 int main(int argc, const char * argv[]) {
 
 	EightWayMovement ew;
-    ew.posy = 4;
+    ew.posy = 1;
 	ew.posx = 100;
     EightWayMovement goal;
 	goal.posx = 96;

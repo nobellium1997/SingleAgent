@@ -28,8 +28,8 @@
             <file leaf-file-name="test.txt" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="119">
-                    <caret line="7" column="96" lean-forward="true" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
+                  <state relative-caret-position="17">
+                    <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
                   </state>
                 </provider>
               </entry>
@@ -47,8 +47,8 @@
           <file leaf-file-name="AStarOpenList.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AStarOpenList.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+                <state relative-caret-position="329">
+                  <caret line="182" column="21" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -56,7 +56,7 @@
           <file leaf-file-name="EightWayMovement.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/EightWayMovement.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="369">
+                <state relative-caret-position="510">
                   <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
                   <folding>
                     <element signature="e#114#131#0" expanded="true" />
@@ -69,15 +69,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="AStar.h" pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="AStar.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AStar.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-                  <folding>
-                    <element signature="e#241#287#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="442">
+                  <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -94,11 +91,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#28#47#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -110,6 +110,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>hash</find>
+      <find>g</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -128,8 +129,9 @@
         <option value="$PROJECT_DIR$/Heuristic.h" />
         <option value="$PROJECT_DIR$/EightWayMovement.cpp" />
         <option value="$PROJECT_DIR$/EightWayMovement.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/AStar.h" />
+        <option value="$PROJECT_DIR$/AStarOpenList.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -144,8 +146,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-495" />
-    <option name="y" value="-10" />
+    <option name="x" value="-468" />
+    <option name="y" value="-23" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -219,21 +221,23 @@
       <workItem from="1526441431688" duration="1710000" />
       <workItem from="1526443859221" duration="11967000" />
       <workItem from="1526479570538" duration="2433000" />
+      <workItem from="1526486604001" duration="1786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16110000" />
+    <option name="totallyTimeSpent" value="17896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17395833" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49947917" weight="0.32837406" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32912722" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005208" side_tool="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32837406" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.32837406" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -246,7 +250,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +269,51 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AStarOpenList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EightWayMovement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="e#114#131#0" expanded="true" />
+            <element signature="e#923#925#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EightWayMovement.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#41#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EightWayMovement.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3179">
@@ -311,9 +359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#177#193#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -412,9 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#177#193#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -451,7 +493,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EightWayMovement.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
+        <state relative-caret-position="510">
           <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#114#131#0" expanded="true" />
@@ -462,22 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AStarOpenList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="96" lean-forward="true" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+        <state relative-caret-position="329">
+          <caret line="182" column="21" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -493,10 +521,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AStar.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        <state relative-caret-position="442">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding>
-            <element signature="e#241#287#0" expanded="true" />
+            <element signature="e#28#47#0" expanded="true" />
           </folding>
         </state>
       </provider>

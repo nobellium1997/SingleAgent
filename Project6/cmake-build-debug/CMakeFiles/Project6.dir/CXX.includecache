@@ -9,6 +9,8 @@
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStar.h
 vector
 -
+cmath
+-
 AStarOpenList.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
 Heuristic.h
