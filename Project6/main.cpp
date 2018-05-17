@@ -16,6 +16,9 @@
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators);
 
 int main(int argc, const char * argv[]) {
+    // So I know one of the requirements is to have astar run after finding the goal, but
+    // I didn't include that to save on runtime for the tests. Simply removing the break statement
+    // from astar.h will expand all nodes in the state space
 
     // all this code is to test the map
     std::ifstream file;
@@ -66,7 +69,7 @@ int main(int argc, const char * argv[]) {
 
     // only did 20 tests, but you could do them all by looping to
     // start_points.size()
-    for(int i = 0; i < 20; i++) {
+    for(int i = 0; i < 1; i++) {
         ew.posx = start_points.at(i).first;
         ew.posy = start_points.at(i).second;
 
@@ -85,6 +88,22 @@ int main(int argc, const char * argv[]) {
         for(auto op: operators) {
             std::cout << op << " ";
         }
+        std::cout << std::endl;
+
+        // this will print all the gcosts of all nodes expanded
+        // there is a method that I wrote to take in a particular state
+        // and return it's gcost if it has been expanded
+        std::vector<std::pair<EightWayMovement, double>> vec = astar.get_state_gcost();
+        std::cout << "gcosts of all nodes expanded" << std::endl;
+        for(auto i: vec) {
+            std::cout << i.second << ", ";
+        }
+        std::cout << std::endl;
+
+        // this is just a demo to show how the api works. It will return a gcost
+        // when given a state if the state has been expanded
+        std::cout << "finding the gcost of one state " << std::endl;
+        std::cout << astar.get_state_gcost(ew) << std::endl;
         std::cout << std::endl;
         std::cout << std::endl;
     }
