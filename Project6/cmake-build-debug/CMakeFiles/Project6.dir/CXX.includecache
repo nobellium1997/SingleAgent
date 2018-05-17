@@ -107,6 +107,8 @@ chrono
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/main.cpp
 iostream
 -
+sstream
+-
 STP.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
 Timer.h

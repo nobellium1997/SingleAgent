@@ -4,6 +4,7 @@
 //
 
 #include <iostream>
+#include <sstream>
 #include "STP.h"
 #include "Timer.h"
 #include "DFID.h"
@@ -16,28 +17,81 @@ void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWM
 
 int main(int argc, const char * argv[]) {
 
-	EightWayMovement ew;
-    ew.posy = 1;
-	ew.posx = 100;
-    EightWayMovement goal;
-	goal.posx = 96;
-    goal.posy = 7;
+    // all this code is to test the map
+    std::ifstream file;
+    std::string file_name = "lak303d.map.scen";
+    file.open(file_name);
 
+    // retrieving start and goal coordinates
+    std::vector<std::pair<int, int>> start_points;
+    std::vector<std::pair<int, int>> end_points;
+
+    std::string line;
+    if(file.is_open()) {
+        int counter = 0;
+        while(std::getline(file, line)) {
+            if(counter == 0) {
+                counter++;
+                continue;
+            }
+            std::pair<int, int> coords;
+            std::istringstream stream(line);
+            std::string temp;
+            for (int i = 0; i < 4; i++) {
+                stream >> temp;
+            }
+            stream >> temp;
+            coords.first = std::stoi(temp, nullptr, 10);
+            stream >> temp;
+            coords.second = std::stoi(temp, nullptr, 10);
+            start_points.push_back(coords);
+
+            stream >> temp;
+            coords.first = std::stoi(temp, nullptr, 10);
+            stream >> temp;
+            coords.second = std::stoi(temp, nullptr, 10);
+            end_points.push_back(coords);
+        }
+    } else {
+        std::cerr << "No file found ";
+    }
+
+    EightWayMovement ew;
+    EightWayMovement goal;
     AStar<EWM, EightWayMovement, EWMoves> astar;
-	std::vector<EightWayMovement> path;
-	std::vector<EWMoves> operators;
-	EWM environment;
-	EightWayHeuristic h;
-	astar.GetPath(&environment, ew, goal, &h, path);
-    states_to_path(path, operators);
-    for(auto op: operators) {
-        std::cout << op << " ";
+    std::vector<EightWayMovement> path;
+    std::vector<EWMoves> operators;
+    EWM environment;
+    EightWayHeuristic h;
+
+    for(int i = 0; i < start_points.size(); i++) {
+        ew.posx = start_points.at(i).first;
+        ew.posy = start_points.at(i).second;
+
+        goal.posx = end_points.at(i).first;
+        goal.posy = end_points.at(i).second;
+
+        astar.GetPath(&environment, ew, goal, &h, path);
+
+        states_to_path(path, operators);
+
+        std::cout << "Solution from " << start_points.at(i).first << ", " << start_points.at(i).second
+                                                                          << " to " << end_points.at(i).first
+                                                                                    << ", "
+                                                                                    << end_points.at(i).second
+                                                                                    << std::endl;
+        for(auto op: operators) {
+            std::cout << op << " ";
+        }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
 
 	return 0;
 }
 
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators) {
+    operators.clear();
     EightWayMovement previous_state = states.at(states.size()-1);
     for(int i = states.size()-2; i > -1; i--) {
         EightWayMovement current_state = states.at(i);

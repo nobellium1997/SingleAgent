@@ -59,6 +59,8 @@ EightWayMovement::EightWayMovement(/*const std::string &file_name*/) {
     file.close();
 }
 
+
+
 std::ostream& operator<<(std::ostream& out, const EightWayMovement& ew) {
     for(int i = 0; i < ew.map_height; i++) {
         for(int j = 0; j < ew.map_width; j++) {
