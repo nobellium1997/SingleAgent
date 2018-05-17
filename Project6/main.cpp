@@ -12,6 +12,8 @@
 #include "EightWayMovement.h"
 #include "EightWayHeuristic.h"
 
+void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators);
+
 int main(int argc, const char * argv[]) {
 
 	EightWayMovement ew;
@@ -23,12 +25,45 @@ int main(int argc, const char * argv[]) {
 
     AStar<EWM, EightWayMovement, EWMoves> astar;
 	std::vector<EightWayMovement> path;
+	std::vector<EWMoves> operators;
 	EWM environment;
 	EightWayHeuristic h;
 	astar.GetPath(&environment, ew, goal, &h, path);
-    for(int i = 0; i < path.size(); i++) {
-        std::cout << path.at(i).posx << " " << path.at(i).posy << std::endl;
+    states_to_path(path, operators);
+    for(auto op: operators) {
+        std::cout << op << " ";
     }
 
 	return 0;
+}
+
+void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators) {
+    EightWayMovement previous_state = states.at(states.size()-1);
+    for(int i = states.size()-2; i > -1; i--) {
+        EightWayMovement current_state = states.at(i);
+
+        if(current_state.posy > previous_state.posy &&
+                current_state.posx > previous_state.posx) {
+            operators.push_back(down_right);
+        } else if(previous_state.posy > current_state.posy &&
+                previous_state.posx > current_state.posx) {
+            operators.push_back(up_left);
+        } else if (current_state.posy > previous_state.posy &&
+                previous_state.posx > current_state.posx) {
+            operators.push_back(down_left);
+        } else if(previous_state.posy > current_state.posy &&
+                current_state.posx > previous_state.posx){
+            operators.push_back(up_right);
+        } else if(current_state.posy > previous_state.posy) {
+            operators.push_back(down);
+        } else if(previous_state.posy > current_state.posy) {
+            operators.push_back(up);
+        } else if (current_state.posx > previous_state.posx) {
+            operators.push_back(right);
+        } else if(previous_state.posx > current_state.posx) {
+            operators.push_back(left);
+        }
+
+        previous_state = current_state;
+    }
 }
