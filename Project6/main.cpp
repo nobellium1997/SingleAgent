@@ -64,7 +64,9 @@ int main(int argc, const char * argv[]) {
     EWM environment;
     EightWayHeuristic h;
 
-    for(int i = 0; i < start_points.size(); i++) {
+    // only did 20 tests, but you could do them all by looping to
+    // start_points.size()
+    for(int i = 0; i < 20; i++) {
         ew.posx = start_points.at(i).first;
         ew.posy = start_points.at(i).second;
 
