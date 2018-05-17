@@ -72,15 +72,17 @@ int main(int argc, const char * argv[]) {
         goal.posx = end_points.at(i).first;
         goal.posy = end_points.at(i).second;
 
+        std::cout << "Solution from " << start_points.at(i).first << ", " << start_points.at(i).second
+                  << " to " << end_points.at(i).first
+                  << ", "
+                  << end_points.at(i).second
+                  << std::endl;
+
         astar.GetPath(&environment, ew, goal, &h, path);
 
         states_to_path(path, operators);
 
-        std::cout << "Solution from " << start_points.at(i).first << ", " << start_points.at(i).second
-                                                                          << " to " << end_points.at(i).first
-                                                                                    << ", "
-                                                                                    << end_points.at(i).second
-                                                                                    << std::endl;
+
         for(auto op: operators) {
             std::cout << op << " ";
         }
@@ -90,7 +92,7 @@ int main(int argc, const char * argv[]) {
         // there is a method that I wrote to take in a particular state
         // and return it's gcost if it has been expanded
         std::vector<std::pair<EightWayMovement, double>> vec = astar.get_state_gcost();
-        std::cout << "gcosts of all nodes expanded" << std::endl;
+        std::cout << "gcosts of all nodes expanded";
         int counter = 0;
         for(auto i: vec) {
             if(counter %10 == 0) {
