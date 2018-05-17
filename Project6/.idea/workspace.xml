@@ -28,8 +28,8 @@
             <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/main.cpp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="459">
-                    <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+                  <state relative-caret-position="306">
+                    <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="113" selection-end-column="31" />
                     <folding>
                       <element signature="e#28#47#0" expanded="true" />
                     </folding>
@@ -45,20 +45,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="179" column="101" selection-start-line="179" selection-start-column="101" selection-end-line="179" selection-end-column="101" />
+            <state relative-caret-position="170">
+              <caret line="10" column="104" selection-start-line="10" selection-start-column="104" selection-end-line="10" selection-end-column="104" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AStar.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AStar.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AStar.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+            <state relative-caret-position="183">
+              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding>
                 <element signature="e#500#546#0" expanded="true" />
                 <element signature="e#1521#1567#0" expanded="true" />
@@ -217,12 +217,12 @@
       <workItem from="1526479570538" duration="2433000" />
       <workItem from="1526486604001" duration="1786000" />
       <workItem from="1526513896885" duration="4312000" />
-      <workItem from="1526518822740" duration="3795000" />
+      <workItem from="1526518822740" duration="4337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26003000" />
+    <option name="totallyTimeSpent" value="26545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -641,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="179" column="101" selection-start-line="179" selection-start-column="101" selection-end-line="179" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/lak303d.map.scen">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -657,8 +650,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AStar.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+        <state relative-caret-position="183">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
             <element signature="e#500#546#0" expanded="true" />
             <element signature="e#1521#1567#0" expanded="true" />
@@ -667,10 +660,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="104" selection-start-line="10" selection-start-column="104" selection-end-line="10" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="306">
+          <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="113" selection-end-column="31" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
           </folding>
