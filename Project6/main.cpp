@@ -104,9 +104,9 @@ int main(int argc, const char * argv[]) {
         // this is just a demo to show how the api works. It will return a gcost
         // when given a state if the state has been expanded
         // the answer will always be zero
-        std::cout << "finding the gcost of one state " << std::endl;
-        std::cout << astar.get_state_gcost(ew) << std::endl;
-        std::cout << std::endl;
+//        std::cout << "finding the gcost of one state " << std::endl;
+//        std::cout << astar.get_state_gcost(ew) << std::endl;
+//        std::cout << std::endl;
 
         std::cout << std::endl;
     }

@@ -1,7 +1,12 @@
-The first set of tests is stopping a star when it finds the goal. I only ran 20 but you could
+I hardcoded the filename in my class "EightWayMovement.cpp" so if you need to change the file name
+or path thats where to go
+
+To keep a star running after goal, just hit y (or anything that isn't n) in the terminal. To exit after finding the goal, hit n
+
+The first set of tests in this file is stopping a star when it finds the goal. I only ran 20 but you could
 change the loop in main to run all tests and find optimal paths.
 
-The second test is if I leave a star to run after it finds the goal. This prints out all 
+The second test is if I leave a star to run after it finds the goal. I only ran one test for time. This prints out all 
 the gcosts of all nodes in the state space
 
 Solution from 10, 113 to 11, 112
