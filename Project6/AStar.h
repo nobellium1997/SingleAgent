@@ -34,6 +34,8 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 	while (!q.Empty())
 	{
 		AStarData<state> next = q.GetNext();
+		std::cout << "g cost is " << next.g << " h cost is " << next.h << std::endl;
+
 		if (next.state == goal)
 		{
 			q.GetPath(next.state, path);

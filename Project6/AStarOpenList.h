@@ -17,8 +17,8 @@ const size_t kNoParent = -1;
 template <class s>
 struct AStarData {
 	s state;
-	int g;
-	int h;
+	double g;
+	double h;
 };
 
 template <class s>

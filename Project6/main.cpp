@@ -20,6 +20,7 @@ int main(int argc, const char * argv[]) {
     EightWayMovement goal;
 	goal.posx = 96;
     goal.posy = 7;
+
     AStar<EWM, EightWayMovement, EWMoves> astar;
 	std::vector<EightWayMovement> path;
 	EWM environment;
