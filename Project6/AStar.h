@@ -46,7 +46,12 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 		if (next.state == goal)
 		{
 			q.GetPath(next.state, path);
-			return;
+			std::string input;
+			std::cout <<"Goal found. Keep going? (y/n): ";
+			std::cin >> input;
+			if(input == "n") {
+			    return;
+			}
 		}
 		env->GetOperators(next.state, acts);
 		

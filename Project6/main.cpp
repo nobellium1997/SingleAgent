@@ -16,11 +16,6 @@
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators);
 
 int main(int argc, const char * argv[]) {
-    // So I know one of the requirements is to have astar run after finding the goal, but
-    // I didn't include that to save on runtime for the tests. Simply commenting out the "return"
-    // on line 49 statement from astar.h will expand all nodes in the state space and will print
-    // every gcost in the state space
-
     // all this code is to test the map
     std::ifstream file;
     std::string file_name = "lak303d.map.scen";
