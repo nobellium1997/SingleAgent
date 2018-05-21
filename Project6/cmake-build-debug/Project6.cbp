@@ -98,6 +98,18 @@
 		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DFID.h">
 			<Option target="Project6"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.cpp">
+			<Option target="Project6"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h">
+			<Option target="Project6"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp">
+			<Option target="Project6"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h">
+			<Option target="Project6"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.cpp">
 			<Option target="Project6"/>
 		</Unit>

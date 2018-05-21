@@ -225,6 +225,54 @@ CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o.provides: CMakeFiles/Project6.di
 CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o.provides.build: CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o
 
 
+CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o: CMakeFiles/Project6.dir/flags.make
+CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o: ../DifferentialHeuristic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o -c /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp
+
+CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp > CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.i
+
+CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp -o CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.s
+
+CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o.requires:
+
+.PHONY : CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o.requires
+
+CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o.provides: CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o.provides.build
+.PHONY : CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o.provides
+
+CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o.provides.build: CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o
+
+
+CMakeFiles/Project6.dir/DifferentialHelper.cpp.o: CMakeFiles/Project6.dir/flags.make
+CMakeFiles/Project6.dir/DifferentialHelper.cpp.o: ../DifferentialHelper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project6.dir/DifferentialHelper.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project6.dir/DifferentialHelper.cpp.o -c /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.cpp
+
+CMakeFiles/Project6.dir/DifferentialHelper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project6.dir/DifferentialHelper.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.cpp > CMakeFiles/Project6.dir/DifferentialHelper.cpp.i
+
+CMakeFiles/Project6.dir/DifferentialHelper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project6.dir/DifferentialHelper.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.cpp -o CMakeFiles/Project6.dir/DifferentialHelper.cpp.s
+
+CMakeFiles/Project6.dir/DifferentialHelper.cpp.o.requires:
+
+.PHONY : CMakeFiles/Project6.dir/DifferentialHelper.cpp.o.requires
+
+CMakeFiles/Project6.dir/DifferentialHelper.cpp.o.provides: CMakeFiles/Project6.dir/DifferentialHelper.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHelper.cpp.o.provides.build
+.PHONY : CMakeFiles/Project6.dir/DifferentialHelper.cpp.o.provides
+
+CMakeFiles/Project6.dir/DifferentialHelper.cpp.o.provides.build: CMakeFiles/Project6.dir/DifferentialHelper.cpp.o
+
+
 # Object files for target Project6
 Project6_OBJECTS = \
 "CMakeFiles/Project6.dir/main.cpp.o" \
@@ -233,7 +281,9 @@ Project6_OBJECTS = \
 "CMakeFiles/Project6.dir/STP.cpp.o" \
 "CMakeFiles/Project6.dir/Timer.cpp.o" \
 "CMakeFiles/Project6.dir/EightWayMovement.cpp.o" \
-"CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o"
+"CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o" \
+"CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o" \
+"CMakeFiles/Project6.dir/DifferentialHelper.cpp.o"
 
 # External object files for target Project6
 Project6_EXTERNAL_OBJECTS =
@@ -245,9 +295,11 @@ Project6.exe: CMakeFiles/Project6.dir/STP.cpp.o
 Project6.exe: CMakeFiles/Project6.dir/Timer.cpp.o
 Project6.exe: CMakeFiles/Project6.dir/EightWayMovement.cpp.o
 Project6.exe: CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o
+Project6.exe: CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o
+Project6.exe: CMakeFiles/Project6.dir/DifferentialHelper.cpp.o
 Project6.exe: CMakeFiles/Project6.dir/build.make
 Project6.exe: CMakeFiles/Project6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Project6.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Project6.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,6 +314,8 @@ CMakeFiles/Project6.dir/requires: CMakeFiles/Project6.dir/STP.cpp.o.requires
 CMakeFiles/Project6.dir/requires: CMakeFiles/Project6.dir/Timer.cpp.o.requires
 CMakeFiles/Project6.dir/requires: CMakeFiles/Project6.dir/EightWayMovement.cpp.o.requires
 CMakeFiles/Project6.dir/requires: CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o.requires
+CMakeFiles/Project6.dir/requires: CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o.requires
+CMakeFiles/Project6.dir/requires: CMakeFiles/Project6.dir/DifferentialHelper.cpp.o.requires
 
 .PHONY : CMakeFiles/Project6.dir/requires
 

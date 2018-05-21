@@ -177,6 +177,60 @@ DFID.cpp.s:
 	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DFID.cpp.s
 .PHONY : DFID.cpp.s
 
+DifferentialHelper.o: DifferentialHelper.cpp.o
+
+.PHONY : DifferentialHelper.o
+
+# target to build an object file
+DifferentialHelper.cpp.o:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHelper.cpp.o
+.PHONY : DifferentialHelper.cpp.o
+
+DifferentialHelper.i: DifferentialHelper.cpp.i
+
+.PHONY : DifferentialHelper.i
+
+# target to preprocess a source file
+DifferentialHelper.cpp.i:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHelper.cpp.i
+.PHONY : DifferentialHelper.cpp.i
+
+DifferentialHelper.s: DifferentialHelper.cpp.s
+
+.PHONY : DifferentialHelper.s
+
+# target to generate assembly for a file
+DifferentialHelper.cpp.s:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHelper.cpp.s
+.PHONY : DifferentialHelper.cpp.s
+
+DifferentialHeuristic.o: DifferentialHeuristic.cpp.o
+
+.PHONY : DifferentialHeuristic.o
+
+# target to build an object file
+DifferentialHeuristic.cpp.o:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o
+.PHONY : DifferentialHeuristic.cpp.o
+
+DifferentialHeuristic.i: DifferentialHeuristic.cpp.i
+
+.PHONY : DifferentialHeuristic.i
+
+# target to preprocess a source file
+DifferentialHeuristic.cpp.i:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.i
+.PHONY : DifferentialHeuristic.cpp.i
+
+DifferentialHeuristic.s: DifferentialHeuristic.cpp.s
+
+.PHONY : DifferentialHeuristic.s
+
+# target to generate assembly for a file
+DifferentialHeuristic.cpp.s:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.s
+.PHONY : DifferentialHeuristic.cpp.s
+
 EightWayHeuristic.o: EightWayHeuristic.cpp.o
 
 .PHONY : EightWayHeuristic.o
@@ -327,6 +381,12 @@ help:
 	@echo "... DFID.o"
 	@echo "... DFID.i"
 	@echo "... DFID.s"
+	@echo "... DifferentialHelper.o"
+	@echo "... DifferentialHelper.i"
+	@echo "... DifferentialHelper.s"
+	@echo "... DifferentialHeuristic.o"
+	@echo "... DifferentialHeuristic.i"
+	@echo "... DifferentialHeuristic.s"
 	@echo "... EightWayHeuristic.o"
 	@echo "... EightWayHeuristic.i"
 	@echo "... EightWayHeuristic.s"

@@ -11,6 +11,7 @@
 
 #include <vector>
 #include <cmath>
+#include <iostream>
 #include "AStarOpenList.h"
 #include "Heuristic.h"
 

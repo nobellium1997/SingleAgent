@@ -11,6 +11,8 @@ vector
 -
 cmath
 -
+iostream
+-
 AStarOpenList.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
 Heuristic.h
@@ -43,6 +45,30 @@ stdio.h
 -
 STP.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.cpp
+DifferentialHelper.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+vector
+-
+EightWayMovement.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+AStar.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStar.h
+EightWayHeuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp
+DifferentialHeuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+Heuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+DifferentialHelper.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
 
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.cpp
 cmath
@@ -123,4 +149,8 @@ EightWayMovement.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
 EightWayHeuristic.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+DifferentialHelper.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+DifferentialHeuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
 

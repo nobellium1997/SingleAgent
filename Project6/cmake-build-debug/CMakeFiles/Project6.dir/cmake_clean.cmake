@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project6.dir/Timer.cpp.o"
   "CMakeFiles/Project6.dir/EightWayMovement.cpp.o"
   "CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o"
+  "CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o"
+  "CMakeFiles/Project6.dir/DifferentialHelper.cpp.o"
   "Project6.pdb"
   "Project6.exe"
   "libProject6.dll.a"

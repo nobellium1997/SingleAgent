@@ -9,6 +9,25 @@ CMakeFiles/Project6.dir/DFID.cpp.o
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DFID.cpp
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DFID.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+CMakeFiles/Project6.dir/DifferentialHelper.cpp.o
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStar.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.cpp
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStar.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
 CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.cpp
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
@@ -29,6 +48,8 @@ CMakeFiles/Project6.dir/main.cpp.o
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/BFS.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DFID.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
