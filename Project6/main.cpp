@@ -19,44 +19,44 @@
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators);
 
 int main(int argc, const char * argv[]) {
-//    // all this code is to test the map
-//    std::ifstream file;
-//    std::string file_name = "lak303d.map.scen";
-//    file.open(file_name);
-//
-//    // retrieving start and goal coordinates
-//    std::vector<std::pair<int, int>> start_points;
-//    std::vector<std::pair<int, int>> end_points;
-//
-//    std::string line;
-//    if(file.is_open()) {
-//        int counter = 0;
-//        while(std::getline(file, line)) {
-//            if(counter == 0) {
-//                counter++;
-//                continue;
-//            }
-//            std::pair<int, int> coords;
-//            std::istringstream stream(line);
-//            std::string temp;
-//            for (int i = 0; i < 4; i++) {
-//                stream >> temp;
-//            }
-//            stream >> temp;
-//            coords.first = std::stoi(temp, nullptr, 10);
-//            stream >> temp;
-//            coords.second = std::stoi(temp, nullptr, 10);
-//            start_points.push_back(coords);
-//
-//            stream >> temp;
-//            coords.first = std::stoi(temp, nullptr, 10);
-//            stream >> temp;
-//            coords.second = std::stoi(temp, nullptr, 10);
-//            end_points.push_back(coords);
-//        }
-//    } else {
-//        std::cerr << "No file found ";
-//    }
+    // all this code is to test the map
+    std::ifstream file;
+    std::string file_name = "lak303d.map.scen";
+    file.open(file_name);
+
+    // retrieving start and goal coordinates
+    std::vector<std::pair<int, int>> start_points;
+    std::vector<std::pair<int, int>> end_points;
+
+    std::string line;
+    if(file.is_open()) {
+        int counter = 0;
+        while(std::getline(file, line)) {
+            if(counter == 0) {
+                counter++;
+                continue;
+            }
+            std::pair<int, int> coords;
+            std::istringstream stream(line);
+            std::string temp;
+            for (int i = 0; i < 4; i++) {
+                stream >> temp;
+            }
+            stream >> temp;
+            coords.first = std::stoi(temp, nullptr, 10);
+            stream >> temp;
+            coords.second = std::stoi(temp, nullptr, 10);
+            start_points.push_back(coords);
+
+            stream >> temp;
+            coords.first = std::stoi(temp, nullptr, 10);
+            stream >> temp;
+            coords.second = std::stoi(temp, nullptr, 10);
+            end_points.push_back(coords);
+        }
+    } else {
+        std::cerr << "No file found ";
+    }
 //
 //    EightWayMovement ew;
 //    EightWayMovement goal;
@@ -131,10 +131,30 @@ int main(int argc, const char * argv[]) {
 //        std::cout << std::endl;
 //    }
 
-    DifferentialHeuristic dh2(99, 95);
+    DifferentialHeuristic dh2(95, 95);
     DifferentialHeuristic dh3(165, 111);
     DifferentialHeuristic dh(21, 90);
+    DifferentialHeuristic dh4(97, 5);
+    DifferentialHeuristic dh5(87, 191);
 
+    std::vector<DifferentialHeuristic> pivot_points;
+    pivot_points.push_back(dh);
+    pivot_points.push_back(dh2);
+    pivot_points.push_back(dh3);
+    pivot_points.push_back(dh4);
+    pivot_points.push_back(dh5);
+
+    MaxHeuristic h(pivot_points);
+
+    EightWayMovement ew;
+    EightWayMovement goal;
+
+    ew.posx = start_points.at(0).first;
+    ew.posy = start_points.at(0).second;
+
+    goal.posx = end_points.at(0).first;
+    goal.posy = end_points.at(0).second;
+    std::cout << h.h(ew, goal);
 	return 0;
 }
 

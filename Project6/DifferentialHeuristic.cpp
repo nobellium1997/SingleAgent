@@ -17,9 +17,5 @@ double DifferentialHeuristic::h(const EightWayMovement &ew1, const EightWayMovem
 }
 
 double DifferentialHeuristic::get_state_gcost(const EightWayMovement &ew1) {
-    for(auto i : points) {
-        if(i.first.posx == ew1.posx && i.first.posy == ew1.posy) {
-            return i.second;
-        }
-    }
+    return points.at(ew1);
 }

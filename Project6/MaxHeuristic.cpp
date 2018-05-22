@@ -4,15 +4,13 @@
 
 #include "MaxHeuristic.h"
 
-MaxHeuristic::MaxHeuristic(const std::vector<DifferentialHeuristic>& points) {
-    for(auto i : points) {
-        this->dh.push_back(i);
-    }
+MaxHeuristic::MaxHeuristic(std::vector<DifferentialHeuristic>& points) {
+    this->dh = &points;
 }
 
 double MaxHeuristic::h(const EightWayMovement &ew1, const EightWayMovement &ew2) {
     double max_val = 0;
-    for(auto i : this->dh) {
+    for(auto i : *this->dh) {
         if(i.h(ew1, ew2) > max_val) {
             max_val = i.h(ew1, ew2);
         }

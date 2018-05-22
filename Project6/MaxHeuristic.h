@@ -12,10 +12,10 @@
 
 class MaxHeuristic : public Heuristic {
 public:
-    MaxHeuristic(const std::vector<DifferentialHeuristic>& points);
+    MaxHeuristic(std::vector<DifferentialHeuristic>& points);
     double h(const EightWayMovement& ew1, const EightWayMovement& ew2);
     EightWayHeuristic eh;
-    std::vector<DifferentialHeuristic> dh;
+    std::vector<DifferentialHeuristic>* dh;
 };
 
 

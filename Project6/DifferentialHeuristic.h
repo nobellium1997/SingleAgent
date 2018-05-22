@@ -13,7 +13,7 @@ public:
     DifferentialHeuristic(const int& x, const int& y);
     double h(const EightWayMovement& ew1, const EightWayMovement& ew2);
     double get_state_gcost(const EightWayMovement& ew1);
-    std::vector<std::pair<EightWayMovement, double>> points;
+    std::unordered_map<EightWayMovement, double> points;
 };
 
 

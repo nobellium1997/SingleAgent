@@ -14,7 +14,8 @@
 class DifferentialHelper {
 public:
     DifferentialHelper(const int& x, const int& y);
-    std::vector<std::pair<EightWayMovement, double>> points;
+//    std::vector<std::pair<EightWayMovement, double>> points;
+    std::unordered_map<EightWayMovement, double> points;
 };
 
 
