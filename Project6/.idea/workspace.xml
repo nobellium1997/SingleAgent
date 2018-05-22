@@ -29,7 +29,7 @@
             <entry file="file://$PROJECT_DIR$/DifferentialHelper.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="442">
-                  <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+                  <caret line="26" selection-start-line="26" selection-end-line="26" />
                 </state>
               </provider>
             </entry>
@@ -37,8 +37,8 @@
           <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+                <state relative-caret-position="816">
+                  <caret line="146" column="42" lean-forward="true" selection-start-line="146" selection-start-column="42" selection-end-line="146" selection-end-column="42" />
                   <folding>
                     <element signature="e#28#47#0" expanded="true" />
                   </folding>
@@ -46,19 +46,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DifferentialHeuristic.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/DifferentialHeuristic.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="AStarOpenList.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AStarOpenList.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="911">
+                <state relative-caret-position="1241">
                   <caret line="73" selection-start-line="73" selection-end-line="73" />
                 </state>
               </provider>
@@ -98,11 +89,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="AStar.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="AStar.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AStar.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-31">
-                  <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+                <state relative-caret-position="17">
+                  <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
                   <folding>
                     <element signature="e#163#180#0" expanded="true" />
                     <element signature="e#2173#2219#0" expanded="true" />
@@ -111,35 +102,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DifferentialHelper.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/DifferentialHelper.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#119#136#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DifferentialHeuristic.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/DifferentialHeuristic.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-                  <folding>
-                    <element signature="e#124#146#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="Heuristic.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Heuristic.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="70" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="70" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="70" />
                 </state>
               </provider>
             </entry>
@@ -159,7 +126,7 @@
           <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
+                <state relative-caret-position="1530">
                   <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
                 </state>
               </provider>
@@ -294,11 +261,12 @@
       <workItem from="1526527229861" duration="524000" />
       <workItem from="1526859990055" duration="901000" />
       <workItem from="1526863228433" duration="3335000" />
+      <workItem from="1526946505903" duration="633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31444000" />
+    <option name="totallyTimeSpent" value="32077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -306,7 +274,6 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17395833" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49947917" visible="true" weight="0.3280757" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32912722" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005208" side_tool="true" weight="0.32912722" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
@@ -322,6 +289,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32837406" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49947917" visible="true" weight="0.3280757" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +313,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/AStar.h</url>
-          <line>38</line>
+          <line>39</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
@@ -668,15 +636,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="1530">
           <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Heuristic.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="70" />
+        <state relative-caret-position="289">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -692,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AStar.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        <state relative-caret-position="17">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
           <folding>
             <element signature="e#163#180#0" expanded="true" />
             <element signature="e#2173#2219#0" expanded="true" />
@@ -701,51 +669,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DifferentialHelper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DifferentialHeuristic.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding>
-            <element signature="e#124#146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DifferentialHelper.h" />
+    <entry file="file://$PROJECT_DIR$/DifferentialHeuristic.h" />
     <entry file="file://$PROJECT_DIR$/AStarOpenList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="911">
+        <state relative-caret-position="1241">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DifferentialHeuristic.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DifferentialHeuristic.cpp" />
     <entry file="file://$PROJECT_DIR$/DifferentialHelper.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+        <state relative-caret-position="816">
+          <caret line="146" column="42" lean-forward="true" selection-start-line="146" selection-start-column="42" selection-end-line="146" selection-end-column="42" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
           </folding>
