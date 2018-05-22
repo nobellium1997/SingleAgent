@@ -19,115 +19,119 @@
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators);
 
 int main(int argc, const char * argv[]) {
-//    // all this code is to test the map
-//    std::ifstream file;
-//    std::string file_name = "lak303d.map.scen";
-//    file.open(file_name);
-//
-//    // retrieving start and goal coordinates
-//    std::vector<std::pair<int, int>> start_points;
-//    std::vector<std::pair<int, int>> end_points;
-//
-//    std::string line;
-//    if(file.is_open()) {
-//        int counter = 0;
-//        while(std::getline(file, line)) {
-//            if(counter == 0) {
-//                counter++;
-//                continue;
-//            }
-//            std::pair<int, int> coords;
-//            std::istringstream stream(line);
-//            std::string temp;
-//            for (int i = 0; i < 4; i++) {
-//                stream >> temp;
-//            }
-//            stream >> temp;
-//            coords.first = std::stoi(temp, nullptr, 10);
-//            stream >> temp;
-//            coords.second = std::stoi(temp, nullptr, 10);
-//            start_points.push_back(coords);
-//
-//            stream >> temp;
-//            coords.first = std::stoi(temp, nullptr, 10);
-//            stream >> temp;
-//            coords.second = std::stoi(temp, nullptr, 10);
-//            end_points.push_back(coords);
-//        }
-//    } else {
-//        std::cerr << "No file found ";
-//    }
-//
-//    EightWayMovement ew;
-//    EightWayMovement goal;
-//    AStar<EWM, EightWayMovement, EWMoves> astar;
-//    std::vector<EightWayMovement> path;
-//    std::vector<EWMoves> operators;
-//    EWM environment;
-//    EightWayHeuristic h;
-//
-//    // only did 1 test, but you could do them all by looping to
-//    // start_points.size()
-//    for(int i = 0; i < 20; i++) {
-//        ew.posx = start_points.at(i).first;
-//        ew.posy = start_points.at(i).second;
-//
-//        goal.posx = end_points.at(i).first;
-//        goal.posy = end_points.at(i).second;
-//
-//        std::cout << "Solution from " << start_points.at(i).first << ", " << start_points.at(i).second
-//                  << " to " << end_points.at(i).first
-//                  << ", "
-//                  << end_points.at(i).second
-//                  << std::endl;
-//
-//        astar.GetPath(&environment, ew, goal, &h, path);
-//
-//        states_to_path(path, operators);
-//
-//
-//        for(auto op: operators) {
-//            std::cout << op << " ";
-//        }
-//        std::cout << std::endl;
-//
-//        // this will print all the gcosts of all nodes expanded
-//        // there is a method that I wrote to take in a particular state
-//        // and return it's gcost if it has been expanded
-//        std::vector<std::pair<EightWayMovement, double>> vec = astar.get_state_gcost();
-//        std::cout << "gcosts of all nodes expanded";
-//        int counter = 0;
-//        for(auto i: vec) {
-//            if(counter %10 == 0) {
-//                std::cout << std::endl;
-//            }
-//            std::cout << i.second << ", ";
-//            counter++;
-//        }
-//        std::cout << std::endl;
-//
-//        // this is just a demo to show how the api works. It will return a gcost
-//        // when given a state if the state has been expanded
-//        // the answer will always be zero
-////        std::cout << "finding the gcost of one state " << std::endl;
-////        std::cout << astar.get_state_gcost(ew) << std::endl;
-////        std::cout << std::endl;
-//
-//        std::cout << std::endl;
-//    }
+    // all this code is to test the map
+    std::ifstream file;
+    std::string file_name = "lak303d.map.scen";
+    file.open(file_name);
+
+    // retrieving start and goal coordinates
+    std::vector<std::pair<int, int>> start_points;
+    std::vector<std::pair<int, int>> end_points;
+
+    std::string line;
+    if(file.is_open()) {
+        int counter = 0;
+        while(std::getline(file, line)) {
+            if(counter == 0) {
+                counter++;
+                continue;
+            }
+            std::pair<int, int> coords;
+            std::istringstream stream(line);
+            std::string temp;
+            for (int i = 0; i < 4; i++) {
+                stream >> temp;
+            }
+            stream >> temp;
+            coords.first = std::stoi(temp, nullptr, 10);
+            stream >> temp;
+            coords.second = std::stoi(temp, nullptr, 10);
+            start_points.push_back(coords);
+
+            stream >> temp;
+            coords.first = std::stoi(temp, nullptr, 10);
+            stream >> temp;
+            coords.second = std::stoi(temp, nullptr, 10);
+            end_points.push_back(coords);
+        }
+    } else {
+        std::cerr << "No file found ";
+    }
+
+    EightWayMovement ew;
+    EightWayMovement goal;
+    AStar<EWM, EightWayMovement, EWMoves> astar;
+    std::vector<EightWayMovement> path;
+    std::vector<EWMoves> operators;
+    EWM environment;
+
     DifferentialHeuristic dh(13, 89);
     std::vector<DifferentialHeuristic> pivot_points;
     pivot_points.push_back(dh);
+    MaxHeuristic h(pivot_points);
 
-    MaxHeuristic mh(pivot_points);
-    EightWayMovement e1;
-    e1.posx = 14;
-    e1.posy = 89;
+    // only did 1 test, but you could do them all by looping to
+    // start_points.size()
+    for(int i = 0; i < 20; i++) {
+        ew.posx = start_points.at(i).first;
+        ew.posy = start_points.at(i).second;
 
-    EightWayMovement goal;
-    goal.posx = 165;
-    goal.posy = 89;
-    std::cout << mh.h(e1, goal);
+        goal.posx = end_points.at(i).first;
+        goal.posy = end_points.at(i).second;
+
+        std::cout << "Solution from " << start_points.at(i).first << ", " << start_points.at(i).second
+                  << " to " << end_points.at(i).first
+                  << ", "
+                  << end_points.at(i).second
+                  << std::endl;
+
+        astar.GetPath(&environment, ew, goal, &h, path, false);
+
+        states_to_path(path, operators);
+
+
+        for(auto op: operators) {
+            std::cout << op << " ";
+        }
+        std::cout << std::endl;
+
+        // this will print all the gcosts of all nodes expanded
+        // there is a method that I wrote to take in a particular state
+        // and return it's gcost if it has been expanded
+        std::vector<std::pair<EightWayMovement, double>> vec = astar.get_state_gcost();
+        std::cout << "gcosts of all nodes expanded";
+        int counter = 0;
+        for(auto i: vec) {
+            if(counter %10 == 0) {
+                std::cout << std::endl;
+            }
+            std::cout << i.second << ", ";
+            counter++;
+        }
+        std::cout << std::endl;
+
+        // this is just a demo to show how the api works. It will return a gcost
+        // when given a state if the state has been expanded
+        // the answer will always be zero
+//        std::cout << "finding the gcost of one state " << std::endl;
+//        std::cout << astar.get_state_gcost(ew) << std::endl;
+//        std::cout << std::endl;
+
+        std::cout << std::endl;
+    }
+//    DifferentialHeuristic dh(13, 89);
+//    std::vector<DifferentialHeuristic> pivot_points;
+//    pivot_points.push_back(dh);
+//
+//    MaxHeuristic mh(pivot_points);
+//    EightWayMovement e1;
+//    e1.posx = 14;
+//    e1.posy = 89;
+//
+//    EightWayMovement goal;
+//    goal.posx = 165;
+//    goal.posy = 89;
+//    std::cout << mh.h(e1, goal);
 
 
 	return 0;
