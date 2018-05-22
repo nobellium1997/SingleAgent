@@ -57,81 +57,15 @@ int main(int argc, const char * argv[]) {
     } else {
         std::cerr << "No file found ";
     }
-//
-//    EightWayMovement ew;
-//    EightWayMovement goal;
-//    AStar<EWM, EightWayMovement, EWMoves> astar;
-//    std::vector<EightWayMovement> path;
-//    std::vector<EWMoves> operators;
-//    EWM environment;
-//
-//    DifferentialHeuristic dh2(99, 95);
-//    DifferentialHeuristic dh3(165, 111);
-//    DifferentialHeuristic dh(21, 90);
-//    DifferentialHeuristic dh4(97, 5);
-//    DifferentialHeuristic dh5(87, 191);
 
-//    std::vector<DifferentialHeuristic> pivot_points;
-//    pivot_points.push_back(dh);
-//    pivot_points.push_back(dh2);
-//    pivot_points.push_back(dh3);
-////    pivot_points.push_back(dh4);
-////    pivot_points.push_back(dh5);
-//
-//    MaxHeuristic h(pivot_points);
-//    EightWayHeuristic h;
-//
-//    // only did 1 test, but you could do them all by looping to
-//    // start_points.size()
-//    for(int i = 0; i < 5; i++) {
-//        ew.posx = start_points.at(i).first;
-//        ew.posy = start_points.at(i).second;
-//
-//        goal.posx = end_points.at(i).first;
-//        goal.posy = end_points.at(i).second;
-//
-//        std::cout << "Solution from " << start_points.at(i).first << ", " << start_points.at(i).second
-//                  << " to " << end_points.at(i).first
-//                  << ", "
-//                  << end_points.at(i).second
-//                  << std::endl;
-//
-//        astar.GetPath(&environment, ew, goal, &h, path, true);
-//
-//        states_to_path(path, operators);
-//
-//
-//        for(auto op: operators) {
-//            std::cout << op << " ";
-//        }
-//        std::cout << std::endl;
-//
-//        // this will print all the gcosts of all nodes expanded
-//        // there is a method that I wrote to take in a particular state
-//        // and return it's gcost if it has been expanded
-//        std::vector<std::pair<EightWayMovement, double>> vec = astar.get_state_gcost();
-//        std::cout << "gcosts of all nodes expanded";
-//        int counter = 0;
-//        for(auto i: vec) {
-//            if(counter %10 == 0) {
-//                std::cout << std::endl;
-//            }
-//            std::cout << i.second << ", ";
-//            counter++;
-//        }
-//        std::cout << std::endl;
-//
-//        // this is just a demo to show how the api works. It will return a gcost
-//        // when given a state if the state has been expanded
-//        // the answer will always be zero
-////        std::cout << "finding the gcost of one state " << std::endl;
-////        std::cout << astar.get_state_gcost(ew) << std::endl;
-////        std::cout << std::endl;
-//
-//        std::cout << std::endl;
-//    }
+    EightWayMovement ew;
+    EightWayMovement goal;
+    AStar<EWM, EightWayMovement, EWMoves> astar;
+    std::vector<EightWayMovement> path;
+    std::vector<EWMoves> operators;
+    EWM environment;
 
-    DifferentialHeuristic dh2(95, 95);
+    DifferentialHeuristic dh2(99, 95);
     DifferentialHeuristic dh3(165, 111);
     DifferentialHeuristic dh(21, 90);
     DifferentialHeuristic dh4(97, 5);
@@ -146,15 +80,30 @@ int main(int argc, const char * argv[]) {
 
     MaxHeuristic h(pivot_points);
 
-    EightWayMovement ew;
-    EightWayMovement goal;
+    for(int i = 0; i < start_points.size(); i++) {
+        ew.posx = start_points.at(i).first;
+        ew.posy = start_points.at(i).second;
 
-    ew.posx = start_points.at(0).first;
-    ew.posy = start_points.at(0).second;
+        goal.posx = end_points.at(i).first;
+        goal.posy = end_points.at(i).second;
 
-    goal.posx = end_points.at(0).first;
-    goal.posy = end_points.at(0).second;
-    std::cout << h.h(ew, goal);
+        std::cout << "Solution from " << start_points.at(i).first << ", " << start_points.at(i).second
+                  << " to " << end_points.at(i).first
+                  << ", "
+                  << end_points.at(i).second
+                  << std::endl;
+
+        astar.GetPath(&environment, ew, goal, &h, path, false);
+
+        states_to_path(path, operators);
+
+
+        for(auto op: operators) {
+            std::cout << op << " ";
+        }
+        std::cout << std::endl;
+        std::cout << std::endl;
+    }
 	return 0;
 }
 

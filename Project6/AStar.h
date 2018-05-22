@@ -41,9 +41,12 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 	path.resize(0);
 	q.Reset();
 	q.Add(start, 0, h->h(start, goal));
+	int counter = 0;
 	while (!q.Empty())
 	{
 		AStarData<state> next = q.GetNext();
+		std::cout << "Nodes Expanded " << counter << std::endl;
+		counter++;
 
 		if (next.state == goal)
 		{
