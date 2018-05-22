@@ -65,11 +65,11 @@ int main(int argc, const char * argv[]) {
     std::vector<EWMoves> operators;
     EWM environment;
 
-    DifferentialHeuristic dh2(99, 95);
-    DifferentialHeuristic dh3(165, 111);
-    DifferentialHeuristic dh(21, 90);
-    DifferentialHeuristic dh4(97, 5);
-    DifferentialHeuristic dh5(87, 191);
+    DifferentialHeuristic dh(90, 189);
+    DifferentialHeuristic dh2(7, 111);
+    DifferentialHeuristic dh3(184, 108);
+    DifferentialHeuristic dh4(98, 7);
+    DifferentialHeuristic dh5(95, 97);
 
     std::vector<DifferentialHeuristic> pivot_points;
     pivot_points.push_back(dh);
@@ -79,8 +79,9 @@ int main(int argc, const char * argv[]) {
     pivot_points.push_back(dh5);
 
     MaxHeuristic h(pivot_points);
+//    EightWayHeuristic h;
 
-    for(int i = 0; i < start_points.size(); i++) {
+    for(int i = 0; i < 1; i++) {
         ew.posx = start_points.at(i).first;
         ew.posy = start_points.at(i).second;
 
@@ -101,6 +102,10 @@ int main(int argc, const char * argv[]) {
         for(auto op: operators) {
             std::cout << op << " ";
         }
+        std::cout << std::endl;
+        std::cout << "Nodes Expanded: " << astar.get_nodes_expanded() << std::endl;
+        std::cout << "g-cost of goal: " << astar.get_final_gcost() << std::endl;
+
         std::cout << std::endl;
         std::cout << std::endl;
     }

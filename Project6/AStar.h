@@ -22,6 +22,8 @@ public:
                  const bool& keep_going);
     std::vector<std::pair<state, double>> get_state_gcost();
     double get_state_gcost(state s);
+    int get_nodes_expanded();
+    double get_final_gcost();
 private:
     struct state_gcost {
         state s;
@@ -30,6 +32,8 @@ private:
 	AStarOpenList<state> q;
 	std::vector<action> acts;
 	std::vector<state_gcost> closed_list;
+	int nodes_expanded;
+	double final_gcost;
 };
 
 
@@ -41,17 +45,16 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 	path.resize(0);
 	q.Reset();
 	q.Add(start, 0, h->h(start, goal));
-//	int counter = 0;
+	nodes_expanded = 0;
 	while (!q.Empty())
 	{
 		AStarData<state> next = q.GetNext();
-//		std::cout << "Nodes Expanded " << counter << std::endl;
-//		counter++;
+		std::cout << next.h << std::endl;
 
 		if (next.state == goal)
 		{
-            std::cout << "Final gcost is " << next.g << std::endl;
-                      q.GetPath(next.state, path);
+			final_gcost = next.g;
+            q.GetPath(next.state, path);
 			if(!keep_going) {
 			    return;
 			}
@@ -71,6 +74,7 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 
 		state_gcost s = {next.state, next.g};
 		closed_list.push_back(s);
+		nodes_expanded++;
 	}
 }
 
@@ -94,6 +98,16 @@ double AStar<environment, state, action>::get_state_gcost(state s) {
         }
     }
     return 0;
+}
+
+template <class environment, class state, class action>
+int AStar<environment, state, action>::get_nodes_expanded() {
+	return nodes_expanded;
+}
+
+template <class environment, class state, class action>
+double AStar<environment, state, action>::get_final_gcost() {
+	return final_gcost;
 }
 
 #endif /* AStar_h */
