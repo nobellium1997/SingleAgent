@@ -37,6 +37,17 @@ CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o
 CMakeFiles/Project6.dir/EightWayMovement.cpp.o
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.cpp
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStar.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.cpp
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
 CMakeFiles/Project6.dir/STP.cpp.o
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.cpp
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
@@ -53,6 +64,7 @@ CMakeFiles/Project6.dir/main.cpp.o
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+ /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Timer.h
  /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/main.cpp

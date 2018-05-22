@@ -125,6 +125,12 @@
 		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h">
 			<Option target="Project6"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.cpp">
+			<Option target="Project6"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h">
+			<Option target="Project6"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.cpp">
 			<Option target="Project6"/>
 		</Unit>

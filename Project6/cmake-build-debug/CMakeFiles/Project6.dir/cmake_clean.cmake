@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o"
   "CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o"
   "CMakeFiles/Project6.dir/DifferentialHelper.cpp.o"
+  "CMakeFiles/Project6.dir/MaxHeuristic.cpp.o"
   "Project6.pdb"
   "Project6.exe"
   "libProject6.dll.a"

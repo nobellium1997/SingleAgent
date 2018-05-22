@@ -285,6 +285,33 @@ EightWayMovement.cpp.s:
 	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/EightWayMovement.cpp.s
 .PHONY : EightWayMovement.cpp.s
 
+MaxHeuristic.o: MaxHeuristic.cpp.o
+
+.PHONY : MaxHeuristic.o
+
+# target to build an object file
+MaxHeuristic.cpp.o:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/MaxHeuristic.cpp.o
+.PHONY : MaxHeuristic.cpp.o
+
+MaxHeuristic.i: MaxHeuristic.cpp.i
+
+.PHONY : MaxHeuristic.i
+
+# target to preprocess a source file
+MaxHeuristic.cpp.i:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/MaxHeuristic.cpp.i
+.PHONY : MaxHeuristic.cpp.i
+
+MaxHeuristic.s: MaxHeuristic.cpp.s
+
+.PHONY : MaxHeuristic.s
+
+# target to generate assembly for a file
+MaxHeuristic.cpp.s:
+	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/MaxHeuristic.cpp.s
+.PHONY : MaxHeuristic.cpp.s
+
 STP.o: STP.cpp.o
 
 .PHONY : STP.o
@@ -393,6 +420,9 @@ help:
 	@echo "... EightWayMovement.o"
 	@echo "... EightWayMovement.i"
 	@echo "... EightWayMovement.s"
+	@echo "... MaxHeuristic.o"
+	@echo "... MaxHeuristic.i"
+	@echo "... MaxHeuristic.s"
 	@echo "... STP.o"
 	@echo "... STP.i"
 	@echo "... STP.s"

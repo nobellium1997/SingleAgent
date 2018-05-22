@@ -9,18 +9,30 @@ DifferentialHelper::DifferentialHelper(const int &x, const int &y) {
     EightWayMovement goal;
     AStar<EWM, EightWayMovement, EWMoves> astar;
     std::vector<EightWayMovement> path;
-    std::vector<EWMoves > operators;
+    std::vector<EWMoves> operators;
     EWM environment;
     EightWayHeuristic h;
 
     ew.posx = x;
     ew.posy = y;
 
-    // TODO change this
-    goal.posx = x + 1;
-    goal.posy = y + 1;
+    environment.GetOperators(ew, operators);
 
-    astar.GetPath(&environment, ew, goal, &h, path);
+    for(auto i : operators) {
+        if(i == up) {
+            goal.posy = y - 1;
+        } else if(i == down) {
+            goal.posy = y + 1;
+        } else if(i == right) {
+            goal.posx = x + 1;
+        } else {
+            goal.posx = x - 1;
+        }
+    }
+
+    operators.clear();
+
+    astar.GetPath(&environment, ew, goal, &h, path, true);
 
     points = astar.get_state_gcost();
 }

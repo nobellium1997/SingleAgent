@@ -104,6 +104,18 @@ STP.h
 EightWayMovement.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
 
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.cpp
+MaxHeuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
+
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
+Heuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+EightWayHeuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+DifferentialHeuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.cpp
 STP.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
@@ -153,4 +165,6 @@ DifferentialHelper.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
 DifferentialHeuristic.h
 /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+MaxHeuristic.h
+/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
 

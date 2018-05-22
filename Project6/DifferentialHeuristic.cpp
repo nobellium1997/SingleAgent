@@ -4,8 +4,8 @@
 
 #include "DifferentialHeuristic.h"
 
-DifferentialHeuristic::DifferentialHeuristic() {
-    DifferentialHelper dh(13, 89);
+DifferentialHeuristic::DifferentialHeuristic(const int& x, const int& y) {
+    DifferentialHelper dh(x, y);
     points = dh.points;
 }
 

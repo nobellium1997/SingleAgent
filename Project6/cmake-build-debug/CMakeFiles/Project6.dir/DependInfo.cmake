@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp" "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/Project6.dir/DifferentialHeuristic.cpp.o"
   "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.cpp" "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o"
   "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.cpp" "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/Project6.dir/EightWayMovement.cpp.o"
+  "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.cpp" "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/Project6.dir/MaxHeuristic.cpp.o"
   "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.cpp" "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/Project6.dir/STP.cpp.o"
   "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Timer.cpp" "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/Project6.dir/Timer.cpp.o"
   "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/main.cpp" "/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/Project6.dir/main.cpp.o"

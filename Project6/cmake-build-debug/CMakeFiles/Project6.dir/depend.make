@@ -37,6 +37,17 @@ CMakeFiles/Project6.dir/EightWayHeuristic.cpp.o: ../STP.h
 CMakeFiles/Project6.dir/EightWayMovement.cpp.o: ../EightWayMovement.cpp
 CMakeFiles/Project6.dir/EightWayMovement.cpp.o: ../EightWayMovement.h
 
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../AStar.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../AStarOpenList.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../DifferentialHelper.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../DifferentialHeuristic.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../EightWayHeuristic.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../EightWayMovement.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../Heuristic.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../MaxHeuristic.cpp
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../MaxHeuristic.h
+CMakeFiles/Project6.dir/MaxHeuristic.cpp.o: ../STP.h
+
 CMakeFiles/Project6.dir/STP.cpp.o: ../STP.cpp
 CMakeFiles/Project6.dir/STP.cpp.o: ../STP.h
 
@@ -52,6 +63,7 @@ CMakeFiles/Project6.dir/main.cpp.o: ../DifferentialHeuristic.h
 CMakeFiles/Project6.dir/main.cpp.o: ../EightWayHeuristic.h
 CMakeFiles/Project6.dir/main.cpp.o: ../EightWayMovement.h
 CMakeFiles/Project6.dir/main.cpp.o: ../Heuristic.h
+CMakeFiles/Project6.dir/main.cpp.o: ../MaxHeuristic.h
 CMakeFiles/Project6.dir/main.cpp.o: ../STP.h
 CMakeFiles/Project6.dir/main.cpp.o: ../Timer.h
 CMakeFiles/Project6.dir/main.cpp.o: ../main.cpp

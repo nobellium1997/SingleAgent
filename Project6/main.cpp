@@ -14,6 +14,7 @@
 #include "EightWayHeuristic.h"
 #include "DifferentialHelper.h"
 #include "DifferentialHeuristic.h"
+#include "MaxHeuristic.h"
 
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators);
 
@@ -114,16 +115,21 @@ int main(int argc, const char * argv[]) {
 //
 //        std::cout << std::endl;
 //    }
+    DifferentialHeuristic dh(13, 89);
+    std::vector<DifferentialHeuristic> pivot_points;
+    pivot_points.push_back(dh);
 
-    DifferentialHeuristic dh;
+    MaxHeuristic mh(pivot_points);
     EightWayMovement e1;
-    e1.posx = 13;
+    e1.posx = 14;
     e1.posy = 89;
 
     EightWayMovement goal;
-    goal.posx = 15;
+    goal.posx = 165;
     goal.posy = 89;
-    std::cout << dh.h(e1, goal);
+    std::cout << mh.h(e1, goal);
+
+
 	return 0;
 }
 

@@ -18,7 +18,8 @@
 template <class environment, class state, class action>
 class AStar {
 public:
-	void GetPath(environment *env, state start, state goal, Heuristic *h, std::vector<state> &path);
+	void GetPath(environment *env, state start, state goal, Heuristic *h, std::vector<state> &path,
+                 const bool& keep_going);
     std::vector<std::pair<state, double>> get_state_gcost();
     double get_state_gcost(state s);
 private:
@@ -34,7 +35,7 @@ private:
 
 template <class environment, class state, class action>
 void AStar<environment, state, action>::GetPath(environment *env, state start, state goal,
-											   Heuristic *h, std::vector<state> &path)
+											   Heuristic *h, std::vector<state> &path, const bool& keep_going)
 {
     closed_list.clear();
 	path.resize(0);
@@ -47,10 +48,8 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 		if (next.state == goal)
 		{
 			q.GetPath(next.state, path);
-			std::string input;
-			std::cout <<"Goal found. Keep going? (y/n): ";
-			std::cin >> input;
-			if(input == "n") {
+
+			if(!keep_going) {
 			    return;
 			}
 		}
