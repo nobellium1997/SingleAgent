@@ -20,18 +20,14 @@ class AStar {
 public:
 	void GetPath(environment *env, state start, state goal, Heuristic *h, std::vector<state> &path,
                  const bool& keep_going);
-    std::vector<std::pair<state, double>> get_state_gcost();
+    std::unordered_map<state, double> get_state_gcost();
     double get_state_gcost(state s);
     int get_nodes_expanded();
     double get_final_gcost();
 private:
-    struct state_gcost {
-        state s;
-        double gcost;
-    };
 	AStarOpenList<state> q;
 	std::vector<action> acts;
-	std::vector<state_gcost> closed_list;
+	std::unordered_map<state, double> closed_list;
 	int nodes_expanded;
 	double final_gcost;
 };
@@ -70,32 +66,25 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 			}
 		}
 
-		state_gcost s = {next.state, next.g};
-		closed_list.push_back(s);
+		closed_list.insert({next.state, next.g});
 		nodes_expanded++;
 	}
 }
 
 template <class environment, class state, class action>
-std::vector<std::pair<state, double>> AStar<environment, state, action>::get_state_gcost() {
-    std::vector<std::pair<state, double>> vec;
-    std::pair<state, double> this_state;
-    for(int i = 0; i < this->closed_list.size(); i++) {
-        this_state.first = this->closed_list.at(i).s;
-        this_state.second = this->closed_list.at(i).gcost;
-        vec.push_back(this_state);
-    }
-    return vec;
+std::unordered_map<state, double> AStar<environment, state, action>::get_state_gcost() {
+    return closed_list;
 }
 
 template <class environment, class state, class action>
 double AStar<environment, state, action>::get_state_gcost(state s) {
-    for(int i = 0; i < this->closed_list.size(); i++) {
-        if(s == this->closed_list.at(i).s) {
-            return this->closed_list.at(i).gcost;
-        }
-    }
-    return 0;
+//	std::unordered_map<state, double>::const_iterator it = closed_list.find(s);
+//	if(it == closed_list.end()) {
+//		return 0;
+//	} else {
+//		return it->second;
+//	}
+	return 0;
 }
 
 template <class environment, class state, class action>

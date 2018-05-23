@@ -41,8 +41,9 @@ DifferentialHelper::DifferentialHelper(const int &x, const int &y) {
     operators.clear();
     astar.GetPath(&environment, ew, goal, &h, path, true);
 
-    std::vector<std::pair<EightWayMovement, double>> vec = astar.get_state_gcost();
-    for(auto i : vec){
-        points.insert({i.first, i.second});
-    }
+//    std::vector<std::pair<EightWayMovement, double>> vec = astar.get_state_gcost();
+//    for(auto i : vec){
+//        points.insert({i.first, i.second});
+//    }
+    points = astar.get_state_gcost();
 }
