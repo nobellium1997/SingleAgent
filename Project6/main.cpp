@@ -78,10 +78,10 @@ int main(int argc, const char * argv[]) {
     pivot_points.push_back(dh4);
     pivot_points.push_back(dh5);
 
-    MaxHeuristic h(pivot_points);
-//    EightWayHeuristic h;
+//    MaxHeuristic h(pivot_points);
+    EightWayHeuristic h;
 
-    for(int i = 0; i < 1; i++) {
+    for(int i = start_points.size()-1; i < start_points.size(); i++) {
         ew.posx = start_points.at(i).first;
         ew.posy = start_points.at(i).second;
 
@@ -98,10 +98,15 @@ int main(int argc, const char * argv[]) {
 
         states_to_path(path, operators);
 
-
+        int counter = 1;
         for(auto op: operators) {
+            if(counter % 10 == 0) {
+                std::cout << std::endl;
+            }
             std::cout << op << " ";
+            counter++;
         }
+        std::cout << std::endl;
         std::cout << std::endl;
         std::cout << "Nodes Expanded: " << astar.get_nodes_expanded() << std::endl;
         std::cout << "g-cost of goal: " << astar.get_final_gcost() << std::endl;

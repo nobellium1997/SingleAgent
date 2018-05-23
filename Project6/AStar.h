@@ -49,8 +49,6 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 	while (!q.Empty())
 	{
 		AStarData<state> next = q.GetNext();
-		std::cout << next.h << std::endl;
-
 		if (next.state == goal)
 		{
 			final_gcost = next.g;
@@ -66,9 +64,9 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 			state tmp = next.state;
 			env->ApplyOperator(tmp, op);
 			if(op == up || op == down || op == left || op == right) {
-				q.Add(tmp, next.g+1, h->h(next.state, goal), next.state);
+				q.Add(tmp, next.g+1, h->h(tmp, goal), next.state);
 			} else {
-				q.Add(tmp, next.g+std::sqrt(2), h->h(next.state, goal), next.state);
+				q.Add(tmp, next.g+std::sqrt(2), h->h(tmp, goal), next.state);
 			}
 		}
 
