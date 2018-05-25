@@ -78,6 +78,9 @@ int main(int argc, const char * argv[]) {
     pivot_points.push_back(dh4);
     pivot_points.push_back(dh5);
 
+
+    // Comment out the heuristic here to test the difference between
+    // octile (EightWayHeuristic) and Differential (MaxHeuristic)
     MaxHeuristic h(pivot_points);
 //    EightWayHeuristic h;
 
