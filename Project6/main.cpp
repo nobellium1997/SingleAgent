@@ -17,6 +17,7 @@
 #include "MaxHeuristic.h"
 
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators);
+std::pair<int, int> get_random_point(const EightWayMovement& ew);
 
 int main(int argc, const char * argv[]) {
     // all this code is to test the map
@@ -117,6 +118,7 @@ int main(int argc, const char * argv[]) {
         std::cout << std::endl;
         std::cout << std::endl;
     }
+
 	return 0;
 }
 
@@ -149,5 +151,16 @@ void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWM
         }
 
         previous_state = current_state;
+    }
+}
+
+std::pair<int, int> get_random_point(const EightWayMovement& ew) {
+    while(true) {
+        std::pair<int, int> point;
+        point.first = rand() % ew.map_width;
+        point.second = rand() % ew.map_height;
+        if(ew.map[point.second][point.first] == 1) {
+            return point;
+        }
     }
 }
