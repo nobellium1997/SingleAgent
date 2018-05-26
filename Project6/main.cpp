@@ -17,7 +17,6 @@
 #include "MaxHeuristic.h"
 
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators);
-std::pair<int, int> get_random_point(const EightWayMovement& ew);
 
 int main(int argc, const char * argv[]) {
     // all this code is to test the map
@@ -66,26 +65,19 @@ int main(int argc, const char * argv[]) {
     std::vector<EWMoves> operators;
     EWM environment;
 
-    DifferentialHeuristic dh(90, 189);
-    DifferentialHeuristic dh2(7, 111);
-    DifferentialHeuristic dh3(184, 108);
-    DifferentialHeuristic dh4(98, 7);
-    DifferentialHeuristic dh5(95, 97);
-
     std::vector<DifferentialHeuristic> pivot_points;
-    pivot_points.push_back(dh);
-    pivot_points.push_back(dh2);
-    pivot_points.push_back(dh3);
-    pivot_points.push_back(dh4);
-    pivot_points.push_back(dh5);
-
+    pivot_points.resize(20);
+    for(int i = 0; i < 20; i++) {
+        DifferentialHeuristic dh;
+        pivot_points.push_back(dh);
+    }
 
     // Comment out the heuristic here to test the difference between
     // octile (EightWayHeuristic) and Differential (MaxHeuristic)
     MaxHeuristic h(pivot_points);
 //    EightWayHeuristic h;
 
-    for(int i = 0; i < start_points.size(); i++) {
+    for(int i = 0; i < 5; i++) {
         ew.posx = start_points.at(i).first;
         ew.posy = start_points.at(i).second;
 
@@ -119,7 +111,7 @@ int main(int argc, const char * argv[]) {
         std::cout << std::endl;
     }
 
-	return 0;
+    return 0;
 }
 
 void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWMoves>& operators) {
@@ -154,13 +146,3 @@ void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWM
     }
 }
 
-std::pair<int, int> get_random_point(const EightWayMovement& ew) {
-    while(true) {
-        std::pair<int, int> point;
-        point.first = rand() % ew.map_width;
-        point.second = rand() % ew.map_height;
-        if(ew.map[point.second][point.first] == 1) {
-            return point;
-        }
-    }
-}
