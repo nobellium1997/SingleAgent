@@ -20,6 +20,8 @@ std::pair<int, int> get_random_point(const EightWayMovement& ew);
 void optimized_pivots(const EightWayMovement& ew, std::vector<DifferentialHeuristic>& optimized_pivot_points);
 
 int main(int argc, const char * argv[]) {
+    std::srand(std::time(nullptr));
+
     // all this code is to test the map
     std::ifstream file;
     std::string file_name = "lak303d.map.scen";
@@ -68,6 +70,11 @@ int main(int argc, const char * argv[]) {
 
     std::vector<DifferentialHeuristic> pivot_points_randomized;
     optimized_pivots(ew, pivot_points_randomized);
+
+//    for(int i = 0; i < 5; i++) {
+//        DifferentialHeuristic dh;
+//        pivot_points_randomized.push_back(dh);
+//    }
 
     // Comment out the heuristic here to test the difference between
     // octile (EightWayHeuristic) and Differential (MaxHeuristic)

@@ -43,6 +43,11 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 	nodes_expanded = 0;
 	while (!q.Empty())
 	{
+	    if(!keep_going) {
+	        std::cout << "\r" << nodes_expanded;
+	        fflush(stdout);
+	    }
+
 		AStarData<state> next = q.GetNext();
 		if (next.state == goal)
 		{

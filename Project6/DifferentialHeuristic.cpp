@@ -5,6 +5,7 @@
 #include "DifferentialHeuristic.h"
 #include "AStar.h"
 #include "EightWayHeuristic.h"
+#include <ctime>
 
 std::pair<int, int> get_random_point(const EightWayMovement& ew);
 
@@ -109,8 +110,8 @@ double DifferentialHeuristic::get_state_gcost(const EightWayMovement &ew1) {
 std::pair<int, int> get_random_point(const EightWayMovement& ew) {
     while(true) {
         std::pair<int, int> point;
-        point.first = rand() % ew.map_width;
-        point.second = rand() % ew.map_height;
+        point.first = std::rand() % ew.map_width;
+        point.second = std::rand() % ew.map_height;
         if(ew.map[point.second][point.first] == 1) {
             return point;
         }
