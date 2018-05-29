@@ -69,12 +69,12 @@ int main(int argc, const char * argv[]) {
     EWM environment;
 
     std::vector<DifferentialHeuristic> pivot_points_randomized;
-    optimized_pivots(ew, pivot_points_randomized);
+//    optimized_pivots(ew, pivot_points_randomized);
 
-//    for(int i = 0; i < 5; i++) {
-//        DifferentialHeuristic dh;
-//        pivot_points_randomized.push_back(dh);
-//    }
+    for(int i = 0; i < 5; i++) {
+        DifferentialHeuristic dh;
+        pivot_points_randomized.push_back(dh);
+    }
 
     // Comment out the heuristic here to test the difference between
     // octile (EightWayHeuristic) and Differential (MaxHeuristic)

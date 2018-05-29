@@ -10,8 +10,8 @@ MaxHeuristic::MaxHeuristic(std::vector<DifferentialHeuristic>& points) {
 
 double MaxHeuristic::h(const EightWayMovement &ew1, const EightWayMovement &ew2) {
     double max_val = 0;
-    for(auto i : *this->dh) {
-        double temp = i.h(ew1, ew2);
+    for(int i = 0; i < this->dh->size(); i++/*auto i : *this->dh*/) {
+        double temp = this->dh->at(i).h(ew1, ew2);
         if(temp > max_val) {
             max_val = temp;
         }
