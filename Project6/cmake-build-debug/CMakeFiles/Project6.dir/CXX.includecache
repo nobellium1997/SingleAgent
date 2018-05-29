@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStar.h
+/home/nobel/Documents/SingleAgent/Project6/AStar.h
 vector
 -
 cmath
@@ -14,75 +14,65 @@ cmath
 iostream
 -
 AStarOpenList.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
+/home/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project6/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
+/home/nobel/Documents/SingleAgent/Project6/AStarOpenList.h
 vector
 -
 unordered_map
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/BFS.cpp
+/home/nobel/Documents/SingleAgent/Project6/BFS.cpp
 deque
 -
 BFS.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/BFS.h
+/home/nobel/Documents/SingleAgent/Project6/BFS.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/BFS.h
+/home/nobel/Documents/SingleAgent/Project6/BFS.h
 stdio.h
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+/home/nobel/Documents/SingleAgent/Project6/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DFID.cpp
+/home/nobel/Documents/SingleAgent/Project6/DFID.cpp
 DFID.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DFID.h
+/home/nobel/Documents/SingleAgent/Project6/DFID.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DFID.h
+/home/nobel/Documents/SingleAgent/Project6/DFID.h
 stdio.h
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+/home/nobel/Documents/SingleAgent/Project6/STP.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.cpp
-DifferentialHelper.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
-
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
-vector
--
-EightWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
-AStar.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStar.h
-EightWayHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
-
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp
+/home/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.cpp
 DifferentialHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+AStar.h
+/home/nobel/Documents/SingleAgent/Project6/AStar.h
+EightWayHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+unordered_map
+-
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
-DifferentialHelper.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+/home/nobel/Documents/SingleAgent/Project6/Heuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.cpp
+/home/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.cpp
 cmath
 -
 EightWayHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project6/Heuristic.h
 EightWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.cpp
+/home/nobel/Documents/SingleAgent/Project6/EightWayMovement.cpp
 fstream
 -
 sstream
@@ -90,39 +80,39 @@ sstream
 iostream
 -
 EightWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
 string
 -
 vector
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project6/Heuristic.h
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+/home/nobel/Documents/SingleAgent/Project6/STP.h
 EightWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.cpp
+/home/nobel/Documents/SingleAgent/Project6/MaxHeuristic.cpp
 MaxHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
 Heuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Heuristic.h
+/home/nobel/Documents/SingleAgent/Project6/Heuristic.h
 EightWayHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
 DifferentialHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.cpp
+/home/nobel/Documents/SingleAgent/Project6/STP.cpp
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+/home/nobel/Documents/SingleAgent/Project6/STP.h
 random
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+/home/nobel/Documents/SingleAgent/Project6/STP.h
 stdio.h
 -
 vector
@@ -130,11 +120,11 @@ vector
 ostream
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Timer.cpp
+/home/nobel/Documents/SingleAgent/Project6/Timer.cpp
 Timer.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Timer.h
+/home/nobel/Documents/SingleAgent/Project6/Timer.h
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Timer.h
+/home/nobel/Documents/SingleAgent/Project6/Timer.h
 stdint.h
 -
 fstream
@@ -142,29 +132,27 @@ fstream
 chrono
 -
 
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/main.cpp
+/home/nobel/Documents/SingleAgent/Project6/main.cpp
 iostream
 -
 sstream
 -
 STP.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/STP.h
+/home/nobel/Documents/SingleAgent/Project6/STP.h
 Timer.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/Timer.h
+/home/nobel/Documents/SingleAgent/Project6/Timer.h
 DFID.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DFID.h
+/home/nobel/Documents/SingleAgent/Project6/DFID.h
 BFS.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/BFS.h
+/home/nobel/Documents/SingleAgent/Project6/BFS.h
 AStar.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/AStar.h
+/home/nobel/Documents/SingleAgent/Project6/AStar.h
 EightWayMovement.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayMovement.h
 EightWayHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
-DifferentialHelper.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHelper.h
+/home/nobel/Documents/SingleAgent/Project6/EightWayHeuristic.h
 DifferentialHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/DifferentialHeuristic.h
 MaxHeuristic.h
-/cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
+/home/nobel/Documents/SingleAgent/Project6/MaxHeuristic.h
 

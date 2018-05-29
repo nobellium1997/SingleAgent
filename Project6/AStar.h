@@ -19,15 +19,13 @@ template <class environment, class state, class action>
 class AStar {
 public:
 	void GetPath(environment *env, state start, state goal, Heuristic *h, std::vector<state> &path,
-                 const bool& keep_going);
-    std::unordered_map<state, double> get_state_gcost();
-    double get_state_gcost(state s);
+                 const bool& keep_going, std::unordered_map<state, double>& closed_list);
     int get_nodes_expanded();
     double get_final_gcost();
 private:
 	AStarOpenList<state> q;
 	std::vector<action> acts;
-	std::unordered_map<state, double> closed_list;
+//	std::unordered_map<state, double> closed_list;
 	int nodes_expanded;
 	double final_gcost;
 };
@@ -35,7 +33,8 @@ private:
 
 template <class environment, class state, class action>
 void AStar<environment, state, action>::GetPath(environment *env, state start, state goal,
-											   Heuristic *h, std::vector<state> &path, const bool& keep_going)
+											   Heuristic *h, std::vector<state> &path, const bool& keep_going,
+												std::unordered_map<state, double>& closed_list)
 {
     closed_list.clear();
 	path.resize(0);
@@ -69,22 +68,6 @@ void AStar<environment, state, action>::GetPath(environment *env, state start, s
 		closed_list.insert({next.state, next.g});
 		nodes_expanded++;
 	}
-}
-
-template <class environment, class state, class action>
-std::unordered_map<state, double> AStar<environment, state, action>::get_state_gcost() {
-    return closed_list;
-}
-
-template <class environment, class state, class action>
-double AStar<environment, state, action>::get_state_gcost(state s) {
-//	std::unordered_map<state, double>::const_iterator it = closed_list.find(s);
-//	if(it == closed_list.end()) {
-//		return 0;
-//	} else {
-//		return it->second;
-//	}
-	return 0;
 }
 
 template <class environment, class state, class action>

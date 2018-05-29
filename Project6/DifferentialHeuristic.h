@@ -5,8 +5,8 @@
 #ifndef PROJECT6_DIFFERENTIALHEURISTIC_H
 #define PROJECT6_DIFFERENTIALHEURISTIC_H
 
+#include <unordered_map>
 #include "Heuristic.h"
-#include "DifferentialHelper.h"
 
 class DifferentialHeuristic : public  Heuristic {
 public:

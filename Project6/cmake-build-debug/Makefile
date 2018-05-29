@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /home/nobel/Downloads/CLion-2018.1.2/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /home/nobel/Downloads/CLion-2018.1.2/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6
+CMAKE_SOURCE_DIR = /home/nobel/Documents/SingleAgent/Project6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nobel/Documents/SingleAgent/Project6/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/nobel/Downloads/CLion-2018.1.2/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/nobel/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/nobel/Downloads/CLion-2018.1.2/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles /home/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nobel/Documents/SingleAgent/Project6/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,33 +176,6 @@ DFID.s: DFID.cpp.s
 DFID.cpp.s:
 	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DFID.cpp.s
 .PHONY : DFID.cpp.s
-
-DifferentialHelper.o: DifferentialHelper.cpp.o
-
-.PHONY : DifferentialHelper.o
-
-# target to build an object file
-DifferentialHelper.cpp.o:
-	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHelper.cpp.o
-.PHONY : DifferentialHelper.cpp.o
-
-DifferentialHelper.i: DifferentialHelper.cpp.i
-
-.PHONY : DifferentialHelper.i
-
-# target to preprocess a source file
-DifferentialHelper.cpp.i:
-	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHelper.cpp.i
-.PHONY : DifferentialHelper.cpp.i
-
-DifferentialHelper.s: DifferentialHelper.cpp.s
-
-.PHONY : DifferentialHelper.s
-
-# target to generate assembly for a file
-DifferentialHelper.cpp.s:
-	$(MAKE) -f CMakeFiles/Project6.dir/build.make CMakeFiles/Project6.dir/DifferentialHelper.cpp.s
-.PHONY : DifferentialHelper.cpp.s
 
 DifferentialHeuristic.o: DifferentialHeuristic.cpp.o
 
@@ -408,9 +381,6 @@ help:
 	@echo "... DFID.o"
 	@echo "... DFID.i"
 	@echo "... DFID.s"
-	@echo "... DifferentialHelper.o"
-	@echo "... DifferentialHelper.i"
-	@echo "... DifferentialHelper.s"
 	@echo "... DifferentialHeuristic.o"
 	@echo "... DifferentialHeuristic.i"
 	@echo "... DifferentialHeuristic.s"

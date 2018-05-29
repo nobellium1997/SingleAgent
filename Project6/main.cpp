@@ -12,7 +12,6 @@
 #include "AStar.h"
 #include "EightWayMovement.h"
 #include "EightWayHeuristic.h"
-#include "DifferentialHelper.h"
 #include "DifferentialHeuristic.h"
 #include "MaxHeuristic.h"
 
@@ -75,6 +74,7 @@ int main(int argc, const char * argv[]) {
     MaxHeuristic h(pivot_points_randomized);
 //    EightWayHeuristic h;
 
+    std::unordered_map<EightWayMovement, double> temp_map;
     for(int i = start_points.size()-1; i < start_points.size(); i++) {
         ew.posx = start_points.at(i).first;
         ew.posy = start_points.at(i).second;
@@ -88,7 +88,7 @@ int main(int argc, const char * argv[]) {
                   << end_points.at(i).second
                   << std::endl;
 
-        astar.GetPath(&environment, ew, goal, &h, path, false);
+        astar.GetPath(&environment, ew, goal, &h, path, false, temp_map);
 
         states_to_path(path, operators);
 
@@ -108,7 +108,6 @@ int main(int argc, const char * argv[]) {
         std::cout << std::endl;
         std::cout << std::endl;
     }
-
     return 0;
 }
 
@@ -147,6 +146,7 @@ void states_to_path(const std::vector<EightWayMovement>& states, std::vector<EWM
 void optimized_pivots(const EightWayMovement& ew, std::vector<DifferentialHeuristic>& optimized_pivot_points) {
     EightWayHeuristic octile_distance;
     std::vector<std::pair<int, int>> random_points;
+
     for(int i = 0; i < 20; i++) {
         std::pair<int, int> temp_point = get_random_point(ew);
         random_points.push_back(temp_point);
